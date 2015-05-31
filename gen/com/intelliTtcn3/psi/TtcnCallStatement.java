@@ -1,0 +1,19 @@
+// This is a generated file. Not intended for manual editing.
+package com.intelliTtcn3.psi;
+
+import java.util.List;
+import org.jetbrains.annotations.*;
+import com.intellij.psi.PsiElement;
+
+public interface TtcnCallStatement extends PsiElement {
+
+  @NotNull
+  TtcnArrayIdentifierRef getArrayIdentifierRef();
+
+  @Nullable
+  TtcnPortCallBody getPortCallBody();
+
+  @NotNull
+  TtcnPortCallOp getPortCallOp();
+
+}
