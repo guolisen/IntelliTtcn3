@@ -36,13 +36,14 @@ import com.intelliTtcn3.psi.TtcnTypes;
 %eof{  return;
 %eof}
 
-//%line
-//%column
+%line
+%column
 
 
 %{
   StringBuilder string = new StringBuilder();
-
+  private int yyline;
+  private int yycolumn;
 
 %}
 
@@ -63,7 +64,7 @@ DocumentationComment = "/*" "*"+ [^/*] ~"*/"
 Identifier = [:jletter:][:jletterdigit:]*
 
 /* integer literals */
-DecIntegerLiteral = \d+(\.\d*)?
+DecIntegerLiteral = 0 | [1-9][0-9]*
 
 /* floating point literals */
 FloatLiteral  = ({FLit1}|{FLit2}|{FLit3}) {Exponent}? [fF]
@@ -296,7 +297,9 @@ SingleCharacter = [^\r\n\'\\]
      be represented by a positive integer. */
   "-2147483648"                  {  }
 
-  {DecIntegerLiteral}            { return TtcnTypes.TTCN_NUMBER; }
+    {DecIntegerLiteral}            { return TtcnTypes.TTCN_NUMBER; }
+    {FloatLiteral}                 { return TtcnTypes.TTCN_NUMBER; }
+    {DoubleLiteral}                { return TtcnTypes.TTCN_NUMBER; }
 
   /* comments */
   {Comment}                      { /* ignore */ }
