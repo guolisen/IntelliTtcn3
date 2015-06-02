@@ -23,21 +23,9 @@ public class TtcnFloatENotationImpl extends ASTWrapperPsiElement implements Ttcn
   }
 
   @Override
-  @Nullable
-  public TtcnDecimalNumber getDecimalNumber() {
-    return findChildByClass(TtcnDecimalNumber.class);
-  }
-
-  @Override
   @NotNull
   public TtcnExponential getExponential() {
     return findNotNullChildByClass(TtcnExponential.class);
-  }
-
-  @Override
-  @NotNull
-  public List<TtcnNumber> getNumberList() {
-    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnNumber.class);
   }
 
 }

@@ -24,14 +24,20 @@ public class TtcnNestedSetOfDefImpl extends ASTWrapperPsiElement implements Ttcn
 
   @Override
   @Nullable
+  public TtcnBound getBound() {
+    return findChildByClass(TtcnBound.class);
+  }
+
+  @Override
+  @Nullable
   public TtcnNestedTypeDef getNestedTypeDef() {
     return findChildByClass(TtcnNestedTypeDef.class);
   }
 
   @Override
   @Nullable
-  public TtcnStringLength getStringLength() {
-    return findChildByClass(TtcnStringLength.class);
+  public TtcnSingleExpression getSingleExpression() {
+    return findChildByClass(TtcnSingleExpression.class);
   }
 
   @Override

@@ -24,8 +24,8 @@ public class TtcnConstDefImpl extends ASTWrapperPsiElement implements TtcnConstD
 
   @Override
   @NotNull
-  public TtcnConstList getConstList() {
-    return findNotNullChildByClass(TtcnConstList.class);
+  public List<TtcnSingleConstDef> getSingleConstDefList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnSingleConstDef.class);
   }
 
   @Override

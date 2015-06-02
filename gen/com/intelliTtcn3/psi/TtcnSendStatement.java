@@ -8,9 +8,12 @@ import com.intellij.psi.PsiElement;
 public interface TtcnSendStatement extends PsiElement {
 
   @NotNull
-  TtcnArrayIdentifierRef getArrayIdentifierRef();
+  List<TtcnFieldOrBitNumber> getFieldOrBitNumberList();
 
   @NotNull
   TtcnPortSendOp getPortSendOp();
+
+  @NotNull
+  PsiElement getTtcnId();
 
 }

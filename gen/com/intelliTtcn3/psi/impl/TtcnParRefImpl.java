@@ -24,8 +24,8 @@ public class TtcnParRefImpl extends ASTWrapperPsiElement implements TtcnParRef {
 
   @Override
   @NotNull
-  public TtcnIdentifier getIdentifier() {
-    return findNotNullChildByClass(TtcnIdentifier.class);
+  public PsiElement getTtcnId() {
+    return findNotNullChildByType(TTCN_ID);
   }
 
 }

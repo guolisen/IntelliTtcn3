@@ -24,8 +24,86 @@ public class TtcnModuleDefinitionsListImpl extends ASTWrapperPsiElement implemen
 
   @Override
   @NotNull
-  public List<TtcnModuleDefinition> getModuleDefinitionList() {
-    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnModuleDefinition.class);
+  public List<TtcnAltstepDef> getAltstepDefList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnAltstepDef.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnConstDef> getConstDefList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnConstDef.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnExtConstDef> getExtConstDefList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnExtConstDef.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnExtFunctionDef> getExtFunctionDefList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnExtFunctionDef.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnFriendModuleDef> getFriendModuleDefList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnFriendModuleDef.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnFunctionDef> getFunctionDefList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnFunctionDef.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnGroupDef> getGroupDefList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnGroupDef.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnImportDef> getImportDefList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnImportDef.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnModuleParDef> getModuleParDefList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnModuleParDef.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnSignatureDef> getSignatureDefList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnSignatureDef.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnTemplateDef> getTemplateDefList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnTemplateDef.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnTestcaseDef> getTestcaseDefList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnTestcaseDef.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnTypeDef> getTypeDefList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnTypeDef.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnWithStatement> getWithStatementList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnWithStatement.class);
   }
 
 }

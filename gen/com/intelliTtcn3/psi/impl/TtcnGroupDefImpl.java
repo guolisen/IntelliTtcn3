@@ -23,15 +23,15 @@ public class TtcnGroupDefImpl extends ASTWrapperPsiElement implements TtcnGroupD
   }
 
   @Override
-  @NotNull
-  public TtcnIdentifier getIdentifier() {
-    return findNotNullChildByClass(TtcnIdentifier.class);
-  }
-
-  @Override
   @Nullable
   public TtcnModuleDefinitionsList getModuleDefinitionsList() {
     return findChildByClass(TtcnModuleDefinitionsList.class);
+  }
+
+  @Override
+  @NotNull
+  public PsiElement getTtcnId() {
+    return findNotNullChildByType(TTCN_ID);
   }
 
 }

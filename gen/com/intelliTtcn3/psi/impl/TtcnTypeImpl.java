@@ -24,14 +24,8 @@ public class TtcnTypeImpl extends ASTWrapperPsiElement implements TtcnType {
 
   @Override
   @Nullable
-  public TtcnPredefinedType getPredefinedType() {
-    return findChildByClass(TtcnPredefinedType.class);
-  }
-
-  @Override
-  @Nullable
-  public TtcnReferencedType getReferencedType() {
-    return findChildByClass(TtcnReferencedType.class);
+  public TtcnExtendedFieldReference getExtendedFieldReference() {
+    return findChildByClass(TtcnExtendedFieldReference.class);
   }
 
 }

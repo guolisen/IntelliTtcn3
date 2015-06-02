@@ -11,6 +11,9 @@ public interface TtcnSubTypeSpec extends PsiElement {
   TtcnAllowedValuesSpec getAllowedValuesSpec();
 
   @Nullable
-  TtcnStringLength getStringLength();
+  TtcnBound getBound();
+
+  @Nullable
+  TtcnSingleExpression getSingleExpression();
 
 }

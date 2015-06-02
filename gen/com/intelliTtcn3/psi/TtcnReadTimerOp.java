@@ -8,6 +8,9 @@ import com.intellij.psi.PsiElement;
 public interface TtcnReadTimerOp extends PsiElement {
 
   @NotNull
-  TtcnArrayIdentifierRef getArrayIdentifierRef();
+  List<TtcnFieldOrBitNumber> getFieldOrBitNumberList();
+
+  @NotNull
+  PsiElement getTtcnId();
 
 }

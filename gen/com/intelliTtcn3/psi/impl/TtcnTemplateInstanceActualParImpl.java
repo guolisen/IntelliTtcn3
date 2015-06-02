@@ -24,8 +24,26 @@ public class TtcnTemplateInstanceActualParImpl extends ASTWrapperPsiElement impl
 
   @Override
   @Nullable
-  public TtcnInLineTemplate getInLineTemplate() {
-    return findChildByClass(TtcnInLineTemplate.class);
+  public TtcnDerivedRefWithParList getDerivedRefWithParList() {
+    return findChildByClass(TtcnDerivedRefWithParList.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnSignature getSignature() {
+    return findChildByClass(TtcnSignature.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnTemplateBody getTemplateBody() {
+    return findChildByClass(TtcnTemplateBody.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnType getType() {
+    return findChildByClass(TtcnType.class);
   }
 
 }

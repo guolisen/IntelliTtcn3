@@ -8,6 +8,18 @@ import com.intellij.psi.PsiElement;
 public interface TtcnFunctionFormalParList extends PsiElement {
 
   @NotNull
-  List<TtcnFunctionFormalPar> getFunctionFormalParList();
+  List<TtcnDerivedRefWithParList> getDerivedRefWithParListList();
+
+  @NotNull
+  List<TtcnExpression> getExpressionList();
+
+  @NotNull
+  List<TtcnSignature> getSignatureList();
+
+  @NotNull
+  List<TtcnTemplateBody> getTemplateBodyList();
+
+  @NotNull
+  List<TtcnType> getTypeList();
 
 }

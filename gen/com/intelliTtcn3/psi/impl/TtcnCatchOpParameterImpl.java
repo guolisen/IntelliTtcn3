@@ -24,14 +24,26 @@ public class TtcnCatchOpParameterImpl extends ASTWrapperPsiElement implements Tt
 
   @Override
   @Nullable
-  public TtcnInLineTemplate getInLineTemplate() {
-    return findChildByClass(TtcnInLineTemplate.class);
+  public TtcnDerivedRefWithParList getDerivedRefWithParList() {
+    return findChildByClass(TtcnDerivedRefWithParList.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnSignature> getSignatureList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnSignature.class);
   }
 
   @Override
   @Nullable
-  public TtcnSignature getSignature() {
-    return findChildByClass(TtcnSignature.class);
+  public TtcnTemplateBody getTemplateBody() {
+    return findChildByClass(TtcnTemplateBody.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnType getType() {
+    return findChildByClass(TtcnType.class);
   }
 
 }

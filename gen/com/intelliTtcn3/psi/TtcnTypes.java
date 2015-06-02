@@ -11,10 +11,7 @@ public interface TtcnTypes {
   IElementType ACTION_TEXT = new TtcnElementType("ACTION_TEXT");
   IElementType ACTIVATE_OP = new TtcnElementType("ACTIVATE_OP");
   IElementType ADDRESS_DECL = new TtcnElementType("ADDRESS_DECL");
-  IElementType ADDRESS_KEYWORD = new TtcnElementType("ADDRESS_KEYWORD");
   IElementType ADDRESS_REF_LIST = new TtcnElementType("ADDRESS_REF_LIST");
-  IElementType ADDRESS_VALUE = new TtcnElementType("ADDRESS_VALUE");
-  IElementType ADD_EXPRESSION = new TtcnElementType("ADD_EXPRESSION");
   IElementType ADD_OP = new TtcnElementType("ADD_OP");
   IElementType ALIVE_OP = new TtcnElementType("ALIVE_OP");
   IElementType ALLOWED_VALUES_SPEC = new TtcnElementType("ALLOWED_VALUES_SPEC");
@@ -28,8 +25,6 @@ public interface TtcnTypes {
   IElementType ALL_REF = new TtcnElementType("ALL_REF");
   IElementType ALL_WITH_EXCEPT = new TtcnElementType("ALL_WITH_EXCEPT");
   IElementType ALL_WITH_EXCEPTS = new TtcnElementType("ALL_WITH_EXCEPTS");
-  IElementType ALPHA = new TtcnElementType("ALPHA");
-  IElementType ALPHA_NUM = new TtcnElementType("ALPHA_NUM");
   IElementType ALTSTEP_DEF = new TtcnElementType("ALTSTEP_DEF");
   IElementType ALTSTEP_INSTANCE = new TtcnElementType("ALTSTEP_INSTANCE");
   IElementType ALTSTEP_LOCAL_DEF = new TtcnElementType("ALTSTEP_LOCAL_DEF");
@@ -37,8 +32,6 @@ public interface TtcnTypes {
   IElementType ALT_CONSTRUCT = new TtcnElementType("ALT_CONSTRUCT");
   IElementType ALT_GUARD_CHAR = new TtcnElementType("ALT_GUARD_CHAR");
   IElementType ALT_GUARD_LIST = new TtcnElementType("ALT_GUARD_LIST");
-  IElementType AND_EXPRESSION = new TtcnElementType("AND_EXPRESSION");
-  IElementType ANY_TYPE_KEYWORD = new TtcnElementType("ANY_TYPE_KEYWORD");
   IElementType ARRAY_CONST_EXPRESSION = new TtcnElementType("ARRAY_CONST_EXPRESSION");
   IElementType ARRAY_DEF = new TtcnElementType("ARRAY_DEF");
   IElementType ARRAY_ELEMENT_CONST_EXPRESSION_LIST = new TtcnElementType("ARRAY_ELEMENT_CONST_EXPRESSION_LIST");
@@ -46,9 +39,7 @@ public interface TtcnTypes {
   IElementType ARRAY_ELEMENT_SPEC = new TtcnElementType("ARRAY_ELEMENT_SPEC");
   IElementType ARRAY_ELEMENT_SPEC_LIST = new TtcnElementType("ARRAY_ELEMENT_SPEC_LIST");
   IElementType ARRAY_EXPRESSION = new TtcnElementType("ARRAY_EXPRESSION");
-  IElementType ARRAY_IDENTIFIER_REF = new TtcnElementType("ARRAY_IDENTIFIER_REF");
   IElementType ARRAY_IDENTIFIER_REF_ASSIGNMENT = new TtcnElementType("ARRAY_IDENTIFIER_REF_ASSIGNMENT");
-  IElementType ARRAY_OR_BIT_REF = new TtcnElementType("ARRAY_OR_BIT_REF");
   IElementType ARRAY_VALUE_OR_ATTRIB = new TtcnElementType("ARRAY_VALUE_OR_ATTRIB");
   IElementType ASSIGNMENT = new TtcnElementType("ASSIGNMENT");
   IElementType ASSIGNMENT_LIST = new TtcnElementType("ASSIGNMENT_LIST");
@@ -57,19 +48,10 @@ public interface TtcnTypes {
   IElementType BASE_TEMPLATE = new TtcnElementType("BASE_TEMPLATE");
   IElementType BASIC_STATEMENTS = new TtcnElementType("BASIC_STATEMENTS");
   IElementType BEHAVIOUR_STATEMENTS = new TtcnElementType("BEHAVIOUR_STATEMENTS");
-  IElementType BIN = new TtcnElementType("BIN");
   IElementType BIN_OR_MATCH = new TtcnElementType("BIN_OR_MATCH");
-  IElementType BIT_AND_EXPRESSION = new TtcnElementType("BIT_AND_EXPRESSION");
-  IElementType BIT_NOT_EXPRESSION = new TtcnElementType("BIT_NOT_EXPRESSION");
-  IElementType BIT_OR_EXPRESSION = new TtcnElementType("BIT_OR_EXPRESSION");
-  IElementType BIT_STRING_KEYWORD = new TtcnElementType("BIT_STRING_KEYWORD");
   IElementType BIT_STRING_MATCH = new TtcnElementType("BIT_STRING_MATCH");
-  IElementType BIT_XOR_EXPRESSION = new TtcnElementType("BIT_XOR_EXPRESSION");
-  IElementType BOOLEAN_EXPRESSION = new TtcnElementType("BOOLEAN_EXPRESSION");
-  IElementType BOOLEAN_KEYWORD = new TtcnElementType("BOOLEAN_KEYWORD");
   IElementType BOOLEAN_VALUE = new TtcnElementType("BOOLEAN_VALUE");
   IElementType BOUND = new TtcnElementType("BOUND");
-  IElementType BSTRING = new TtcnElementType("BSTRING");
   IElementType CALL_BODY_GUARD = new TtcnElementType("CALL_BODY_GUARD");
   IElementType CALL_BODY_OPS = new TtcnElementType("CALL_BODY_OPS");
   IElementType CALL_BODY_STATEMENT = new TtcnElementType("CALL_BODY_STATEMENT");
@@ -80,7 +62,6 @@ public interface TtcnTypes {
   IElementType CATCH_OP_PARAMETER = new TtcnElementType("CATCH_OP_PARAMETER");
   IElementType CATCH_STATEMENT = new TtcnElementType("CATCH_STATEMENT");
   IElementType CHAR_KEYWORD = new TtcnElementType("CHAR_KEYWORD");
-  IElementType CHAR_STRING_KEYWORD = new TtcnElementType("CHAR_STRING_KEYWORD");
   IElementType CHAR_STRING_MATCH = new TtcnElementType("CHAR_STRING_MATCH");
   IElementType CHAR_STRING_VALUE = new TtcnElementType("CHAR_STRING_VALUE");
   IElementType CHECK_PARAMETER = new TtcnElementType("CHECK_PARAMETER");
@@ -88,7 +69,6 @@ public interface TtcnTypes {
   IElementType CHECK_STATEMENT = new TtcnElementType("CHECK_STATEMENT");
   IElementType CHECK_STATE_STATEMENT = new TtcnElementType("CHECK_STATE_STATEMENT");
   IElementType CLEAR_STATEMENT = new TtcnElementType("CLEAR_STATEMENT");
-  IElementType COMMENT = new TtcnElementType("COMMENT");
   IElementType COMMUNICATION_STATEMENTS = new TtcnElementType("COMMUNICATION_STATEMENTS");
   IElementType COMPLEMENT = new TtcnElementType("COMPLEMENT");
   IElementType COMPONENT_DEF = new TtcnElementType("COMPONENT_DEF");
@@ -96,30 +76,22 @@ public interface TtcnTypes {
   IElementType COMPONENT_ELEMENT_DEF = new TtcnElementType("COMPONENT_ELEMENT_DEF");
   IElementType COMPONENT_OR_ANY = new TtcnElementType("COMPONENT_OR_ANY");
   IElementType COMPONENT_OR_DEFAULT_REFERENCE = new TtcnElementType("COMPONENT_OR_DEFAULT_REFERENCE");
-  IElementType COMPONENT_REF = new TtcnElementType("COMPONENT_REF");
   IElementType COMPONENT_REFERENCE_OR_LITERAL = new TtcnElementType("COMPONENT_REFERENCE_OR_LITERAL");
   IElementType COMPONENT_REF_ASSIGNMENT = new TtcnElementType("COMPONENT_REF_ASSIGNMENT");
-  IElementType COMPONENT_TYPE = new TtcnElementType("COMPONENT_TYPE");
   IElementType COMPOUND_CONST_EXPRESSION = new TtcnElementType("COMPOUND_CONST_EXPRESSION");
   IElementType COMPOUND_EXPRESSION = new TtcnElementType("COMPOUND_EXPRESSION");
   IElementType CONDITIONAL_CONSTRUCT = new TtcnElementType("CONDITIONAL_CONSTRUCT");
   IElementType CONFIGURATION_OPS = new TtcnElementType("CONFIGURATION_OPS");
-  IElementType CONFIGURATION_STATEMENTS = new TtcnElementType("CONFIGURATION_STATEMENTS");
   IElementType CONFIG_PARAM_DEF = new TtcnElementType("CONFIG_PARAM_DEF");
   IElementType CONFIG_SPEC = new TtcnElementType("CONFIG_SPEC");
   IElementType CONNECT_STATEMENT = new TtcnElementType("CONNECT_STATEMENT");
   IElementType CONSTANT_EXPRESSION = new TtcnElementType("CONSTANT_EXPRESSION");
   IElementType CONST_DEF = new TtcnElementType("CONST_DEF");
-  IElementType CONST_LIST = new TtcnElementType("CONST_LIST");
-  IElementType CONTENT = new TtcnElementType("CONTENT");
   IElementType CONTROL_STATEMENT = new TtcnElementType("CONTROL_STATEMENT");
   IElementType CONTROL_STATEMENT_OR_DEF = new TtcnElementType("CONTROL_STATEMENT_OR_DEF");
   IElementType CONTROL_STATEMENT_OR_DEF_LIST = new TtcnElementType("CONTROL_STATEMENT_OR_DEF_LIST");
   IElementType CREATE_OP = new TtcnElementType("CREATE_OP");
-  IElementType CSTRING = new TtcnElementType("CSTRING");
   IElementType DEACTIVATE_STATEMENT = new TtcnElementType("DEACTIVATE_STATEMENT");
-  IElementType DECIMAL_NUMBER = new TtcnElementType("DECIMAL_NUMBER");
-  IElementType DEFAULT_KEYWORD = new TtcnElementType("DEFAULT_KEYWORD");
   IElementType DEF_OR_FIELD_REF = new TtcnElementType("DEF_OR_FIELD_REF");
   IElementType DEF_OR_FIELD_REF_LIST = new TtcnElementType("DEF_OR_FIELD_REF_LIST");
   IElementType DERIVED_DEF = new TtcnElementType("DERIVED_DEF");
@@ -132,9 +104,7 @@ public interface TtcnTypes {
   IElementType ELSE_IF_CLAUSE = new TtcnElementType("ELSE_IF_CLAUSE");
   IElementType ELSE_STATEMENT = new TtcnElementType("ELSE_STATEMENT");
   IElementType ENUMERATION = new TtcnElementType("ENUMERATION");
-  IElementType ENUMERATION_LIST = new TtcnElementType("ENUMERATION_LIST");
   IElementType ENUM_DEF = new TtcnElementType("ENUM_DEF");
-  IElementType EQUAL_EXPRESSION = new TtcnElementType("EQUAL_EXPRESSION");
   IElementType EQUAL_OP = new TtcnElementType("EQUAL_OP");
   IElementType EXCEPTION_SPEC = new TtcnElementType("EXCEPTION_SPEC");
   IElementType EXCEPTS_DEF = new TtcnElementType("EXCEPTS_DEF");
@@ -151,9 +121,7 @@ public interface TtcnTypes {
   IElementType EXCEPT_TYPE_DEF_SPEC = new TtcnElementType("EXCEPT_TYPE_DEF_SPEC");
   IElementType EXPONENTIAL = new TtcnElementType("EXPONENTIAL");
   IElementType EXPRESSION = new TtcnElementType("EXPRESSION");
-  IElementType EXTENDED_ALPHA_NUM = new TtcnElementType("EXTENDED_ALPHA_NUM");
   IElementType EXTENDED_FIELD_REFERENCE = new TtcnElementType("EXTENDED_FIELD_REFERENCE");
-  IElementType EXTENDED_IDENTIFIER = new TtcnElementType("EXTENDED_IDENTIFIER");
   IElementType EXTRA_MATCHING_ATTRIBUTES = new TtcnElementType("EXTRA_MATCHING_ATTRIBUTES");
   IElementType EXT_CONST_DEF = new TtcnElementType("EXT_CONST_DEF");
   IElementType EXT_FUNCTION_DEF = new TtcnElementType("EXT_FUNCTION_DEF");
@@ -167,32 +135,17 @@ public interface TtcnTypes {
   IElementType FIELD_SPEC_LIST = new TtcnElementType("FIELD_SPEC_LIST");
   IElementType FLOAT_DOT_NOTATION = new TtcnElementType("FLOAT_DOT_NOTATION");
   IElementType FLOAT_E_NOTATION = new TtcnElementType("FLOAT_E_NOTATION");
-  IElementType FLOAT_KEYWORD = new TtcnElementType("FLOAT_KEYWORD");
   IElementType FLOAT_VALUE = new TtcnElementType("FLOAT_VALUE");
-  IElementType FORMAL_PORT_PAR = new TtcnElementType("FORMAL_PORT_PAR");
-  IElementType FORMAL_TEMPLATE_PAR = new TtcnElementType("FORMAL_TEMPLATE_PAR");
-  IElementType FORMAL_TIMER_PAR = new TtcnElementType("FORMAL_TIMER_PAR");
-  IElementType FORMAL_VALUE_PAR = new TtcnElementType("FORMAL_VALUE_PAR");
   IElementType FOR_STATEMENT = new TtcnElementType("FOR_STATEMENT");
   IElementType FREE_TEXT = new TtcnElementType("FREE_TEXT");
   IElementType FRIEND_MODULE_DEF = new TtcnElementType("FRIEND_MODULE_DEF");
   IElementType FROM_CLAUSE = new TtcnElementType("FROM_CLAUSE");
   IElementType FROM_CLAUSE_PRESENT = new TtcnElementType("FROM_CLAUSE_PRESENT");
-  IElementType FUNCTION_ACTLIST = new TtcnElementType("FUNCTION_ACTLIST");
-  IElementType FUNCTION_ACTUAL_PAR = new TtcnElementType("FUNCTION_ACTUAL_PAR");
-  IElementType FUNCTION_ACTUAL_PAR_ASSIGNMENT = new TtcnElementType("FUNCTION_ACTUAL_PAR_ASSIGNMENT");
-  IElementType FUNCTION_ACTUAL_PAR_LIST = new TtcnElementType("FUNCTION_ACTUAL_PAR_LIST");
-  IElementType FUNCTION_ACT_ASSIGNLIST = new TtcnElementType("FUNCTION_ACT_ASSIGNLIST");
   IElementType FUNCTION_DEF = new TtcnElementType("FUNCTION_DEF");
-  IElementType FUNCTION_DEF_LIST = new TtcnElementType("FUNCTION_DEF_LIST");
-  IElementType FUNCTION_FORMAL_PAR = new TtcnElementType("FUNCTION_FORMAL_PAR");
   IElementType FUNCTION_FORMAL_PAR_LIST = new TtcnElementType("FUNCTION_FORMAL_PAR_LIST");
   IElementType FUNCTION_INSTANCE = new TtcnElementType("FUNCTION_INSTANCE");
-  IElementType FUNCTION_LOCAL_DEF = new TtcnElementType("FUNCTION_LOCAL_DEF");
-  IElementType FUNCTION_LOCAL_INST = new TtcnElementType("FUNCTION_LOCAL_INST");
   IElementType FUNCTION_REF = new TtcnElementType("FUNCTION_REF");
   IElementType FUNCTION_STATEMENT = new TtcnElementType("FUNCTION_STATEMENT");
-  IElementType FUNCTION_STATEMENT_LIST = new TtcnElementType("FUNCTION_STATEMENT_LIST");
   IElementType GET_CALL_STATEMENT = new TtcnElementType("GET_CALL_STATEMENT");
   IElementType GET_REPLY_STATEMENT = new TtcnElementType("GET_REPLY_STATEMENT");
   IElementType GOTO_STATEMENT = new TtcnElementType("GOTO_STATEMENT");
@@ -201,12 +154,8 @@ public interface TtcnTypes {
   IElementType GUARD_OP = new TtcnElementType("GUARD_OP");
   IElementType GUARD_STATEMENT = new TtcnElementType("GUARD_STATEMENT");
   IElementType HALT_STATEMENT = new TtcnElementType("HALT_STATEMENT");
-  IElementType HEX = new TtcnElementType("HEX");
   IElementType HEX_OR_MATCH = new TtcnElementType("HEX_OR_MATCH");
-  IElementType HEX_STRING_KEYWORD = new TtcnElementType("HEX_STRING_KEYWORD");
   IElementType HEX_STRING_MATCH = new TtcnElementType("HEX_STRING_MATCH");
-  IElementType HSTRING = new TtcnElementType("HSTRING");
-  IElementType IDENTIFIER = new TtcnElementType("IDENTIFIER");
   IElementType IDENTIFIER_LIST = new TtcnElementType("IDENTIFIER_LIST");
   IElementType IDENTIFIER_LIST_OR_ALL = new TtcnElementType("IDENTIFIER_LIST_OR_ALL");
   IElementType IDENTIFIER_LIST_OR_ALL_WITH_EXCEPT = new TtcnElementType("IDENTIFIER_LIST_OR_ALL_WITH_EXCEPT");
@@ -229,23 +178,17 @@ public interface TtcnTypes {
   IElementType INDEX_ASSIGNMENT = new TtcnElementType("INDEX_ASSIGNMENT");
   IElementType INDEX_SPEC = new TtcnElementType("INDEX_SPEC");
   IElementType INITIAL = new TtcnElementType("INITIAL");
-  IElementType INTEGER_KEYWORD = new TtcnElementType("INTEGER_KEYWORD");
   IElementType INTERLEAVED_CONSTRUCT = new TtcnElementType("INTERLEAVED_CONSTRUCT");
   IElementType INTERLEAVED_GUARD = new TtcnElementType("INTERLEAVED_GUARD");
   IElementType INTERLEAVED_GUARD_ELEMENT = new TtcnElementType("INTERLEAVED_GUARD_ELEMENT");
   IElementType INTERLEAVED_GUARD_LIST = new TtcnElementType("INTERLEAVED_GUARD_LIST");
-  IElementType IN_LINE_TEMPLATE = new TtcnElementType("IN_LINE_TEMPLATE");
-  IElementType IN_OUT_PAR_KEYWORD = new TtcnElementType("IN_OUT_PAR_KEYWORD");
-  IElementType IN_PAR_KEYWORD = new TtcnElementType("IN_PAR_KEYWORD");
   IElementType KILLED_STATEMENT = new TtcnElementType("KILLED_STATEMENT");
   IElementType KILL_TC_STATEMENT = new TtcnElementType("KILL_TC_STATEMENT");
   IElementType LABEL_STATEMENT = new TtcnElementType("LABEL_STATEMENT");
-  IElementType LANGUAGE_SPEC = new TtcnElementType("LANGUAGE_SPEC");
   IElementType LIST_OF_TEMPLATES = new TtcnElementType("LIST_OF_TEMPLATES");
   IElementType LOG_ITEM = new TtcnElementType("LOG_ITEM");
   IElementType LOG_STATEMENT = new TtcnElementType("LOG_STATEMENT");
   IElementType LOOP_CONSTRUCT = new TtcnElementType("LOOP_CONSTRUCT");
-  IElementType LOWER_ALPHA = new TtcnElementType("LOWER_ALPHA");
   IElementType MAP_PARAM_DEF = new TtcnElementType("MAP_PARAM_DEF");
   IElementType MAP_STATEMENT = new TtcnElementType("MAP_STATEMENT");
   IElementType MATCHING_SYMBOL = new TtcnElementType("MATCHING_SYMBOL");
@@ -254,19 +197,16 @@ public interface TtcnTypes {
   IElementType MESSAGE_LIST = new TtcnElementType("MESSAGE_LIST");
   IElementType MIXED_ATTRIBS = new TtcnElementType("MIXED_ATTRIBS");
   IElementType MIXED_LIST = new TtcnElementType("MIXED_LIST");
+  IElementType MODULE = new TtcnElementType("MODULE");
   IElementType MODULE_CONTROL_BODY = new TtcnElementType("MODULE_CONTROL_BODY");
   IElementType MODULE_CONTROL_PART = new TtcnElementType("MODULE_CONTROL_PART");
-  IElementType MODULE_DEFINITION = new TtcnElementType("MODULE_DEFINITION");
   IElementType MODULE_DEFINITIONS_LIST = new TtcnElementType("MODULE_DEFINITIONS_LIST");
-  IElementType MODULE_ID = new TtcnElementType("MODULE_ID");
   IElementType MODULE_PAR = new TtcnElementType("MODULE_PAR");
   IElementType MODULE_PAR_DEF = new TtcnElementType("MODULE_PAR_DEF");
-  IElementType MODULE_PAR_LIST = new TtcnElementType("MODULE_PAR_LIST");
   IElementType MTC_SPEC = new TtcnElementType("MTC_SPEC");
   IElementType MULTIPLY_OP = new TtcnElementType("MULTIPLY_OP");
   IElementType MULTITYPED_MODULE_PAR_LIST = new TtcnElementType("MULTITYPED_MODULE_PAR_LIST");
   IElementType MULTI_WITH_ATTRIB = new TtcnElementType("MULTI_WITH_ATTRIB");
-  IElementType MUL_EXPRESSION = new TtcnElementType("MUL_EXPRESSION");
   IElementType NESTED_ENUM_DEF = new TtcnElementType("NESTED_ENUM_DEF");
   IElementType NESTED_RECORD_DEF = new TtcnElementType("NESTED_RECORD_DEF");
   IElementType NESTED_RECORD_OF_DEF = new TtcnElementType("NESTED_RECORD_OF_DEF");
@@ -274,21 +214,11 @@ public interface TtcnTypes {
   IElementType NESTED_SET_OF_DEF = new TtcnElementType("NESTED_SET_OF_DEF");
   IElementType NESTED_TYPE_DEF = new TtcnElementType("NESTED_TYPE_DEF");
   IElementType NESTED_UNION_DEF = new TtcnElementType("NESTED_UNION_DEF");
-  IElementType NON_ZERO_NUM = new TtcnElementType("NON_ZERO_NUM");
-  IElementType NOT_EXPRESSION = new TtcnElementType("NOT_EXPRESSION");
   IElementType NOT_USED_OR_EXPRESSION = new TtcnElementType("NOT_USED_OR_EXPRESSION");
-  IElementType NUM = new TtcnElementType("NUM");
-  IElementType NUMBER = new TtcnElementType("NUMBER");
-  IElementType OCT = new TtcnElementType("OCT");
-  IElementType OCTET_STRING_KEYWORD = new TtcnElementType("OCTET_STRING_KEYWORD");
   IElementType OCTET_STRING_MATCH = new TtcnElementType("OCTET_STRING_MATCH");
   IElementType OCT_OR_MATCH = new TtcnElementType("OCT_OR_MATCH");
-  IElementType OMIT_KEYWORD = new TtcnElementType("OMIT_KEYWORD");
   IElementType OP_CALL = new TtcnElementType("OP_CALL");
-  IElementType OSTRING = new TtcnElementType("OSTRING");
-  IElementType OUT_PAR_KEYWORD = new TtcnElementType("OUT_PAR_KEYWORD");
   IElementType PARAM_ASSIGNMENT_LIST = new TtcnElementType("PARAM_ASSIGNMENT_LIST");
-  IElementType PARAM_CLAUSE = new TtcnElementType("PARAM_CLAUSE");
   IElementType PARAM_SPEC = new TtcnElementType("PARAM_SPEC");
   IElementType PAR_REF = new TtcnElementType("PAR_REF");
   IElementType PATTERN = new TtcnElementType("PATTERN");
@@ -300,8 +230,6 @@ public interface TtcnTypes {
   IElementType PORT_CATCH_OP = new TtcnElementType("PORT_CATCH_OP");
   IElementType PORT_CHECK_OP = new TtcnElementType("PORT_CHECK_OP");
   IElementType PORT_DEF = new TtcnElementType("PORT_DEF");
-  IElementType PORT_DEF_ATTRIBS = new TtcnElementType("PORT_DEF_ATTRIBS");
-  IElementType PORT_DEF_BODY = new TtcnElementType("PORT_DEF_BODY");
   IElementType PORT_ELEMENT = new TtcnElementType("PORT_ELEMENT");
   IElementType PORT_GET_CALL_OP = new TtcnElementType("PORT_GET_CALL_OP");
   IElementType PORT_GET_REPLY_OP = new TtcnElementType("PORT_GET_REPLY_OP");
@@ -314,13 +242,10 @@ public interface TtcnTypes {
   IElementType PORT_REDIRECT = new TtcnElementType("PORT_REDIRECT");
   IElementType PORT_REDIRECT_WITH_PARAM = new TtcnElementType("PORT_REDIRECT_WITH_PARAM");
   IElementType PORT_REDIRECT_WITH_VALUE_AND_PARAM = new TtcnElementType("PORT_REDIRECT_WITH_VALUE_AND_PARAM");
-  IElementType PORT_REF = new TtcnElementType("PORT_REF");
   IElementType PORT_REPLY_OP = new TtcnElementType("PORT_REPLY_OP");
   IElementType PORT_SEND_OP = new TtcnElementType("PORT_SEND_OP");
   IElementType PORT_TRIGGER_OP = new TtcnElementType("PORT_TRIGGER_OP");
-  IElementType PREDEFINED_TYPE = new TtcnElementType("PREDEFINED_TYPE");
   IElementType PREDEFINED_VALUE = new TtcnElementType("PREDEFINED_VALUE");
-  IElementType PRE_DEF_FUNCTION_IDENTIFIER = new TtcnElementType("PRE_DEF_FUNCTION_IDENTIFIER");
   IElementType PRIMARY = new TtcnElementType("PRIMARY");
   IElementType PROCEDURE_ATTRIBS = new TtcnElementType("PROCEDURE_ATTRIBS");
   IElementType PROCEDURE_LIST = new TtcnElementType("PROCEDURE_LIST");
@@ -340,13 +265,10 @@ public interface TtcnTypes {
   IElementType REDIRECT_PRESENT = new TtcnElementType("REDIRECT_PRESENT");
   IElementType REDIRECT_WITH_PARAM_SPEC = new TtcnElementType("REDIRECT_WITH_PARAM_SPEC");
   IElementType REDIRECT_WITH_VALUE_AND_PARAM_SPEC = new TtcnElementType("REDIRECT_WITH_VALUE_AND_PARAM_SPEC");
-  IElementType REFERENCED_TYPE = new TtcnElementType("REFERENCED_TYPE");
   IElementType REFERENCED_VALUE = new TtcnElementType("REFERENCED_VALUE");
-  IElementType REL_EXPRESSION = new TtcnElementType("REL_EXPRESSION");
   IElementType REL_OP = new TtcnElementType("REL_OP");
   IElementType REPLY_STATEMENT = new TtcnElementType("REPLY_STATEMENT");
   IElementType REPLY_VALUE = new TtcnElementType("REPLY_VALUE");
-  IElementType RESTRICTED_TEMPLATE = new TtcnElementType("RESTRICTED_TEMPLATE");
   IElementType RETURN_STATEMENT = new TtcnElementType("RETURN_STATEMENT");
   IElementType RETURN_TYPE = new TtcnElementType("RETURN_TYPE");
   IElementType RUNNING_OP = new TtcnElementType("RUNNING_OP");
@@ -360,7 +282,6 @@ public interface TtcnTypes {
   IElementType SET_DEF = new TtcnElementType("SET_DEF");
   IElementType SET_LOCAL_VERDICT = new TtcnElementType("SET_LOCAL_VERDICT");
   IElementType SET_OF_DEF = new TtcnElementType("SET_OF_DEF");
-  IElementType SHIFT_EXPRESSION = new TtcnElementType("SHIFT_EXPRESSION");
   IElementType SHIFT_OP = new TtcnElementType("SHIFT_OP");
   IElementType SIGNATURE = new TtcnElementType("SIGNATURE");
   IElementType SIGNATURE_DEF = new TtcnElementType("SIGNATURE_DEF");
@@ -368,7 +289,6 @@ public interface TtcnTypes {
   IElementType SIGNATURE_LIST = new TtcnElementType("SIGNATURE_LIST");
   IElementType SIMPLE_SPEC = new TtcnElementType("SIMPLE_SPEC");
   IElementType SIMPLE_TEMPLATE_SPEC = new TtcnElementType("SIMPLE_TEMPLATE_SPEC");
-  IElementType SINGLE_CONNECTION_SPEC = new TtcnElementType("SINGLE_CONNECTION_SPEC");
   IElementType SINGLE_CONST_DEF = new TtcnElementType("SINGLE_CONST_DEF");
   IElementType SINGLE_EXPRESSION = new TtcnElementType("SINGLE_EXPRESSION");
   IElementType SINGLE_TEMPLATE_EXPRESSION = new TtcnElementType("SINGLE_TEMPLATE_EXPRESSION");
@@ -383,14 +303,8 @@ public interface TtcnTypes {
   IElementType STOP_STATEMENT = new TtcnElementType("STOP_STATEMENT");
   IElementType STOP_TC_STATEMENT = new TtcnElementType("STOP_TC_STATEMENT");
   IElementType STOP_TIMER_STATEMENT = new TtcnElementType("STOP_TIMER_STATEMENT");
-  IElementType STRING_LENGTH = new TtcnElementType("STRING_LENGTH");
-  IElementType STRUCTURED_TYPE_DEF = new TtcnElementType("STRUCTURED_TYPE_DEF");
-  IElementType STRUCT_DEF_BODY = new TtcnElementType("STRUCT_DEF_BODY");
-  IElementType STRUCT_FIELD_DEF = new TtcnElementType("STRUCT_FIELD_DEF");
   IElementType STRUCT_FIELD_REF = new TtcnElementType("STRUCT_FIELD_REF");
-  IElementType STRUCT_OF_DEF_BODY = new TtcnElementType("STRUCT_OF_DEF_BODY");
   IElementType SUBSET_MATCH = new TtcnElementType("SUBSET_MATCH");
-  IElementType SUB_TYPE_DEF = new TtcnElementType("SUB_TYPE_DEF");
   IElementType SUB_TYPE_SPEC = new TtcnElementType("SUB_TYPE_SPEC");
   IElementType SUPERSET_MATCH = new TtcnElementType("SUPERSET_MATCH");
   IElementType SUT_STATEMENTS = new TtcnElementType("SUT_STATEMENTS");
@@ -404,10 +318,7 @@ public interface TtcnTypes {
   IElementType TEMPLATE_LIST_ITEM = new TtcnElementType("TEMPLATE_LIST_ITEM");
   IElementType TEMPLATE_OPS = new TtcnElementType("TEMPLATE_OPS");
   IElementType TEMPLATE_OR_RANGE = new TtcnElementType("TEMPLATE_OR_RANGE");
-  IElementType TEMPLATE_OR_VALUE_FORMAL_PAR = new TtcnElementType("TEMPLATE_OR_VALUE_FORMAL_PAR");
-  IElementType TEMPLATE_OR_VALUE_FORMAL_PAR_LIST = new TtcnElementType("TEMPLATE_OR_VALUE_FORMAL_PAR_LIST");
   IElementType TEMPLATE_REF_WITH_PAR_LIST = new TtcnElementType("TEMPLATE_REF_WITH_PAR_LIST");
-  IElementType TEMPLATE_RESTRICTION = new TtcnElementType("TEMPLATE_RESTRICTION");
   IElementType TEMP_VAR_LIST = new TtcnElementType("TEMP_VAR_LIST");
   IElementType TESTCASE_ACTUAL_PAR_LIST = new TtcnElementType("TESTCASE_ACTUAL_PAR_LIST");
   IElementType TESTCASE_DEF = new TtcnElementType("TESTCASE_DEF");
@@ -423,19 +334,12 @@ public interface TtcnTypes {
   IElementType TRIGGER_STATEMENT = new TtcnElementType("TRIGGER_STATEMENT");
   IElementType TYPE = new TtcnElementType("TYPE");
   IElementType TYPE_DEF = new TtcnElementType("TYPE_DEF");
-  IElementType TYPE_DEF_BODY = new TtcnElementType("TYPE_DEF_BODY");
   IElementType TYPE_LIST = new TtcnElementType("TYPE_LIST");
   IElementType TYPE_REFERENCE = new TtcnElementType("TYPE_REFERENCE");
-  IElementType UNARY_EXPRESSION = new TtcnElementType("UNARY_EXPRESSION");
   IElementType UNARY_OP = new TtcnElementType("UNARY_OP");
   IElementType UNION_DEF = new TtcnElementType("UNION_DEF");
-  IElementType UNION_DEF_BODY = new TtcnElementType("UNION_DEF_BODY");
-  IElementType UNION_FIELD_DEF = new TtcnElementType("UNION_FIELD_DEF");
-  IElementType UNIVERSAL_CHAR_STRING = new TtcnElementType("UNIVERSAL_CHAR_STRING");
-  IElementType UNIVERSAL_KEYWORD = new TtcnElementType("UNIVERSAL_KEYWORD");
   IElementType UNMAP_PARAM_DEF = new TtcnElementType("UNMAP_PARAM_DEF");
   IElementType UNMAP_STATEMENT = new TtcnElementType("UNMAP_STATEMENT");
-  IElementType UPPER_ALPHA = new TtcnElementType("UPPER_ALPHA");
   IElementType VALUE = new TtcnElementType("VALUE");
   IElementType VALUEOF_OP = new TtcnElementType("VALUEOF_OP");
   IElementType VALUE_MATCH_SPEC = new TtcnElementType("VALUE_MATCH_SPEC");
@@ -446,14 +350,10 @@ public interface TtcnTypes {
   IElementType VARIABLE_REF = new TtcnElementType("VARIABLE_REF");
   IElementType VAR_INSTANCE = new TtcnElementType("VAR_INSTANCE");
   IElementType VAR_LIST = new TtcnElementType("VAR_LIST");
-  IElementType VERDICT_TYPE_KEYWORD = new TtcnElementType("VERDICT_TYPE_KEYWORD");
   IElementType VERDICT_TYPE_VALUE = new TtcnElementType("VERDICT_TYPE_VALUE");
-  IElementType VISIBILITY = new TtcnElementType("VISIBILITY");
   IElementType WHILE_STATEMENT = new TtcnElementType("WHILE_STATEMENT");
   IElementType WILDCARD_LENGTH_MATCH = new TtcnElementType("WILDCARD_LENGTH_MATCH");
-  IElementType WITH_ATTRIB_LIST = new TtcnElementType("WITH_ATTRIB_LIST");
   IElementType WITH_STATEMENT = new TtcnElementType("WITH_STATEMENT");
-  IElementType XOR_EXPRESSION = new TtcnElementType("XOR_EXPRESSION");
 
   IElementType D = new TtcnTokenType("d");
   IElementType TTCN_ACTION = new TtcnTokenType("action");
@@ -475,7 +375,6 @@ public interface TtcnTypes {
   IElementType TTCN_AT_LAZY = new TtcnTokenType("@lazy");
   IElementType TTCN_BIN = new TtcnTokenType("TTCN_BIN");
   IElementType TTCN_BITSTRING = new TtcnTokenType("bitstring");
-  IElementType TTCN_BLOCKCOMMENT = new TtcnTokenType("TTCN_BLOCKCOMMENT");
   IElementType TTCN_BOOL = new TtcnTokenType("boolean");
   IElementType TTCN_BREAK = new TtcnTokenType("break");
   IElementType TTCN_BSTRING = new TtcnTokenType("TTCN_BSTRING");
@@ -489,6 +388,7 @@ public interface TtcnTypes {
   IElementType TTCN_CLEAR = new TtcnTokenType("clear");
   IElementType TTCN_COLON = new TtcnTokenType(":");
   IElementType TTCN_COMMA = new TtcnTokenType(",");
+  IElementType TTCN_COMMENT = new TtcnTokenType("COMMENT");
   IElementType TTCN_COMPLEMENT = new TtcnTokenType("complement");
   IElementType TTCN_COMPONENT = new TtcnTokenType("component");
   IElementType TTCN_CONNECT = new TtcnTokenType("&");
@@ -555,7 +455,6 @@ public interface TtcnTypes {
   IElementType TTCN_LENGTH = new TtcnTokenType("length");
   IElementType TTCN_LESS = new TtcnTokenType("<");
   IElementType TTCN_LESS_EQ = new TtcnTokenType("<=");
-  IElementType TTCN_LINECOMMENT = new TtcnTokenType("TTCN_LINECOMMENT");
   IElementType TTCN_LM = new TtcnTokenType("[");
   IElementType TTCN_LOG = new TtcnTokenType("log");
   IElementType TTCN_LOWERCHAR = new TtcnTokenType("TTCN_LOWERCHAR");
@@ -673,17 +572,8 @@ public interface TtcnTypes {
       else if (type == ADDRESS_DECL) {
         return new TtcnAddressDeclImpl(node);
       }
-      else if (type == ADDRESS_KEYWORD) {
-        return new TtcnAddressKeywordImpl(node);
-      }
       else if (type == ADDRESS_REF_LIST) {
         return new TtcnAddressRefListImpl(node);
-      }
-      else if (type == ADDRESS_VALUE) {
-        return new TtcnAddressValueImpl(node);
-      }
-      else if (type == ADD_EXPRESSION) {
-        return new TtcnAddExpressionImpl(node);
       }
       else if (type == ADD_OP) {
         return new TtcnAddOpImpl(node);
@@ -724,12 +614,6 @@ public interface TtcnTypes {
       else if (type == ALL_WITH_EXCEPTS) {
         return new TtcnAllWithExceptsImpl(node);
       }
-      else if (type == ALPHA) {
-        return new TtcnAlphaImpl(node);
-      }
-      else if (type == ALPHA_NUM) {
-        return new TtcnAlphaNumImpl(node);
-      }
       else if (type == ALTSTEP_DEF) {
         return new TtcnAltstepDefImpl(node);
       }
@@ -750,12 +634,6 @@ public interface TtcnTypes {
       }
       else if (type == ALT_GUARD_LIST) {
         return new TtcnAltGuardListImpl(node);
-      }
-      else if (type == AND_EXPRESSION) {
-        return new TtcnAndExpressionImpl(node);
-      }
-      else if (type == ANY_TYPE_KEYWORD) {
-        return new TtcnAnyTypeKeywordImpl(node);
       }
       else if (type == ARRAY_CONST_EXPRESSION) {
         return new TtcnArrayConstExpressionImpl(node);
@@ -778,14 +656,8 @@ public interface TtcnTypes {
       else if (type == ARRAY_EXPRESSION) {
         return new TtcnArrayExpressionImpl(node);
       }
-      else if (type == ARRAY_IDENTIFIER_REF) {
-        return new TtcnArrayIdentifierRefImpl(node);
-      }
       else if (type == ARRAY_IDENTIFIER_REF_ASSIGNMENT) {
         return new TtcnArrayIdentifierRefAssignmentImpl(node);
-      }
-      else if (type == ARRAY_OR_BIT_REF) {
-        return new TtcnArrayOrBitRefImpl(node);
       }
       else if (type == ARRAY_VALUE_OR_ATTRIB) {
         return new TtcnArrayValueOrAttribImpl(node);
@@ -811,44 +683,17 @@ public interface TtcnTypes {
       else if (type == BEHAVIOUR_STATEMENTS) {
         return new TtcnBehaviourStatementsImpl(node);
       }
-      else if (type == BIN) {
-        return new TtcnBinImpl(node);
-      }
       else if (type == BIN_OR_MATCH) {
         return new TtcnBinOrMatchImpl(node);
       }
-      else if (type == BIT_AND_EXPRESSION) {
-        return new TtcnBitAndExpressionImpl(node);
-      }
-      else if (type == BIT_NOT_EXPRESSION) {
-        return new TtcnBitNotExpressionImpl(node);
-      }
-      else if (type == BIT_OR_EXPRESSION) {
-        return new TtcnBitOrExpressionImpl(node);
-      }
-      else if (type == BIT_STRING_KEYWORD) {
-        return new TtcnBitStringKeywordImpl(node);
-      }
       else if (type == BIT_STRING_MATCH) {
         return new TtcnBitStringMatchImpl(node);
-      }
-      else if (type == BIT_XOR_EXPRESSION) {
-        return new TtcnBitXorExpressionImpl(node);
-      }
-      else if (type == BOOLEAN_EXPRESSION) {
-        return new TtcnBooleanExpressionImpl(node);
-      }
-      else if (type == BOOLEAN_KEYWORD) {
-        return new TtcnBooleanKeywordImpl(node);
       }
       else if (type == BOOLEAN_VALUE) {
         return new TtcnBooleanValueImpl(node);
       }
       else if (type == BOUND) {
         return new TtcnBoundImpl(node);
-      }
-      else if (type == BSTRING) {
-        return new TtcnBstringImpl(node);
       }
       else if (type == CALL_BODY_GUARD) {
         return new TtcnCallBodyGuardImpl(node);
@@ -880,9 +725,6 @@ public interface TtcnTypes {
       else if (type == CHAR_KEYWORD) {
         return new TtcnCharKeywordImpl(node);
       }
-      else if (type == CHAR_STRING_KEYWORD) {
-        return new TtcnCharStringKeywordImpl(node);
-      }
       else if (type == CHAR_STRING_MATCH) {
         return new TtcnCharStringMatchImpl(node);
       }
@@ -903,9 +745,6 @@ public interface TtcnTypes {
       }
       else if (type == CLEAR_STATEMENT) {
         return new TtcnClearStatementImpl(node);
-      }
-      else if (type == COMMENT) {
-        return new TtcnCommentImpl(node);
       }
       else if (type == COMMUNICATION_STATEMENTS) {
         return new TtcnCommunicationStatementsImpl(node);
@@ -928,17 +767,11 @@ public interface TtcnTypes {
       else if (type == COMPONENT_OR_DEFAULT_REFERENCE) {
         return new TtcnComponentOrDefaultReferenceImpl(node);
       }
-      else if (type == COMPONENT_REF) {
-        return new TtcnComponentRefImpl(node);
-      }
       else if (type == COMPONENT_REFERENCE_OR_LITERAL) {
         return new TtcnComponentReferenceOrLiteralImpl(node);
       }
       else if (type == COMPONENT_REF_ASSIGNMENT) {
         return new TtcnComponentRefAssignmentImpl(node);
-      }
-      else if (type == COMPONENT_TYPE) {
-        return new TtcnComponentTypeImpl(node);
       }
       else if (type == COMPOUND_CONST_EXPRESSION) {
         return new TtcnCompoundConstExpressionImpl(node);
@@ -951,9 +784,6 @@ public interface TtcnTypes {
       }
       else if (type == CONFIGURATION_OPS) {
         return new TtcnConfigurationOpsImpl(node);
-      }
-      else if (type == CONFIGURATION_STATEMENTS) {
-        return new TtcnConfigurationStatementsImpl(node);
       }
       else if (type == CONFIG_PARAM_DEF) {
         return new TtcnConfigParamDefImpl(node);
@@ -970,12 +800,6 @@ public interface TtcnTypes {
       else if (type == CONST_DEF) {
         return new TtcnConstDefImpl(node);
       }
-      else if (type == CONST_LIST) {
-        return new TtcnConstListImpl(node);
-      }
-      else if (type == CONTENT) {
-        return new TtcnContentImpl(node);
-      }
       else if (type == CONTROL_STATEMENT) {
         return new TtcnControlStatementImpl(node);
       }
@@ -988,17 +812,8 @@ public interface TtcnTypes {
       else if (type == CREATE_OP) {
         return new TtcnCreateOpImpl(node);
       }
-      else if (type == CSTRING) {
-        return new TtcnCstringImpl(node);
-      }
       else if (type == DEACTIVATE_STATEMENT) {
         return new TtcnDeactivateStatementImpl(node);
-      }
-      else if (type == DECIMAL_NUMBER) {
-        return new TtcnDecimalNumberImpl(node);
-      }
-      else if (type == DEFAULT_KEYWORD) {
-        return new TtcnDefaultKeywordImpl(node);
       }
       else if (type == DEF_OR_FIELD_REF) {
         return new TtcnDefOrFieldRefImpl(node);
@@ -1036,14 +851,8 @@ public interface TtcnTypes {
       else if (type == ENUMERATION) {
         return new TtcnEnumerationImpl(node);
       }
-      else if (type == ENUMERATION_LIST) {
-        return new TtcnEnumerationListImpl(node);
-      }
       else if (type == ENUM_DEF) {
         return new TtcnEnumDefImpl(node);
-      }
-      else if (type == EQUAL_EXPRESSION) {
-        return new TtcnEqualExpressionImpl(node);
       }
       else if (type == EQUAL_OP) {
         return new TtcnEqualOpImpl(node);
@@ -1093,14 +902,8 @@ public interface TtcnTypes {
       else if (type == EXPRESSION) {
         return new TtcnExpressionImpl(node);
       }
-      else if (type == EXTENDED_ALPHA_NUM) {
-        return new TtcnExtendedAlphaNumImpl(node);
-      }
       else if (type == EXTENDED_FIELD_REFERENCE) {
         return new TtcnExtendedFieldReferenceImpl(node);
-      }
-      else if (type == EXTENDED_IDENTIFIER) {
-        return new TtcnExtendedIdentifierImpl(node);
       }
       else if (type == EXTRA_MATCHING_ATTRIBUTES) {
         return new TtcnExtraMatchingAttributesImpl(node);
@@ -1141,23 +944,8 @@ public interface TtcnTypes {
       else if (type == FLOAT_E_NOTATION) {
         return new TtcnFloatENotationImpl(node);
       }
-      else if (type == FLOAT_KEYWORD) {
-        return new TtcnFloatKeywordImpl(node);
-      }
       else if (type == FLOAT_VALUE) {
         return new TtcnFloatValueImpl(node);
-      }
-      else if (type == FORMAL_PORT_PAR) {
-        return new TtcnFormalPortParImpl(node);
-      }
-      else if (type == FORMAL_TEMPLATE_PAR) {
-        return new TtcnFormalTemplateParImpl(node);
-      }
-      else if (type == FORMAL_TIMER_PAR) {
-        return new TtcnFormalTimerParImpl(node);
-      }
-      else if (type == FORMAL_VALUE_PAR) {
-        return new TtcnFormalValueParImpl(node);
       }
       else if (type == FOR_STATEMENT) {
         return new TtcnForStatementImpl(node);
@@ -1174,29 +962,8 @@ public interface TtcnTypes {
       else if (type == FROM_CLAUSE_PRESENT) {
         return new TtcnFromClausePresentImpl(node);
       }
-      else if (type == FUNCTION_ACTLIST) {
-        return new TtcnFunctionActlistImpl(node);
-      }
-      else if (type == FUNCTION_ACTUAL_PAR) {
-        return new TtcnFunctionActualParImpl(node);
-      }
-      else if (type == FUNCTION_ACTUAL_PAR_ASSIGNMENT) {
-        return new TtcnFunctionActualParAssignmentImpl(node);
-      }
-      else if (type == FUNCTION_ACTUAL_PAR_LIST) {
-        return new TtcnFunctionActualParListImpl(node);
-      }
-      else if (type == FUNCTION_ACT_ASSIGNLIST) {
-        return new TtcnFunctionActAssignlistImpl(node);
-      }
       else if (type == FUNCTION_DEF) {
         return new TtcnFunctionDefImpl(node);
-      }
-      else if (type == FUNCTION_DEF_LIST) {
-        return new TtcnFunctionDefListImpl(node);
-      }
-      else if (type == FUNCTION_FORMAL_PAR) {
-        return new TtcnFunctionFormalParImpl(node);
       }
       else if (type == FUNCTION_FORMAL_PAR_LIST) {
         return new TtcnFunctionFormalParListImpl(node);
@@ -1204,20 +971,11 @@ public interface TtcnTypes {
       else if (type == FUNCTION_INSTANCE) {
         return new TtcnFunctionInstanceImpl(node);
       }
-      else if (type == FUNCTION_LOCAL_DEF) {
-        return new TtcnFunctionLocalDefImpl(node);
-      }
-      else if (type == FUNCTION_LOCAL_INST) {
-        return new TtcnFunctionLocalInstImpl(node);
-      }
       else if (type == FUNCTION_REF) {
         return new TtcnFunctionRefImpl(node);
       }
       else if (type == FUNCTION_STATEMENT) {
         return new TtcnFunctionStatementImpl(node);
-      }
-      else if (type == FUNCTION_STATEMENT_LIST) {
-        return new TtcnFunctionStatementListImpl(node);
       }
       else if (type == GET_CALL_STATEMENT) {
         return new TtcnGetCallStatementImpl(node);
@@ -1243,23 +1001,11 @@ public interface TtcnTypes {
       else if (type == HALT_STATEMENT) {
         return new TtcnHaltStatementImpl(node);
       }
-      else if (type == HEX) {
-        return new TtcnHexImpl(node);
-      }
       else if (type == HEX_OR_MATCH) {
         return new TtcnHexOrMatchImpl(node);
       }
-      else if (type == HEX_STRING_KEYWORD) {
-        return new TtcnHexStringKeywordImpl(node);
-      }
       else if (type == HEX_STRING_MATCH) {
         return new TtcnHexStringMatchImpl(node);
-      }
-      else if (type == HSTRING) {
-        return new TtcnHstringImpl(node);
-      }
-      else if (type == IDENTIFIER) {
-        return new TtcnIdentifierImpl(node);
       }
       else if (type == IDENTIFIER_LIST) {
         return new TtcnIdentifierListImpl(node);
@@ -1327,9 +1073,6 @@ public interface TtcnTypes {
       else if (type == INITIAL) {
         return new TtcnInitialImpl(node);
       }
-      else if (type == INTEGER_KEYWORD) {
-        return new TtcnIntegerKeywordImpl(node);
-      }
       else if (type == INTERLEAVED_CONSTRUCT) {
         return new TtcnInterleavedConstructImpl(node);
       }
@@ -1342,15 +1085,6 @@ public interface TtcnTypes {
       else if (type == INTERLEAVED_GUARD_LIST) {
         return new TtcnInterleavedGuardListImpl(node);
       }
-      else if (type == IN_LINE_TEMPLATE) {
-        return new TtcnInLineTemplateImpl(node);
-      }
-      else if (type == IN_OUT_PAR_KEYWORD) {
-        return new TtcnInOutParKeywordImpl(node);
-      }
-      else if (type == IN_PAR_KEYWORD) {
-        return new TtcnInParKeywordImpl(node);
-      }
       else if (type == KILLED_STATEMENT) {
         return new TtcnKilledStatementImpl(node);
       }
@@ -1359,9 +1093,6 @@ public interface TtcnTypes {
       }
       else if (type == LABEL_STATEMENT) {
         return new TtcnLabelStatementImpl(node);
-      }
-      else if (type == LANGUAGE_SPEC) {
-        return new TtcnLanguageSpecImpl(node);
       }
       else if (type == LIST_OF_TEMPLATES) {
         return new TtcnListOfTemplatesImpl(node);
@@ -1374,9 +1105,6 @@ public interface TtcnTypes {
       }
       else if (type == LOOP_CONSTRUCT) {
         return new TtcnLoopConstructImpl(node);
-      }
-      else if (type == LOWER_ALPHA) {
-        return new TtcnLowerAlphaImpl(node);
       }
       else if (type == MAP_PARAM_DEF) {
         return new TtcnMapParamDefImpl(node);
@@ -1402,29 +1130,23 @@ public interface TtcnTypes {
       else if (type == MIXED_LIST) {
         return new TtcnMixedListImpl(node);
       }
+      else if (type == MODULE) {
+        return new TtcnModuleImpl(node);
+      }
       else if (type == MODULE_CONTROL_BODY) {
         return new TtcnModuleControlBodyImpl(node);
       }
       else if (type == MODULE_CONTROL_PART) {
         return new TtcnModuleControlPartImpl(node);
       }
-      else if (type == MODULE_DEFINITION) {
-        return new TtcnModuleDefinitionImpl(node);
-      }
       else if (type == MODULE_DEFINITIONS_LIST) {
         return new TtcnModuleDefinitionsListImpl(node);
-      }
-      else if (type == MODULE_ID) {
-        return new TtcnModuleIdImpl(node);
       }
       else if (type == MODULE_PAR) {
         return new TtcnModuleParImpl(node);
       }
       else if (type == MODULE_PAR_DEF) {
         return new TtcnModuleParDefImpl(node);
-      }
-      else if (type == MODULE_PAR_LIST) {
-        return new TtcnModuleParListImpl(node);
       }
       else if (type == MTC_SPEC) {
         return new TtcnMtcSpecImpl(node);
@@ -1437,9 +1159,6 @@ public interface TtcnTypes {
       }
       else if (type == MULTI_WITH_ATTRIB) {
         return new TtcnMultiWithAttribImpl(node);
-      }
-      else if (type == MUL_EXPRESSION) {
-        return new TtcnMulExpressionImpl(node);
       }
       else if (type == NESTED_ENUM_DEF) {
         return new TtcnNestedEnumDefImpl(node);
@@ -1462,26 +1181,8 @@ public interface TtcnTypes {
       else if (type == NESTED_UNION_DEF) {
         return new TtcnNestedUnionDefImpl(node);
       }
-      else if (type == NON_ZERO_NUM) {
-        return new TtcnNonZeroNumImpl(node);
-      }
-      else if (type == NOT_EXPRESSION) {
-        return new TtcnNotExpressionImpl(node);
-      }
       else if (type == NOT_USED_OR_EXPRESSION) {
         return new TtcnNotUsedOrExpressionImpl(node);
-      }
-      else if (type == NUM) {
-        return new TtcnNumImpl(node);
-      }
-      else if (type == NUMBER) {
-        return new TtcnNumberImpl(node);
-      }
-      else if (type == OCT) {
-        return new TtcnOctImpl(node);
-      }
-      else if (type == OCTET_STRING_KEYWORD) {
-        return new TtcnOctetStringKeywordImpl(node);
       }
       else if (type == OCTET_STRING_MATCH) {
         return new TtcnOctetStringMatchImpl(node);
@@ -1489,23 +1190,11 @@ public interface TtcnTypes {
       else if (type == OCT_OR_MATCH) {
         return new TtcnOctOrMatchImpl(node);
       }
-      else if (type == OMIT_KEYWORD) {
-        return new TtcnOmitKeywordImpl(node);
-      }
       else if (type == OP_CALL) {
         return new TtcnOpCallImpl(node);
       }
-      else if (type == OSTRING) {
-        return new TtcnOstringImpl(node);
-      }
-      else if (type == OUT_PAR_KEYWORD) {
-        return new TtcnOutParKeywordImpl(node);
-      }
       else if (type == PARAM_ASSIGNMENT_LIST) {
         return new TtcnParamAssignmentListImpl(node);
-      }
-      else if (type == PARAM_CLAUSE) {
-        return new TtcnParamClauseImpl(node);
       }
       else if (type == PARAM_SPEC) {
         return new TtcnParamSpecImpl(node);
@@ -1539,12 +1228,6 @@ public interface TtcnTypes {
       }
       else if (type == PORT_DEF) {
         return new TtcnPortDefImpl(node);
-      }
-      else if (type == PORT_DEF_ATTRIBS) {
-        return new TtcnPortDefAttribsImpl(node);
-      }
-      else if (type == PORT_DEF_BODY) {
-        return new TtcnPortDefBodyImpl(node);
       }
       else if (type == PORT_ELEMENT) {
         return new TtcnPortElementImpl(node);
@@ -1582,9 +1265,6 @@ public interface TtcnTypes {
       else if (type == PORT_REDIRECT_WITH_VALUE_AND_PARAM) {
         return new TtcnPortRedirectWithValueAndParamImpl(node);
       }
-      else if (type == PORT_REF) {
-        return new TtcnPortRefImpl(node);
-      }
       else if (type == PORT_REPLY_OP) {
         return new TtcnPortReplyOpImpl(node);
       }
@@ -1594,14 +1274,8 @@ public interface TtcnTypes {
       else if (type == PORT_TRIGGER_OP) {
         return new TtcnPortTriggerOpImpl(node);
       }
-      else if (type == PREDEFINED_TYPE) {
-        return new TtcnPredefinedTypeImpl(node);
-      }
       else if (type == PREDEFINED_VALUE) {
         return new TtcnPredefinedValueImpl(node);
-      }
-      else if (type == PRE_DEF_FUNCTION_IDENTIFIER) {
-        return new TtcnPreDefFunctionIdentifierImpl(node);
       }
       else if (type == PRIMARY) {
         return new TtcnPrimaryImpl(node);
@@ -1660,14 +1334,8 @@ public interface TtcnTypes {
       else if (type == REDIRECT_WITH_VALUE_AND_PARAM_SPEC) {
         return new TtcnRedirectWithValueAndParamSpecImpl(node);
       }
-      else if (type == REFERENCED_TYPE) {
-        return new TtcnReferencedTypeImpl(node);
-      }
       else if (type == REFERENCED_VALUE) {
         return new TtcnReferencedValueImpl(node);
-      }
-      else if (type == REL_EXPRESSION) {
-        return new TtcnRelExpressionImpl(node);
       }
       else if (type == REL_OP) {
         return new TtcnRelOpImpl(node);
@@ -1677,9 +1345,6 @@ public interface TtcnTypes {
       }
       else if (type == REPLY_VALUE) {
         return new TtcnReplyValueImpl(node);
-      }
-      else if (type == RESTRICTED_TEMPLATE) {
-        return new TtcnRestrictedTemplateImpl(node);
       }
       else if (type == RETURN_STATEMENT) {
         return new TtcnReturnStatementImpl(node);
@@ -1720,9 +1385,6 @@ public interface TtcnTypes {
       else if (type == SET_OF_DEF) {
         return new TtcnSetOfDefImpl(node);
       }
-      else if (type == SHIFT_EXPRESSION) {
-        return new TtcnShiftExpressionImpl(node);
-      }
       else if (type == SHIFT_OP) {
         return new TtcnShiftOpImpl(node);
       }
@@ -1743,9 +1405,6 @@ public interface TtcnTypes {
       }
       else if (type == SIMPLE_TEMPLATE_SPEC) {
         return new TtcnSimpleTemplateSpecImpl(node);
-      }
-      else if (type == SINGLE_CONNECTION_SPEC) {
-        return new TtcnSingleConnectionSpecImpl(node);
       }
       else if (type == SINGLE_CONST_DEF) {
         return new TtcnSingleConstDefImpl(node);
@@ -1789,29 +1448,11 @@ public interface TtcnTypes {
       else if (type == STOP_TIMER_STATEMENT) {
         return new TtcnStopTimerStatementImpl(node);
       }
-      else if (type == STRING_LENGTH) {
-        return new TtcnStringLengthImpl(node);
-      }
-      else if (type == STRUCTURED_TYPE_DEF) {
-        return new TtcnStructuredTypeDefImpl(node);
-      }
-      else if (type == STRUCT_DEF_BODY) {
-        return new TtcnStructDefBodyImpl(node);
-      }
-      else if (type == STRUCT_FIELD_DEF) {
-        return new TtcnStructFieldDefImpl(node);
-      }
       else if (type == STRUCT_FIELD_REF) {
         return new TtcnStructFieldRefImpl(node);
       }
-      else if (type == STRUCT_OF_DEF_BODY) {
-        return new TtcnStructOfDefBodyImpl(node);
-      }
       else if (type == SUBSET_MATCH) {
         return new TtcnSubsetMatchImpl(node);
-      }
-      else if (type == SUB_TYPE_DEF) {
-        return new TtcnSubTypeDefImpl(node);
       }
       else if (type == SUB_TYPE_SPEC) {
         return new TtcnSubTypeSpecImpl(node);
@@ -1852,17 +1493,8 @@ public interface TtcnTypes {
       else if (type == TEMPLATE_OR_RANGE) {
         return new TtcnTemplateOrRangeImpl(node);
       }
-      else if (type == TEMPLATE_OR_VALUE_FORMAL_PAR) {
-        return new TtcnTemplateOrValueFormalParImpl(node);
-      }
-      else if (type == TEMPLATE_OR_VALUE_FORMAL_PAR_LIST) {
-        return new TtcnTemplateOrValueFormalParListImpl(node);
-      }
       else if (type == TEMPLATE_REF_WITH_PAR_LIST) {
         return new TtcnTemplateRefWithParListImpl(node);
-      }
-      else if (type == TEMPLATE_RESTRICTION) {
-        return new TtcnTemplateRestrictionImpl(node);
       }
       else if (type == TEMP_VAR_LIST) {
         return new TtcnTempVarListImpl(node);
@@ -1909,17 +1541,11 @@ public interface TtcnTypes {
       else if (type == TYPE_DEF) {
         return new TtcnTypeDefImpl(node);
       }
-      else if (type == TYPE_DEF_BODY) {
-        return new TtcnTypeDefBodyImpl(node);
-      }
       else if (type == TYPE_LIST) {
         return new TtcnTypeListImpl(node);
       }
       else if (type == TYPE_REFERENCE) {
         return new TtcnTypeReferenceImpl(node);
-      }
-      else if (type == UNARY_EXPRESSION) {
-        return new TtcnUnaryExpressionImpl(node);
       }
       else if (type == UNARY_OP) {
         return new TtcnUnaryOpImpl(node);
@@ -1927,26 +1553,11 @@ public interface TtcnTypes {
       else if (type == UNION_DEF) {
         return new TtcnUnionDefImpl(node);
       }
-      else if (type == UNION_DEF_BODY) {
-        return new TtcnUnionDefBodyImpl(node);
-      }
-      else if (type == UNION_FIELD_DEF) {
-        return new TtcnUnionFieldDefImpl(node);
-      }
-      else if (type == UNIVERSAL_CHAR_STRING) {
-        return new TtcnUniversalCharStringImpl(node);
-      }
-      else if (type == UNIVERSAL_KEYWORD) {
-        return new TtcnUniversalKeywordImpl(node);
-      }
       else if (type == UNMAP_PARAM_DEF) {
         return new TtcnUnmapParamDefImpl(node);
       }
       else if (type == UNMAP_STATEMENT) {
         return new TtcnUnmapStatementImpl(node);
-      }
-      else if (type == UPPER_ALPHA) {
-        return new TtcnUpperAlphaImpl(node);
       }
       else if (type == VALUE) {
         return new TtcnValueImpl(node);
@@ -1978,14 +1589,8 @@ public interface TtcnTypes {
       else if (type == VAR_LIST) {
         return new TtcnVarListImpl(node);
       }
-      else if (type == VERDICT_TYPE_KEYWORD) {
-        return new TtcnVerdictTypeKeywordImpl(node);
-      }
       else if (type == VERDICT_TYPE_VALUE) {
         return new TtcnVerdictTypeValueImpl(node);
-      }
-      else if (type == VISIBILITY) {
-        return new TtcnVisibilityImpl(node);
       }
       else if (type == WHILE_STATEMENT) {
         return new TtcnWhileStatementImpl(node);
@@ -1993,14 +1598,8 @@ public interface TtcnTypes {
       else if (type == WILDCARD_LENGTH_MATCH) {
         return new TtcnWildcardLengthMatchImpl(node);
       }
-      else if (type == WITH_ATTRIB_LIST) {
-        return new TtcnWithAttribListImpl(node);
-      }
       else if (type == WITH_STATEMENT) {
         return new TtcnWithStatementImpl(node);
-      }
-      else if (type == XOR_EXPRESSION) {
-        return new TtcnXorExpressionImpl(node);
       }
       throw new AssertionError("Unknown element type: " + type);
     }

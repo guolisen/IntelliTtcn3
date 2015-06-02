@@ -8,6 +8,9 @@ import com.intellij.psi.PsiElement;
 public interface TtcnConnectStatement extends PsiElement {
 
   @NotNull
-  TtcnSingleConnectionSpec getSingleConnectionSpec();
+  List<TtcnComponentOrDefaultReference> getComponentOrDefaultReferenceList();
+
+  @NotNull
+  List<TtcnFieldOrBitNumber> getFieldOrBitNumberList();
 
 }

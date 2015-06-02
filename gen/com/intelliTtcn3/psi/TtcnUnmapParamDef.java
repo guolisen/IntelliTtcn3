@@ -8,6 +8,9 @@ import com.intellij.psi.PsiElement;
 public interface TtcnUnmapParamDef extends PsiElement {
 
   @NotNull
-  List<TtcnFormalValuePar> getFormalValueParList();
+  List<TtcnExpression> getExpressionList();
+
+  @NotNull
+  List<TtcnType> getTypeList();
 
 }

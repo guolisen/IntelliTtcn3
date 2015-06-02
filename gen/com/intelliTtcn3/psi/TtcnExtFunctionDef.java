@@ -10,10 +10,10 @@ public interface TtcnExtFunctionDef extends PsiElement {
   @Nullable
   TtcnFunctionFormalParList getFunctionFormalParList();
 
-  @NotNull
-  TtcnIdentifier getIdentifier();
-
   @Nullable
   TtcnReturnType getReturnType();
+
+  @NotNull
+  PsiElement getTtcnId();
 
 }

@@ -11,6 +11,6 @@ public interface TtcnVariableRef extends PsiElement {
   TtcnExtendedFieldReference getExtendedFieldReference();
 
   @NotNull
-  TtcnIdentifier getIdentifier();
+  PsiElement getTtcnId();
 
 }

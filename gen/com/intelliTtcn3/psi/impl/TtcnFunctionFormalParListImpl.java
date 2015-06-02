@@ -24,8 +24,32 @@ public class TtcnFunctionFormalParListImpl extends ASTWrapperPsiElement implemen
 
   @Override
   @NotNull
-  public List<TtcnFunctionFormalPar> getFunctionFormalParList() {
-    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnFunctionFormalPar.class);
+  public List<TtcnDerivedRefWithParList> getDerivedRefWithParListList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnDerivedRefWithParList.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnExpression> getExpressionList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnExpression.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnSignature> getSignatureList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnSignature.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnTemplateBody> getTemplateBodyList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnTemplateBody.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnType> getTypeList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnType.class);
   }
 
 }

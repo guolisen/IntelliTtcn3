@@ -40,10 +40,4 @@ public class TtcnTemplateDefImpl extends ASTWrapperPsiElement implements TtcnTem
     return findNotNullChildByClass(TtcnTemplateBody.class);
   }
 
-  @Override
-  @Nullable
-  public TtcnTemplateRestriction getTemplateRestriction() {
-    return findChildByClass(TtcnTemplateRestriction.class);
-  }
-
 }

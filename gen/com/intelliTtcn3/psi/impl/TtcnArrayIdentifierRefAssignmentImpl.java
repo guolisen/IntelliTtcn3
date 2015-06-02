@@ -24,14 +24,8 @@ public class TtcnArrayIdentifierRefAssignmentImpl extends ASTWrapperPsiElement i
 
   @Override
   @NotNull
-  public TtcnArrayIdentifierRef getArrayIdentifierRef() {
-    return findNotNullChildByClass(TtcnArrayIdentifierRef.class);
-  }
-
-  @Override
-  @NotNull
-  public TtcnIdentifier getIdentifier() {
-    return findNotNullChildByClass(TtcnIdentifier.class);
+  public List<TtcnFieldOrBitNumber> getFieldOrBitNumberList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnFieldOrBitNumber.class);
   }
 
 }

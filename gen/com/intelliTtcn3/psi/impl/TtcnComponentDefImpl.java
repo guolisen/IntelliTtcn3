@@ -28,16 +28,4 @@ public class TtcnComponentDefImpl extends ASTWrapperPsiElement implements TtcnCo
     return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnComponentDefList.class);
   }
 
-  @Override
-  @NotNull
-  public List<TtcnComponentType> getComponentTypeList() {
-    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnComponentType.class);
-  }
-
-  @Override
-  @NotNull
-  public TtcnIdentifier getIdentifier() {
-    return findNotNullChildByClass(TtcnIdentifier.class);
-  }
-
 }

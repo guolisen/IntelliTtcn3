@@ -24,14 +24,38 @@ public class TtcnStatementBlockImpl extends ASTWrapperPsiElement implements Ttcn
 
   @Override
   @NotNull
-  public List<TtcnFunctionDefList> getFunctionDefListList() {
-    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnFunctionDefList.class);
+  public List<TtcnConstDef> getConstDefList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnConstDef.class);
   }
 
   @Override
   @NotNull
-  public List<TtcnFunctionStatementList> getFunctionStatementListList() {
-    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnFunctionStatementList.class);
+  public List<TtcnFunctionStatement> getFunctionStatementList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnFunctionStatement.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnTemplateDef> getTemplateDefList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnTemplateDef.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnTimerInstance> getTimerInstanceList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnTimerInstance.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnVarInstance> getVarInstanceList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnVarInstance.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnWithStatement> getWithStatementList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnWithStatement.class);
   }
 
 }

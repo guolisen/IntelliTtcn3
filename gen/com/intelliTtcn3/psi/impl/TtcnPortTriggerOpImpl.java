@@ -24,20 +24,38 @@ public class TtcnPortTriggerOpImpl extends ASTWrapperPsiElement implements TtcnP
 
   @Override
   @Nullable
+  public TtcnDerivedRefWithParList getDerivedRefWithParList() {
+    return findChildByClass(TtcnDerivedRefWithParList.class);
+  }
+
+  @Override
+  @Nullable
   public TtcnFromClause getFromClause() {
     return findChildByClass(TtcnFromClause.class);
   }
 
   @Override
   @Nullable
-  public TtcnInLineTemplate getInLineTemplate() {
-    return findChildByClass(TtcnInLineTemplate.class);
+  public TtcnPortRedirect getPortRedirect() {
+    return findChildByClass(TtcnPortRedirect.class);
   }
 
   @Override
   @Nullable
-  public TtcnPortRedirect getPortRedirect() {
-    return findChildByClass(TtcnPortRedirect.class);
+  public TtcnSignature getSignature() {
+    return findChildByClass(TtcnSignature.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnTemplateBody getTemplateBody() {
+    return findChildByClass(TtcnTemplateBody.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnType getType() {
+    return findChildByClass(TtcnType.class);
   }
 
 }

@@ -24,8 +24,8 @@ public class TtcnWhileStatementImpl extends ASTWrapperPsiElement implements Ttcn
 
   @Override
   @NotNull
-  public TtcnBooleanExpression getBooleanExpression() {
-    return findNotNullChildByClass(TtcnBooleanExpression.class);
+  public TtcnSingleExpression getSingleExpression() {
+    return findNotNullChildByClass(TtcnSingleExpression.class);
   }
 
   @Override

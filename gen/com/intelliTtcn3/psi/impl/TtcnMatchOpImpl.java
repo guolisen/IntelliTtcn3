@@ -23,15 +23,33 @@ public class TtcnMatchOpImpl extends ASTWrapperPsiElement implements TtcnMatchOp
   }
 
   @Override
+  @Nullable
+  public TtcnDerivedRefWithParList getDerivedRefWithParList() {
+    return findChildByClass(TtcnDerivedRefWithParList.class);
+  }
+
+  @Override
   @NotNull
   public TtcnExpression getExpression() {
     return findNotNullChildByClass(TtcnExpression.class);
   }
 
   @Override
+  @Nullable
+  public TtcnSignature getSignature() {
+    return findChildByClass(TtcnSignature.class);
+  }
+
+  @Override
   @NotNull
-  public TtcnInLineTemplate getInLineTemplate() {
-    return findNotNullChildByClass(TtcnInLineTemplate.class);
+  public TtcnTemplateBody getTemplateBody() {
+    return findNotNullChildByClass(TtcnTemplateBody.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnType getType() {
+    return findChildByClass(TtcnType.class);
   }
 
 }

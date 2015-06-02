@@ -10,7 +10,16 @@ public interface TtcnCallParameters extends PsiElement {
   @Nullable
   TtcnCallTimerValue getCallTimerValue();
 
+  @Nullable
+  TtcnDerivedRefWithParList getDerivedRefWithParList();
+
+  @Nullable
+  TtcnSignature getSignature();
+
   @NotNull
-  TtcnInLineTemplate getInLineTemplate();
+  TtcnTemplateBody getTemplateBody();
+
+  @Nullable
+  TtcnType getType();
 
 }

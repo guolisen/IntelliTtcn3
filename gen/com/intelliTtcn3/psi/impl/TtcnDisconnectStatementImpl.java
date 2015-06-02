@@ -41,9 +41,15 @@ public class TtcnDisconnectStatementImpl extends ASTWrapperPsiElement implements
   }
 
   @Override
-  @Nullable
-  public TtcnSingleConnectionSpec getSingleConnectionSpec() {
-    return findChildByClass(TtcnSingleConnectionSpec.class);
+  @NotNull
+  public List<TtcnComponentOrDefaultReference> getComponentOrDefaultReferenceList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnComponentOrDefaultReference.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnFieldOrBitNumber> getFieldOrBitNumberList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnFieldOrBitNumber.class);
   }
 
 }

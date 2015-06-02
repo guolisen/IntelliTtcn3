@@ -8,13 +8,7 @@ import com.intellij.psi.PsiElement;
 public interface TtcnPredefinedValue extends PsiElement {
 
   @Nullable
-  TtcnAddressValue getAddressValue();
-
-  @Nullable
   TtcnBooleanValue getBooleanValue();
-
-  @Nullable
-  TtcnBstring getBstring();
 
   @Nullable
   TtcnCharStringValue getCharStringValue();
@@ -23,21 +17,21 @@ public interface TtcnPredefinedValue extends PsiElement {
   TtcnFloatValue getFloatValue();
 
   @Nullable
-  TtcnHstring getHstring();
-
-  @Nullable
-  TtcnIdentifier getIdentifier();
-
-  @Nullable
-  TtcnNumber getNumber();
-
-  @Nullable
-  TtcnOmitKeyword getOmitKeyword();
-
-  @Nullable
-  TtcnOstring getOstring();
-
-  @Nullable
   TtcnVerdictTypeValue getVerdictTypeValue();
+
+  @Nullable
+  PsiElement getTtcnBstring();
+
+  @Nullable
+  PsiElement getTtcnHstring();
+
+  @Nullable
+  PsiElement getTtcnId();
+
+  @Nullable
+  PsiElement getTtcnNumber();
+
+  @Nullable
+  PsiElement getTtcnOstring();
 
 }

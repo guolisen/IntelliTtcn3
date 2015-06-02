@@ -7,10 +7,19 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnPortSendOp extends PsiElement {
 
+  @Nullable
+  TtcnDerivedRefWithParList getDerivedRefWithParList();
+
+  @Nullable
+  TtcnSignature getSignature();
+
   @NotNull
-  TtcnInLineTemplate getInLineTemplate();
+  TtcnTemplateBody getTemplateBody();
 
   @Nullable
   TtcnToClause getToClause();
+
+  @Nullable
+  TtcnType getType();
 
 }

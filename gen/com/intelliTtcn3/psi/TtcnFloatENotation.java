@@ -7,13 +7,7 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnFloatENotation extends PsiElement {
 
-  @Nullable
-  TtcnDecimalNumber getDecimalNumber();
-
   @NotNull
   TtcnExponential getExponential();
-
-  @NotNull
-  List<TtcnNumber> getNumberList();
 
 }

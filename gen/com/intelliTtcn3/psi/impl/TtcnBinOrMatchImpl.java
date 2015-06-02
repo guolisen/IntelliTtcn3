@@ -24,8 +24,8 @@ public class TtcnBinOrMatchImpl extends ASTWrapperPsiElement implements TtcnBinO
 
   @Override
   @Nullable
-  public TtcnBin getBin() {
-    return findChildByClass(TtcnBin.class);
+  public PsiElement getTtcnBin() {
+    return findChildByType(TTCN_BIN);
   }
 
 }

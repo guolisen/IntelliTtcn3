@@ -24,8 +24,8 @@ public class TtcnElseIfClauseImpl extends ASTWrapperPsiElement implements TtcnEl
 
   @Override
   @NotNull
-  public TtcnBooleanExpression getBooleanExpression() {
-    return findNotNullChildByClass(TtcnBooleanExpression.class);
+  public TtcnSingleExpression getSingleExpression() {
+    return findNotNullChildByClass(TtcnSingleExpression.class);
   }
 
   @Override

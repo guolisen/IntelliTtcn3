@@ -8,9 +8,9 @@ import com.intellij.psi.PsiElement;
 public interface TtcnCharStringValue extends PsiElement {
 
   @Nullable
-  TtcnCstring getCstring();
+  TtcnQuadruple getQuadruple();
 
   @Nullable
-  TtcnQuadruple getQuadruple();
+  PsiElement getTtcnString();
 
 }

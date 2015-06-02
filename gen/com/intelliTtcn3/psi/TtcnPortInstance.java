@@ -8,9 +8,6 @@ import com.intellij.psi.PsiElement;
 public interface TtcnPortInstance extends PsiElement {
 
   @NotNull
-  TtcnExtendedIdentifier getExtendedIdentifier();
-
-  @NotNull
   List<TtcnPortElement> getPortElementList();
 
 }

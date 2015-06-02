@@ -7,9 +7,6 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnReturnType extends PsiElement {
 
-  @Nullable
-  TtcnRestrictedTemplate getRestrictedTemplate();
-
   @NotNull
   TtcnType getType();
 

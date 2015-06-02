@@ -8,15 +8,18 @@ import com.intellij.psi.PsiElement;
 public interface TtcnBaseTemplate extends PsiElement {
 
   @NotNull
-  TtcnIdentifier getIdentifier();
+  List<TtcnDerivedRefWithParList> getDerivedRefWithParListList();
 
-  @Nullable
-  TtcnSignature getSignature();
+  @NotNull
+  List<TtcnExpression> getExpressionList();
 
-  @Nullable
-  TtcnTemplateOrValueFormalParList getTemplateOrValueFormalParList();
+  @NotNull
+  List<TtcnSignature> getSignatureList();
 
-  @Nullable
-  TtcnType getType();
+  @NotNull
+  List<TtcnTemplateBody> getTemplateBodyList();
+
+  @NotNull
+  List<TtcnType> getTypeList();
 
 }

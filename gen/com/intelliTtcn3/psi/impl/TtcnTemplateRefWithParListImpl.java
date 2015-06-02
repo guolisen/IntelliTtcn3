@@ -23,12 +23,6 @@ public class TtcnTemplateRefWithParListImpl extends ASTWrapperPsiElement impleme
   }
 
   @Override
-  @NotNull
-  public TtcnExtendedIdentifier getExtendedIdentifier() {
-    return findNotNullChildByClass(TtcnExtendedIdentifier.class);
-  }
-
-  @Override
   @Nullable
   public TtcnTemplateActualParList getTemplateActualParList() {
     return findChildByClass(TtcnTemplateActualParList.class);

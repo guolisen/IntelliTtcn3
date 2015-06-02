@@ -22,10 +22,4 @@ public class TtcnMtcSpecImpl extends ASTWrapperPsiElement implements TtcnMtcSpec
     else super.accept(visitor);
   }
 
-  @Override
-  @NotNull
-  public TtcnComponentType getComponentType() {
-    return findNotNullChildByClass(TtcnComponentType.class);
-  }
-
 }

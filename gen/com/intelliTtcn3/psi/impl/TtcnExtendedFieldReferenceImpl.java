@@ -24,20 +24,8 @@ public class TtcnExtendedFieldReferenceImpl extends ASTWrapperPsiElement impleme
 
   @Override
   @NotNull
-  public List<TtcnArrayOrBitRef> getArrayOrBitRefList() {
-    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnArrayOrBitRef.class);
-  }
-
-  @Override
-  @NotNull
-  public List<TtcnIdentifier> getIdentifierList() {
-    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnIdentifier.class);
-  }
-
-  @Override
-  @NotNull
-  public List<TtcnPredefinedType> getPredefinedTypeList() {
-    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnPredefinedType.class);
+  public List<TtcnFieldOrBitNumber> getFieldOrBitNumberList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnFieldOrBitNumber.class);
   }
 
 }

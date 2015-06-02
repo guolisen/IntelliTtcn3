@@ -24,8 +24,8 @@ public class TtcnFieldReferenceImpl extends ASTWrapperPsiElement implements Ttcn
 
   @Override
   @Nullable
-  public TtcnArrayOrBitRef getArrayOrBitRef() {
-    return findChildByClass(TtcnArrayOrBitRef.class);
+  public TtcnFieldOrBitNumber getFieldOrBitNumber() {
+    return findChildByClass(TtcnFieldOrBitNumber.class);
   }
 
   @Override

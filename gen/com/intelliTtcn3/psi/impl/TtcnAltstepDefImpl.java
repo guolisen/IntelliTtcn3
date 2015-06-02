@@ -41,12 +41,6 @@ public class TtcnAltstepDefImpl extends ASTWrapperPsiElement implements TtcnAlts
   }
 
   @Override
-  @NotNull
-  public TtcnIdentifier getIdentifier() {
-    return findNotNullChildByClass(TtcnIdentifier.class);
-  }
-
-  @Override
   @Nullable
   public TtcnMtcSpec getMtcSpec() {
     return findChildByClass(TtcnMtcSpec.class);
@@ -62,6 +56,12 @@ public class TtcnAltstepDefImpl extends ASTWrapperPsiElement implements TtcnAlts
   @Nullable
   public TtcnSystemSpec getSystemSpec() {
     return findChildByClass(TtcnSystemSpec.class);
+  }
+
+  @Override
+  @NotNull
+  public PsiElement getTtcnId() {
+    return findNotNullChildByType(TTCN_ID);
   }
 
 }

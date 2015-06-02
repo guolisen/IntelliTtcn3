@@ -24,8 +24,8 @@ public class TtcnWithStatementImpl extends ASTWrapperPsiElement implements TtcnW
 
   @Override
   @NotNull
-  public TtcnWithAttribList getWithAttribList() {
-    return findNotNullChildByClass(TtcnWithAttribList.class);
+  public TtcnMultiWithAttrib getMultiWithAttrib() {
+    return findNotNullChildByClass(TtcnMultiWithAttrib.class);
   }
 
 }

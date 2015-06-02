@@ -23,12 +23,6 @@ public class TtcnConditionalConstructImpl extends ASTWrapperPsiElement implement
   }
 
   @Override
-  @NotNull
-  public TtcnBooleanExpression getBooleanExpression() {
-    return findNotNullChildByClass(TtcnBooleanExpression.class);
-  }
-
-  @Override
   @Nullable
   public TtcnElseClause getElseClause() {
     return findChildByClass(TtcnElseClause.class);
@@ -38,6 +32,12 @@ public class TtcnConditionalConstructImpl extends ASTWrapperPsiElement implement
   @NotNull
   public List<TtcnElseIfClause> getElseIfClauseList() {
     return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnElseIfClause.class);
+  }
+
+  @Override
+  @NotNull
+  public TtcnSingleExpression getSingleExpression() {
+    return findNotNullChildByClass(TtcnSingleExpression.class);
   }
 
   @Override

@@ -8,9 +8,21 @@ import com.intellij.psi.PsiElement;
 public interface TtcnStatementBlock extends PsiElement {
 
   @NotNull
-  List<TtcnFunctionDefList> getFunctionDefListList();
+  List<TtcnConstDef> getConstDefList();
 
   @NotNull
-  List<TtcnFunctionStatementList> getFunctionStatementListList();
+  List<TtcnFunctionStatement> getFunctionStatementList();
+
+  @NotNull
+  List<TtcnTemplateDef> getTemplateDefList();
+
+  @NotNull
+  List<TtcnTimerInstance> getTimerInstanceList();
+
+  @NotNull
+  List<TtcnVarInstance> getVarInstanceList();
+
+  @NotNull
+  List<TtcnWithStatement> getWithStatementList();
 
 }

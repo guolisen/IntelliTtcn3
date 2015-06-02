@@ -10,7 +10,4 @@ public interface TtcnQuadruple extends PsiElement {
   @NotNull
   TtcnCharKeyword getCharKeyword();
 
-  @NotNull
-  List<TtcnNumber> getNumberList();
-
 }

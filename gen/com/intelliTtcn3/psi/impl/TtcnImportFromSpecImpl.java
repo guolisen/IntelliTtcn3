@@ -24,8 +24,14 @@ public class TtcnImportFromSpecImpl extends ASTWrapperPsiElement implements Ttcn
 
   @Override
   @NotNull
-  public TtcnModuleId getModuleId() {
-    return findNotNullChildByClass(TtcnModuleId.class);
+  public List<TtcnFreeText> getFreeTextList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnFreeText.class);
+  }
+
+  @Override
+  @NotNull
+  public PsiElement getTtcnId() {
+    return findNotNullChildByType(TTCN_ID);
   }
 
 }

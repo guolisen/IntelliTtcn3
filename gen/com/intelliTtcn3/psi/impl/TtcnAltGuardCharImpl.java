@@ -24,8 +24,8 @@ public class TtcnAltGuardCharImpl extends ASTWrapperPsiElement implements TtcnAl
 
   @Override
   @Nullable
-  public TtcnBooleanExpression getBooleanExpression() {
-    return findChildByClass(TtcnBooleanExpression.class);
+  public TtcnSingleExpression getSingleExpression() {
+    return findChildByClass(TtcnSingleExpression.class);
   }
 
 }

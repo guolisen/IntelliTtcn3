@@ -29,15 +29,15 @@ public class TtcnExtFunctionDefImpl extends ASTWrapperPsiElement implements Ttcn
   }
 
   @Override
-  @NotNull
-  public TtcnIdentifier getIdentifier() {
-    return findNotNullChildByClass(TtcnIdentifier.class);
-  }
-
-  @Override
   @Nullable
   public TtcnReturnType getReturnType() {
     return findChildByClass(TtcnReturnType.class);
+  }
+
+  @Override
+  @NotNull
+  public PsiElement getTtcnId() {
+    return findNotNullChildByType(TTCN_ID);
   }
 
 }

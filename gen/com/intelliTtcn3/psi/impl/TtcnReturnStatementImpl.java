@@ -24,14 +24,32 @@ public class TtcnReturnStatementImpl extends ASTWrapperPsiElement implements Ttc
 
   @Override
   @Nullable
+  public TtcnDerivedRefWithParList getDerivedRefWithParList() {
+    return findChildByClass(TtcnDerivedRefWithParList.class);
+  }
+
+  @Override
+  @Nullable
   public TtcnExpression getExpression() {
     return findChildByClass(TtcnExpression.class);
   }
 
   @Override
   @Nullable
-  public TtcnInLineTemplate getInLineTemplate() {
-    return findChildByClass(TtcnInLineTemplate.class);
+  public TtcnSignature getSignature() {
+    return findChildByClass(TtcnSignature.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnTemplateBody getTemplateBody() {
+    return findChildByClass(TtcnTemplateBody.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnType getType() {
+    return findChildByClass(TtcnType.class);
   }
 
 }

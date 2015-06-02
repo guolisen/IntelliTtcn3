@@ -22,10 +22,4 @@ public class TtcnOctOrMatchImpl extends ASTWrapperPsiElement implements TtcnOctO
     else super.accept(visitor);
   }
 
-  @Override
-  @Nullable
-  public TtcnOct getOct() {
-    return findChildByClass(TtcnOct.class);
-  }
-
 }

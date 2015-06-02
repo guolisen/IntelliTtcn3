@@ -7,7 +7,4 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnSignature extends PsiElement {
 
-  @NotNull
-  TtcnExtendedIdentifier getExtendedIdentifier();
-
 }

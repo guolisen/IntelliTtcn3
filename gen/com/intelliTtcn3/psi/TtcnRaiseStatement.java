@@ -8,9 +8,12 @@ import com.intellij.psi.PsiElement;
 public interface TtcnRaiseStatement extends PsiElement {
 
   @NotNull
-  TtcnArrayIdentifierRef getArrayIdentifierRef();
+  List<TtcnFieldOrBitNumber> getFieldOrBitNumberList();
 
   @NotNull
   TtcnPortRaiseOp getPortRaiseOp();
+
+  @NotNull
+  PsiElement getTtcnId();
 
 }

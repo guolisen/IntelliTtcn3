@@ -7,13 +7,19 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnPortRaiseOp extends PsiElement {
 
-  @NotNull
-  TtcnInLineTemplate getInLineTemplate();
+  @Nullable
+  TtcnDerivedRefWithParList getDerivedRefWithParList();
 
   @NotNull
-  TtcnSignature getSignature();
+  List<TtcnSignature> getSignatureList();
+
+  @NotNull
+  TtcnTemplateBody getTemplateBody();
 
   @Nullable
   TtcnToClause getToClause();
+
+  @Nullable
+  TtcnType getType();
 
 }

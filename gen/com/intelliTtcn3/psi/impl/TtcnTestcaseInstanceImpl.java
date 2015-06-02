@@ -29,12 +29,6 @@ public class TtcnTestcaseInstanceImpl extends ASTWrapperPsiElement implements Tt
   }
 
   @Override
-  @NotNull
-  public TtcnExtendedIdentifier getExtendedIdentifier() {
-    return findNotNullChildByClass(TtcnExtendedIdentifier.class);
-  }
-
-  @Override
   @Nullable
   public TtcnSingleExpression getSingleExpression() {
     return findChildByClass(TtcnSingleExpression.class);

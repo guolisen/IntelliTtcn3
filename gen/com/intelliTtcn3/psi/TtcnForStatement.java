@@ -11,10 +11,10 @@ public interface TtcnForStatement extends PsiElement {
   TtcnAssignment getAssignment();
 
   @NotNull
-  TtcnBooleanExpression getBooleanExpression();
+  TtcnInitial getInitial();
 
   @NotNull
-  TtcnInitial getInitial();
+  TtcnSingleExpression getSingleExpression();
 
   @NotNull
   TtcnStatementBlock getStatementBlock();

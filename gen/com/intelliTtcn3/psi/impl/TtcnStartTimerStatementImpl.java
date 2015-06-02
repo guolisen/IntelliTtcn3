@@ -23,15 +23,21 @@ public class TtcnStartTimerStatementImpl extends ASTWrapperPsiElement implements
   }
 
   @Override
-  @NotNull
-  public TtcnArrayIdentifierRef getArrayIdentifierRef() {
-    return findNotNullChildByClass(TtcnArrayIdentifierRef.class);
-  }
-
-  @Override
   @Nullable
   public TtcnExpression getExpression() {
     return findChildByClass(TtcnExpression.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnFieldOrBitNumber> getFieldOrBitNumberList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnFieldOrBitNumber.class);
+  }
+
+  @Override
+  @NotNull
+  public PsiElement getTtcnId() {
+    return findNotNullChildByType(TTCN_ID);
   }
 
 }

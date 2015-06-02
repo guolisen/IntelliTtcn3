@@ -7,13 +7,22 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnPortReplyOp extends PsiElement {
 
-  @NotNull
-  TtcnInLineTemplate getInLineTemplate();
+  @Nullable
+  TtcnDerivedRefWithParList getDerivedRefWithParList();
 
   @Nullable
   TtcnReplyValue getReplyValue();
 
   @Nullable
+  TtcnSignature getSignature();
+
+  @NotNull
+  TtcnTemplateBody getTemplateBody();
+
+  @Nullable
   TtcnToClause getToClause();
+
+  @Nullable
+  TtcnType getType();
 
 }

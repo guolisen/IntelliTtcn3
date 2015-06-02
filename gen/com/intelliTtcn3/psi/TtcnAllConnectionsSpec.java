@@ -7,7 +7,13 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnAllConnectionsSpec extends PsiElement {
 
+  @Nullable
+  TtcnComponentOrDefaultReference getComponentOrDefaultReference();
+
   @NotNull
-  TtcnPortRef getPortRef();
+  List<TtcnFieldOrBitNumber> getFieldOrBitNumberList();
+
+  @NotNull
+  PsiElement getTtcnId();
 
 }

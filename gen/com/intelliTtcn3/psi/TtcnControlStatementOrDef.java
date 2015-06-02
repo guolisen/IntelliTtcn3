@@ -8,13 +8,19 @@ import com.intellij.psi.PsiElement;
 public interface TtcnControlStatementOrDef extends PsiElement {
 
   @Nullable
+  TtcnConstDef getConstDef();
+
+  @Nullable
   TtcnControlStatement getControlStatement();
 
   @Nullable
-  TtcnFunctionLocalDef getFunctionLocalDef();
+  TtcnTemplateDef getTemplateDef();
 
   @Nullable
-  TtcnFunctionLocalInst getFunctionLocalInst();
+  TtcnTimerInstance getTimerInstance();
+
+  @Nullable
+  TtcnVarInstance getVarInstance();
 
   @Nullable
   TtcnWithStatement getWithStatement();

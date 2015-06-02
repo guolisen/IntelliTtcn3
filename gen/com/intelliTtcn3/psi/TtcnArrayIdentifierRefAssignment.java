@@ -8,9 +8,6 @@ import com.intellij.psi.PsiElement;
 public interface TtcnArrayIdentifierRefAssignment extends PsiElement {
 
   @NotNull
-  TtcnArrayIdentifierRef getArrayIdentifierRef();
-
-  @NotNull
-  TtcnIdentifier getIdentifier();
+  List<TtcnFieldOrBitNumber> getFieldOrBitNumberList();
 
 }

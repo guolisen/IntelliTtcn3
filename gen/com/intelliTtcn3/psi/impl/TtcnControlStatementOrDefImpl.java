@@ -24,20 +24,32 @@ public class TtcnControlStatementOrDefImpl extends ASTWrapperPsiElement implemen
 
   @Override
   @Nullable
+  public TtcnConstDef getConstDef() {
+    return findChildByClass(TtcnConstDef.class);
+  }
+
+  @Override
+  @Nullable
   public TtcnControlStatement getControlStatement() {
     return findChildByClass(TtcnControlStatement.class);
   }
 
   @Override
   @Nullable
-  public TtcnFunctionLocalDef getFunctionLocalDef() {
-    return findChildByClass(TtcnFunctionLocalDef.class);
+  public TtcnTemplateDef getTemplateDef() {
+    return findChildByClass(TtcnTemplateDef.class);
   }
 
   @Override
   @Nullable
-  public TtcnFunctionLocalInst getFunctionLocalInst() {
-    return findChildByClass(TtcnFunctionLocalInst.class);
+  public TtcnTimerInstance getTimerInstance() {
+    return findChildByClass(TtcnTimerInstance.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnVarInstance getVarInstance() {
+    return findChildByClass(TtcnVarInstance.class);
   }
 
   @Override

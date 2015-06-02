@@ -24,12 +24,6 @@ public class TtcnCreateOpImpl extends ASTWrapperPsiElement implements TtcnCreate
 
   @Override
   @NotNull
-  public TtcnComponentType getComponentType() {
-    return findNotNullChildByClass(TtcnComponentType.class);
-  }
-
-  @Override
-  @NotNull
   public List<TtcnSingleExpression> getSingleExpressionList() {
     return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnSingleExpression.class);
   }

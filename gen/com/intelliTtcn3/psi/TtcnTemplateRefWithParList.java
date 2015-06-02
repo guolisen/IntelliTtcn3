@@ -7,9 +7,6 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnTemplateRefWithParList extends PsiElement {
 
-  @NotNull
-  TtcnExtendedIdentifier getExtendedIdentifier();
-
   @Nullable
   TtcnTemplateActualParList getTemplateActualParList();
 

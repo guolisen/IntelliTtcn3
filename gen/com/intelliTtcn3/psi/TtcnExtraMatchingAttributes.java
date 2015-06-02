@@ -8,6 +8,9 @@ import com.intellij.psi.PsiElement;
 public interface TtcnExtraMatchingAttributes extends PsiElement {
 
   @Nullable
-  TtcnStringLength getStringLength();
+  TtcnBound getBound();
+
+  @Nullable
+  TtcnSingleExpression getSingleExpression();
 
 }

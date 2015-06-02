@@ -23,9 +23,75 @@ public class TtcnTypeDefImpl extends ASTWrapperPsiElement implements TtcnTypeDef
   }
 
   @Override
-  @NotNull
-  public TtcnTypeDefBody getTypeDefBody() {
-    return findNotNullChildByClass(TtcnTypeDefBody.class);
+  @Nullable
+  public TtcnArrayDef getArrayDef() {
+    return findChildByClass(TtcnArrayDef.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnComponentDef getComponentDef() {
+    return findChildByClass(TtcnComponentDef.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnEnumDef getEnumDef() {
+    return findChildByClass(TtcnEnumDef.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnPortDef getPortDef() {
+    return findChildByClass(TtcnPortDef.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnRecordDef getRecordDef() {
+    return findChildByClass(TtcnRecordDef.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnRecordOfDef getRecordOfDef() {
+    return findChildByClass(TtcnRecordOfDef.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnSetDef getSetDef() {
+    return findChildByClass(TtcnSetDef.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnSetOfDef getSetOfDef() {
+    return findChildByClass(TtcnSetOfDef.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnSubTypeSpec getSubTypeSpec() {
+    return findChildByClass(TtcnSubTypeSpec.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnType getType() {
+    return findChildByClass(TtcnType.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnUnionDef getUnionDef() {
+    return findChildByClass(TtcnUnionDef.class);
+  }
+
+  @Override
+  @Nullable
+  public PsiElement getTtcnId() {
+    return findChildByType(TTCN_ID);
   }
 
 }

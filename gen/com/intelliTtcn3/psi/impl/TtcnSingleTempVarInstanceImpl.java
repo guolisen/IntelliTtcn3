@@ -29,15 +29,15 @@ public class TtcnSingleTempVarInstanceImpl extends ASTWrapperPsiElement implemen
   }
 
   @Override
-  @NotNull
-  public TtcnIdentifier getIdentifier() {
-    return findNotNullChildByClass(TtcnIdentifier.class);
-  }
-
-  @Override
   @Nullable
   public TtcnTemplateBody getTemplateBody() {
     return findChildByClass(TtcnTemplateBody.class);
+  }
+
+  @Override
+  @NotNull
+  public PsiElement getTtcnId() {
+    return findNotNullChildByType(TTCN_ID);
   }
 
 }

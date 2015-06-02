@@ -8,12 +8,9 @@ import com.intellij.psi.PsiElement;
 public interface TtcnStructFieldRef extends PsiElement {
 
   @Nullable
-  TtcnIdentifier getIdentifier();
-
-  @Nullable
-  TtcnPredefinedType getPredefinedType();
-
-  @Nullable
   TtcnTypeReference getTypeReference();
+
+  @Nullable
+  PsiElement getTtcnId();
 
 }

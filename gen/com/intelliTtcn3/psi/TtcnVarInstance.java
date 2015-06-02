@@ -8,9 +8,6 @@ import com.intellij.psi.PsiElement;
 public interface TtcnVarInstance extends PsiElement {
 
   @Nullable
-  TtcnRestrictedTemplate getRestrictedTemplate();
-
-  @Nullable
   TtcnTempVarList getTempVarList();
 
   @NotNull

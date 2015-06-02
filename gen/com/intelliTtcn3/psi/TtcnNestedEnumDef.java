@@ -8,6 +8,6 @@ import com.intellij.psi.PsiElement;
 public interface TtcnNestedEnumDef extends PsiElement {
 
   @NotNull
-  TtcnEnumerationList getEnumerationList();
+  List<TtcnEnumeration> getEnumerationList();
 
 }

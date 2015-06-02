@@ -8,6 +8,15 @@ import com.intellij.psi.PsiElement;
 public interface TtcnTemplateInstanceActualPar extends PsiElement {
 
   @Nullable
-  TtcnInLineTemplate getInLineTemplate();
+  TtcnDerivedRefWithParList getDerivedRefWithParList();
+
+  @Nullable
+  TtcnSignature getSignature();
+
+  @Nullable
+  TtcnTemplateBody getTemplateBody();
+
+  @Nullable
+  TtcnType getType();
 
 }

@@ -8,12 +8,21 @@ import com.intellij.psi.PsiElement;
 public interface TtcnPortTriggerOp extends PsiElement {
 
   @Nullable
+  TtcnDerivedRefWithParList getDerivedRefWithParList();
+
+  @Nullable
   TtcnFromClause getFromClause();
 
   @Nullable
-  TtcnInLineTemplate getInLineTemplate();
+  TtcnPortRedirect getPortRedirect();
 
   @Nullable
-  TtcnPortRedirect getPortRedirect();
+  TtcnSignature getSignature();
+
+  @Nullable
+  TtcnTemplateBody getTemplateBody();
+
+  @Nullable
+  TtcnType getType();
 
 }

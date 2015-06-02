@@ -23,15 +23,15 @@ public class TtcnComponentRefAssignmentImpl extends ASTWrapperPsiElement impleme
   }
 
   @Override
-  @NotNull
-  public TtcnComponentRef getComponentRef() {
-    return findNotNullChildByClass(TtcnComponentRef.class);
+  @Nullable
+  public TtcnComponentOrDefaultReference getComponentOrDefaultReference() {
+    return findChildByClass(TtcnComponentOrDefaultReference.class);
   }
 
   @Override
   @NotNull
-  public TtcnIdentifier getIdentifier() {
-    return findNotNullChildByClass(TtcnIdentifier.class);
+  public PsiElement getTtcnId() {
+    return findNotNullChildByType(TTCN_ID);
   }
 
 }

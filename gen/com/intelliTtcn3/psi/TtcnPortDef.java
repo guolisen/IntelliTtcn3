@@ -7,7 +7,16 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnPortDef extends PsiElement {
 
+  @Nullable
+  TtcnMessageAttribs getMessageAttribs();
+
+  @Nullable
+  TtcnMixedAttribs getMixedAttribs();
+
+  @Nullable
+  TtcnProcedureAttribs getProcedureAttribs();
+
   @NotNull
-  TtcnPortDefBody getPortDefBody();
+  PsiElement getTtcnId();
 
 }

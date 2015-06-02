@@ -8,6 +8,15 @@ import com.intellij.psi.PsiElement;
 public interface TtcnNestedUnionDef extends PsiElement {
 
   @NotNull
-  List<TtcnUnionFieldDef> getUnionFieldDefList();
+  List<TtcnArrayDef> getArrayDefList();
+
+  @NotNull
+  List<TtcnNestedTypeDef> getNestedTypeDefList();
+
+  @NotNull
+  List<TtcnSubTypeSpec> getSubTypeSpecList();
+
+  @NotNull
+  List<TtcnType> getTypeList();
 
 }

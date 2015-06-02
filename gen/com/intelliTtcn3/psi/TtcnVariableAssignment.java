@@ -8,9 +8,9 @@ import com.intellij.psi.PsiElement;
 public interface TtcnVariableAssignment extends PsiElement {
 
   @NotNull
-  TtcnIdentifier getIdentifier();
+  TtcnVariableRef getVariableRef();
 
   @NotNull
-  TtcnVariableRef getVariableRef();
+  PsiElement getTtcnId();
 
 }

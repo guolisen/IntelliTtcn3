@@ -7,10 +7,10 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnGroupDef extends PsiElement {
 
-  @NotNull
-  TtcnIdentifier getIdentifier();
-
   @Nullable
   TtcnModuleDefinitionsList getModuleDefinitionsList();
+
+  @NotNull
+  PsiElement getTtcnId();
 
 }

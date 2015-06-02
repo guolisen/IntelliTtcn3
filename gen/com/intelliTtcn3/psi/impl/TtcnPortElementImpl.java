@@ -30,8 +30,8 @@ public class TtcnPortElementImpl extends ASTWrapperPsiElement implements TtcnPor
 
   @Override
   @NotNull
-  public TtcnIdentifier getIdentifier() {
-    return findNotNullChildByClass(TtcnIdentifier.class);
+  public PsiElement getTtcnId() {
+    return findNotNullChildByType(TTCN_ID);
   }
 
 }

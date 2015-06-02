@@ -8,9 +8,30 @@ import com.intellij.psi.PsiElement;
 public interface TtcnAltstepInstance extends PsiElement {
 
   @NotNull
-  TtcnExtendedIdentifier getExtendedIdentifier();
+  List<TtcnArrayIdentifierRefAssignment> getArrayIdentifierRefAssignmentList();
 
-  @Nullable
-  TtcnFunctionActualParList getFunctionActualParList();
+  @NotNull
+  List<TtcnComponentOrDefaultReference> getComponentOrDefaultReferenceList();
+
+  @NotNull
+  List<TtcnComponentRefAssignment> getComponentRefAssignmentList();
+
+  @NotNull
+  List<TtcnDerivedRefWithParList> getDerivedRefWithParListList();
+
+  @NotNull
+  List<TtcnFieldOrBitNumber> getFieldOrBitNumberList();
+
+  @NotNull
+  List<TtcnSignature> getSignatureList();
+
+  @NotNull
+  List<TtcnTemplateBody> getTemplateBodyList();
+
+  @NotNull
+  List<TtcnTemplateInstanceAssignment> getTemplateInstanceAssignmentList();
+
+  @NotNull
+  List<TtcnType> getTypeList();
 
 }

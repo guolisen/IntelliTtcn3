@@ -7,7 +7,4 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnMtcSpec extends PsiElement {
 
-  @NotNull
-  TtcnComponentType getComponentType();
-
 }

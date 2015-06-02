@@ -23,12 +23,6 @@ public class TtcnReturnTypeImpl extends ASTWrapperPsiElement implements TtcnRetu
   }
 
   @Override
-  @Nullable
-  public TtcnRestrictedTemplate getRestrictedTemplate() {
-    return findChildByClass(TtcnRestrictedTemplate.class);
-  }
-
-  @Override
   @NotNull
   public TtcnType getType() {
     return findNotNullChildByClass(TtcnType.class);

@@ -24,8 +24,8 @@ public class TtcnModuleParImpl extends ASTWrapperPsiElement implements TtcnModul
 
   @Override
   @NotNull
-  public TtcnModuleParList getModuleParList() {
-    return findNotNullChildByClass(TtcnModuleParList.class);
+  public List<TtcnConstantExpression> getConstantExpressionList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnConstantExpression.class);
   }
 
   @Override

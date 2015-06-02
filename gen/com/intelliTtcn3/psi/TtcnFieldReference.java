@@ -8,7 +8,7 @@ import com.intellij.psi.PsiElement;
 public interface TtcnFieldReference extends PsiElement {
 
   @Nullable
-  TtcnArrayOrBitRef getArrayOrBitRef();
+  TtcnFieldOrBitNumber getFieldOrBitNumber();
 
   @Nullable
   TtcnParRef getParRef();

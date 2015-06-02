@@ -23,9 +23,9 @@ public class TtcnAllPortsSpecImpl extends ASTWrapperPsiElement implements TtcnAl
   }
 
   @Override
-  @NotNull
-  public TtcnComponentRef getComponentRef() {
-    return findNotNullChildByClass(TtcnComponentRef.class);
+  @Nullable
+  public TtcnComponentOrDefaultReference getComponentOrDefaultReference() {
+    return findChildByClass(TtcnComponentOrDefaultReference.class);
   }
 
 }

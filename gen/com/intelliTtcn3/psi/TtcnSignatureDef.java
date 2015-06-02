@@ -10,13 +10,13 @@ public interface TtcnSignatureDef extends PsiElement {
   @Nullable
   TtcnExceptionSpec getExceptionSpec();
 
-  @NotNull
-  TtcnIdentifier getIdentifier();
-
   @Nullable
   TtcnReturnType getReturnType();
 
   @Nullable
   TtcnSignatureFormalParList getSignatureFormalParList();
+
+  @NotNull
+  PsiElement getTtcnId();
 
 }

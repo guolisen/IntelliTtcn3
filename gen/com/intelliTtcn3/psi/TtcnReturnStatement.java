@@ -8,9 +8,18 @@ import com.intellij.psi.PsiElement;
 public interface TtcnReturnStatement extends PsiElement {
 
   @Nullable
+  TtcnDerivedRefWithParList getDerivedRefWithParList();
+
+  @Nullable
   TtcnExpression getExpression();
 
   @Nullable
-  TtcnInLineTemplate getInLineTemplate();
+  TtcnSignature getSignature();
+
+  @Nullable
+  TtcnTemplateBody getTemplateBody();
+
+  @Nullable
+  TtcnType getType();
 
 }

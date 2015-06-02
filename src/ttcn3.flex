@@ -302,7 +302,7 @@ SingleCharacter = [^\r\n\'\\]
     {DoubleLiteral}                { return TtcnTypes.TTCN_NUMBER; }
 
   /* comments */
-  {Comment}                      { /* ignore */ }
+  {Comment}                      { return TtcnTypes.TTCN_COMMENT }
 
   /* whitespace */
   {WhiteSpace}                   { /* ignore */ }

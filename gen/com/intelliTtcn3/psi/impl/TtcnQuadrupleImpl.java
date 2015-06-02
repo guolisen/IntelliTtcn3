@@ -28,10 +28,4 @@ public class TtcnQuadrupleImpl extends ASTWrapperPsiElement implements TtcnQuadr
     return findNotNullChildByClass(TtcnCharKeyword.class);
   }
 
-  @Override
-  @NotNull
-  public List<TtcnNumber> getNumberList() {
-    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnNumber.class);
-  }
-
 }

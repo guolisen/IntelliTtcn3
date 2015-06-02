@@ -10,9 +10,6 @@ public interface TtcnTestcaseInstance extends PsiElement {
   @Nullable
   TtcnExpression getExpression();
 
-  @NotNull
-  TtcnExtendedIdentifier getExtendedIdentifier();
-
   @Nullable
   TtcnSingleExpression getSingleExpression();
 

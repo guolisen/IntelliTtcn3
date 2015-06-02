@@ -7,10 +7,13 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnStartTimerStatement extends PsiElement {
 
-  @NotNull
-  TtcnArrayIdentifierRef getArrayIdentifierRef();
-
   @Nullable
   TtcnExpression getExpression();
+
+  @NotNull
+  List<TtcnFieldOrBitNumber> getFieldOrBitNumberList();
+
+  @NotNull
+  PsiElement getTtcnId();
 
 }

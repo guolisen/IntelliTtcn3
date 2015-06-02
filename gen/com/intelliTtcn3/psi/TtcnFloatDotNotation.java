@@ -8,9 +8,6 @@ import com.intellij.psi.PsiElement;
 public interface TtcnFloatDotNotation extends PsiElement {
 
   @NotNull
-  TtcnDecimalNumber getDecimalNumber();
-
-  @NotNull
-  TtcnNumber getNumber();
+  PsiElement getTtcnNumber();
 
 }

@@ -28,23 +28,14 @@ public class TtcnParser implements PsiParser {
     else if (t == ACTIVATE_OP) {
       r = ActivateOp(b, 0);
     }
-    else if (t == ADD_EXPRESSION) {
-      r = AddExpression(b, 0);
-    }
     else if (t == ADD_OP) {
       r = AddOp(b, 0);
     }
     else if (t == ADDRESS_DECL) {
       r = AddressDecl(b, 0);
     }
-    else if (t == ADDRESS_KEYWORD) {
-      r = AddressKeyword(b, 0);
-    }
     else if (t == ADDRESS_REF_LIST) {
       r = AddressRefList(b, 0);
-    }
-    else if (t == ADDRESS_VALUE) {
-      r = AddressValue(b, 0);
     }
     else if (t == ALIVE_OP) {
       r = AliveOp(b, 0);
@@ -82,12 +73,6 @@ public class TtcnParser implements PsiParser {
     else if (t == ALLOWED_VALUES_SPEC) {
       r = AllowedValuesSpec(b, 0);
     }
-    else if (t == ALPHA) {
-      r = Alpha(b, 0);
-    }
-    else if (t == ALPHA_NUM) {
-      r = AlphaNum(b, 0);
-    }
     else if (t == ALT_CONSTRUCT) {
       r = AltConstruct(b, 0);
     }
@@ -108,12 +93,6 @@ public class TtcnParser implements PsiParser {
     }
     else if (t == ALTSTEP_LOCAL_DEF_LIST) {
       r = AltstepLocalDefList(b, 0);
-    }
-    else if (t == AND_EXPRESSION) {
-      r = AndExpression(b, 0);
-    }
-    else if (t == ANY_TYPE_KEYWORD) {
-      r = AnyTypeKeyword(b, 0);
     }
     else if (t == ARRAY_CONST_EXPRESSION) {
       r = ArrayConstExpression(b, 0);
@@ -136,14 +115,8 @@ public class TtcnParser implements PsiParser {
     else if (t == ARRAY_EXPRESSION) {
       r = ArrayExpression(b, 0);
     }
-    else if (t == ARRAY_IDENTIFIER_REF) {
-      r = ArrayIdentifierRef(b, 0);
-    }
     else if (t == ARRAY_IDENTIFIER_REF_ASSIGNMENT) {
       r = ArrayIdentifierRefAssignment(b, 0);
-    }
-    else if (t == ARRAY_OR_BIT_REF) {
-      r = ArrayOrBitRef(b, 0);
     }
     else if (t == ARRAY_VALUE_OR_ATTRIB) {
       r = ArrayValueOrAttrib(b, 0);
@@ -169,47 +142,17 @@ public class TtcnParser implements PsiParser {
     else if (t == BEHAVIOUR_STATEMENTS) {
       r = BehaviourStatements(b, 0);
     }
-    else if (t == BIN) {
-      r = Bin(b, 0);
-    }
     else if (t == BIN_OR_MATCH) {
       r = BinOrMatch(b, 0);
     }
-    else if (t == BIT_AND_EXPRESSION) {
-      r = BitAndExpression(b, 0);
-    }
-    else if (t == BIT_NOT_EXPRESSION) {
-      r = BitNotExpression(b, 0);
-    }
-    else if (t == BIT_OR_EXPRESSION) {
-      r = BitOrExpression(b, 0);
-    }
-    else if (t == BIT_STRING_KEYWORD) {
-      r = BitStringKeyword(b, 0);
-    }
     else if (t == BIT_STRING_MATCH) {
       r = BitStringMatch(b, 0);
-    }
-    else if (t == BIT_XOR_EXPRESSION) {
-      r = BitXorExpression(b, 0);
-    }
-    else if (t == BOOLEAN_EXPRESSION) {
-      r = BooleanExpression(b, 0);
-    }
-    else if (t == BOOLEAN_KEYWORD) {
-      r = BooleanKeyword(b, 0);
     }
     else if (t == BOOLEAN_VALUE) {
       r = BooleanValue(b, 0);
     }
     else if (t == BOUND) {
       r = Bound(b, 0);
-    }
-    else if (t == BSTRING) {
-      r = Bstring(b, 0);
-    }
-    else if (t == COMMENT) {
-      r = COMMENT(b, 0);
     }
     else if (t == CALL_BODY_GUARD) {
       r = CallBodyGuard(b, 0);
@@ -240,9 +183,6 @@ public class TtcnParser implements PsiParser {
     }
     else if (t == CHAR_KEYWORD) {
       r = CharKeyword(b, 0);
-    }
-    else if (t == CHAR_STRING_KEYWORD) {
-      r = CharStringKeyword(b, 0);
     }
     else if (t == CHAR_STRING_MATCH) {
       r = CharStringMatch(b, 0);
@@ -286,17 +226,11 @@ public class TtcnParser implements PsiParser {
     else if (t == COMPONENT_OR_DEFAULT_REFERENCE) {
       r = ComponentOrDefaultReference(b, 0);
     }
-    else if (t == COMPONENT_REF) {
-      r = ComponentRef(b, 0);
-    }
     else if (t == COMPONENT_REF_ASSIGNMENT) {
       r = ComponentRefAssignment(b, 0);
     }
     else if (t == COMPONENT_REFERENCE_OR_LITERAL) {
       r = ComponentReferenceOrLiteral(b, 0);
-    }
-    else if (t == COMPONENT_TYPE) {
-      r = ComponentType(b, 0);
     }
     else if (t == COMPOUND_CONST_EXPRESSION) {
       r = CompoundConstExpression(b, 0);
@@ -316,23 +250,14 @@ public class TtcnParser implements PsiParser {
     else if (t == CONFIGURATION_OPS) {
       r = ConfigurationOps(b, 0);
     }
-    else if (t == CONFIGURATION_STATEMENTS) {
-      r = ConfigurationStatements(b, 0);
-    }
     else if (t == CONNECT_STATEMENT) {
       r = ConnectStatement(b, 0);
     }
     else if (t == CONST_DEF) {
       r = ConstDef(b, 0);
     }
-    else if (t == CONST_LIST) {
-      r = ConstList(b, 0);
-    }
     else if (t == CONSTANT_EXPRESSION) {
       r = ConstantExpression(b, 0);
-    }
-    else if (t == CONTENT) {
-      r = Content(b, 0);
     }
     else if (t == CONTROL_STATEMENT) {
       r = ControlStatement(b, 0);
@@ -346,23 +271,14 @@ public class TtcnParser implements PsiParser {
     else if (t == CREATE_OP) {
       r = CreateOp(b, 0);
     }
-    else if (t == CSTRING) {
-      r = Cstring(b, 0);
-    }
     else if (t == DEACTIVATE_STATEMENT) {
       r = DeactivateStatement(b, 0);
-    }
-    else if (t == DECIMAL_NUMBER) {
-      r = DecimalNumber(b, 0);
     }
     else if (t == DEF_OR_FIELD_REF) {
       r = DefOrFieldRef(b, 0);
     }
     else if (t == DEF_OR_FIELD_REF_LIST) {
       r = DefOrFieldRefList(b, 0);
-    }
-    else if (t == DEFAULT_KEYWORD) {
-      r = DefaultKeyword(b, 0);
     }
     else if (t == DERIVED_DEF) {
       r = DerivedDef(b, 0);
@@ -396,12 +312,6 @@ public class TtcnParser implements PsiParser {
     }
     else if (t == ENUMERATION) {
       r = Enumeration(b, 0);
-    }
-    else if (t == ENUMERATION_LIST) {
-      r = EnumerationList(b, 0);
-    }
-    else if (t == EQUAL_EXPRESSION) {
-      r = EqualExpression(b, 0);
     }
     else if (t == EQUAL_OP) {
       r = EqualOp(b, 0);
@@ -457,14 +367,8 @@ public class TtcnParser implements PsiParser {
     else if (t == EXT_FUNCTION_DEF) {
       r = ExtFunctionDef(b, 0);
     }
-    else if (t == EXTENDED_ALPHA_NUM) {
-      r = ExtendedAlphaNum(b, 0);
-    }
     else if (t == EXTENDED_FIELD_REFERENCE) {
       r = ExtendedFieldReference(b, 0);
-    }
-    else if (t == EXTENDED_IDENTIFIER) {
-      r = ExtendedIdentifier(b, 0);
     }
     else if (t == EXTRA_MATCHING_ATTRIBUTES) {
       r = ExtraMatchingAttributes(b, 0);
@@ -499,26 +403,11 @@ public class TtcnParser implements PsiParser {
     else if (t == FLOAT_E_NOTATION) {
       r = FloatENotation(b, 0);
     }
-    else if (t == FLOAT_KEYWORD) {
-      r = FloatKeyword(b, 0);
-    }
     else if (t == FLOAT_VALUE) {
       r = FloatValue(b, 0);
     }
     else if (t == FOR_STATEMENT) {
       r = ForStatement(b, 0);
-    }
-    else if (t == FORMAL_PORT_PAR) {
-      r = FormalPortPar(b, 0);
-    }
-    else if (t == FORMAL_TEMPLATE_PAR) {
-      r = FormalTemplatePar(b, 0);
-    }
-    else if (t == FORMAL_TIMER_PAR) {
-      r = FormalTimerPar(b, 0);
-    }
-    else if (t == FORMAL_VALUE_PAR) {
-      r = FormalValuePar(b, 0);
     }
     else if (t == FREE_TEXT) {
       r = FreeText(b, 0);
@@ -532,29 +421,8 @@ public class TtcnParser implements PsiParser {
     else if (t == FROM_CLAUSE_PRESENT) {
       r = FromClausePresent(b, 0);
     }
-    else if (t == FUNCTION_ACT_ASSIGNLIST) {
-      r = FunctionActAssignlist(b, 0);
-    }
-    else if (t == FUNCTION_ACTLIST) {
-      r = FunctionActlist(b, 0);
-    }
-    else if (t == FUNCTION_ACTUAL_PAR) {
-      r = FunctionActualPar(b, 0);
-    }
-    else if (t == FUNCTION_ACTUAL_PAR_ASSIGNMENT) {
-      r = FunctionActualParAssignment(b, 0);
-    }
-    else if (t == FUNCTION_ACTUAL_PAR_LIST) {
-      r = FunctionActualParList(b, 0);
-    }
     else if (t == FUNCTION_DEF) {
       r = FunctionDef(b, 0);
-    }
-    else if (t == FUNCTION_DEF_LIST) {
-      r = FunctionDefList(b, 0);
-    }
-    else if (t == FUNCTION_FORMAL_PAR) {
-      r = FunctionFormalPar(b, 0);
     }
     else if (t == FUNCTION_FORMAL_PAR_LIST) {
       r = FunctionFormalParList(b, 0);
@@ -562,20 +430,11 @@ public class TtcnParser implements PsiParser {
     else if (t == FUNCTION_INSTANCE) {
       r = FunctionInstance(b, 0);
     }
-    else if (t == FUNCTION_LOCAL_DEF) {
-      r = FunctionLocalDef(b, 0);
-    }
-    else if (t == FUNCTION_LOCAL_INST) {
-      r = FunctionLocalInst(b, 0);
-    }
     else if (t == FUNCTION_REF) {
       r = FunctionRef(b, 0);
     }
     else if (t == FUNCTION_STATEMENT) {
       r = FunctionStatement(b, 0);
-    }
-    else if (t == FUNCTION_STATEMENT_LIST) {
-      r = FunctionStatementList(b, 0);
     }
     else if (t == GET_CALL_STATEMENT) {
       r = GetCallStatement(b, 0);
@@ -601,23 +460,11 @@ public class TtcnParser implements PsiParser {
     else if (t == HALT_STATEMENT) {
       r = HaltStatement(b, 0);
     }
-    else if (t == HEX) {
-      r = Hex(b, 0);
-    }
     else if (t == HEX_OR_MATCH) {
       r = HexOrMatch(b, 0);
     }
-    else if (t == HEX_STRING_KEYWORD) {
-      r = HexStringKeyword(b, 0);
-    }
     else if (t == HEX_STRING_MATCH) {
       r = HexStringMatch(b, 0);
-    }
-    else if (t == HSTRING) {
-      r = Hstring(b, 0);
-    }
-    else if (t == IDENTIFIER) {
-      r = Identifier(b, 0);
     }
     else if (t == IDENTIFIER_LIST) {
       r = IdentifierList(b, 0);
@@ -676,15 +523,6 @@ public class TtcnParser implements PsiParser {
     else if (t == IMPORT_TYPE_DEF_SPEC) {
       r = ImportTypeDefSpec(b, 0);
     }
-    else if (t == IN_LINE_TEMPLATE) {
-      r = InLineTemplate(b, 0);
-    }
-    else if (t == IN_OUT_PAR_KEYWORD) {
-      r = InOutParKeyword(b, 0);
-    }
-    else if (t == IN_PAR_KEYWORD) {
-      r = InParKeyword(b, 0);
-    }
     else if (t == INDEX_ASSIGNMENT) {
       r = IndexAssignment(b, 0);
     }
@@ -693,9 +531,6 @@ public class TtcnParser implements PsiParser {
     }
     else if (t == INITIAL) {
       r = Initial(b, 0);
-    }
-    else if (t == INTEGER_KEYWORD) {
-      r = IntegerKeyword(b, 0);
     }
     else if (t == INTERLEAVED_CONSTRUCT) {
       r = InterleavedConstruct(b, 0);
@@ -718,9 +553,6 @@ public class TtcnParser implements PsiParser {
     else if (t == LABEL_STATEMENT) {
       r = LabelStatement(b, 0);
     }
-    else if (t == LANGUAGE_SPEC) {
-      r = LanguageSpec(b, 0);
-    }
     else if (t == LIST_OF_TEMPLATES) {
       r = ListOfTemplates(b, 0);
     }
@@ -732,9 +564,6 @@ public class TtcnParser implements PsiParser {
     }
     else if (t == LOOP_CONSTRUCT) {
       r = LoopConstruct(b, 0);
-    }
-    else if (t == LOWER_ALPHA) {
-      r = LowerAlpha(b, 0);
     }
     else if (t == MAP_PARAM_DEF) {
       r = MapParamDef(b, 0);
@@ -760,20 +589,17 @@ public class TtcnParser implements PsiParser {
     else if (t == MIXED_LIST) {
       r = MixedList(b, 0);
     }
+    else if (t == MODULE) {
+      r = Module(b, 0);
+    }
     else if (t == MODULE_CONTROL_BODY) {
       r = ModuleControlBody(b, 0);
     }
     else if (t == MODULE_CONTROL_PART) {
       r = ModuleControlPart(b, 0);
     }
-    else if (t == MODULE_DEFINITION) {
-      r = ModuleDefinition(b, 0);
-    }
     else if (t == MODULE_DEFINITIONS_LIST) {
       r = ModuleDefinitionsList(b, 0);
-    }
-    else if (t == MODULE_ID) {
-      r = ModuleId(b, 0);
     }
     else if (t == MODULE_PAR) {
       r = ModulePar(b, 0);
@@ -781,14 +607,8 @@ public class TtcnParser implements PsiParser {
     else if (t == MODULE_PAR_DEF) {
       r = ModuleParDef(b, 0);
     }
-    else if (t == MODULE_PAR_LIST) {
-      r = ModuleParList(b, 0);
-    }
     else if (t == MTC_SPEC) {
       r = MtcSpec(b, 0);
-    }
-    else if (t == MUL_EXPRESSION) {
-      r = MulExpression(b, 0);
     }
     else if (t == MULTI_WITH_ATTRIB) {
       r = MultiWithAttrib(b, 0);
@@ -820,53 +640,23 @@ public class TtcnParser implements PsiParser {
     else if (t == NESTED_UNION_DEF) {
       r = NestedUnionDef(b, 0);
     }
-    else if (t == NON_ZERO_NUM) {
-      r = NonZeroNum(b, 0);
-    }
-    else if (t == NOT_EXPRESSION) {
-      r = NotExpression(b, 0);
-    }
     else if (t == NOT_USED_OR_EXPRESSION) {
       r = NotUsedOrExpression(b, 0);
-    }
-    else if (t == NUM) {
-      r = Num(b, 0);
-    }
-    else if (t == NUMBER) {
-      r = Number(b, 0);
-    }
-    else if (t == OCT) {
-      r = Oct(b, 0);
     }
     else if (t == OCT_OR_MATCH) {
       r = OctOrMatch(b, 0);
     }
-    else if (t == OCTET_STRING_KEYWORD) {
-      r = OctetStringKeyword(b, 0);
-    }
     else if (t == OCTET_STRING_MATCH) {
       r = OctetStringMatch(b, 0);
     }
-    else if (t == OMIT_KEYWORD) {
-      r = OmitKeyword(b, 0);
-    }
     else if (t == OP_CALL) {
       r = OpCall(b, 0);
-    }
-    else if (t == OSTRING) {
-      r = Ostring(b, 0);
-    }
-    else if (t == OUT_PAR_KEYWORD) {
-      r = OutParKeyword(b, 0);
     }
     else if (t == PAR_REF) {
       r = ParRef(b, 0);
     }
     else if (t == PARAM_ASSIGNMENT_LIST) {
       r = ParamAssignmentList(b, 0);
-    }
-    else if (t == PARAM_CLAUSE) {
-      r = ParamClause(b, 0);
     }
     else if (t == PARAM_SPEC) {
       r = ParamSpec(b, 0);
@@ -897,12 +687,6 @@ public class TtcnParser implements PsiParser {
     }
     else if (t == PORT_DEF) {
       r = PortDef(b, 0);
-    }
-    else if (t == PORT_DEF_ATTRIBS) {
-      r = PortDefAttribs(b, 0);
-    }
-    else if (t == PORT_DEF_BODY) {
-      r = PortDefBody(b, 0);
     }
     else if (t == PORT_ELEMENT) {
       r = PortElement(b, 0);
@@ -940,9 +724,6 @@ public class TtcnParser implements PsiParser {
     else if (t == PORT_REDIRECT_WITH_VALUE_AND_PARAM) {
       r = PortRedirectWithValueAndParam(b, 0);
     }
-    else if (t == PORT_REF) {
-      r = PortRef(b, 0);
-    }
     else if (t == PORT_REPLY_OP) {
       r = PortReplyOp(b, 0);
     }
@@ -951,12 +732,6 @@ public class TtcnParser implements PsiParser {
     }
     else if (t == PORT_TRIGGER_OP) {
       r = PortTriggerOp(b, 0);
-    }
-    else if (t == PRE_DEF_FUNCTION_IDENTIFIER) {
-      r = PreDefFunctionIdentifier(b, 0);
-    }
-    else if (t == PREDEFINED_TYPE) {
-      r = PredefinedType(b, 0);
     }
     else if (t == PREDEFINED_VALUE) {
       r = PredefinedValue(b, 0);
@@ -1018,14 +793,8 @@ public class TtcnParser implements PsiParser {
     else if (t == REDIRECT_WITH_VALUE_AND_PARAM_SPEC) {
       r = RedirectWithValueAndParamSpec(b, 0);
     }
-    else if (t == REFERENCED_TYPE) {
-      r = ReferencedType(b, 0);
-    }
     else if (t == REFERENCED_VALUE) {
       r = ReferencedValue(b, 0);
-    }
-    else if (t == REL_EXPRESSION) {
-      r = RelExpression(b, 0);
     }
     else if (t == REL_OP) {
       r = RelOp(b, 0);
@@ -1035,9 +804,6 @@ public class TtcnParser implements PsiParser {
     }
     else if (t == REPLY_VALUE) {
       r = ReplyValue(b, 0);
-    }
-    else if (t == RESTRICTED_TEMPLATE) {
-      r = RestrictedTemplate(b, 0);
     }
     else if (t == RETURN_STATEMENT) {
       r = ReturnStatement(b, 0);
@@ -1081,9 +847,6 @@ public class TtcnParser implements PsiParser {
     else if (t == SET_OF_DEF) {
       r = SetOfDef(b, 0);
     }
-    else if (t == SHIFT_EXPRESSION) {
-      r = ShiftExpression(b, 0);
-    }
     else if (t == SHIFT_OP) {
       r = ShiftOp(b, 0);
     }
@@ -1104,9 +867,6 @@ public class TtcnParser implements PsiParser {
     }
     else if (t == SIMPLE_TEMPLATE_SPEC) {
       r = SimpleTemplateSpec(b, 0);
-    }
-    else if (t == SINGLE_CONNECTION_SPEC) {
-      r = SingleConnectionSpec(b, 0);
     }
     else if (t == SINGLE_CONST_DEF) {
       r = SingleConstDef(b, 0);
@@ -1150,26 +910,8 @@ public class TtcnParser implements PsiParser {
     else if (t == STOP_TIMER_STATEMENT) {
       r = StopTimerStatement(b, 0);
     }
-    else if (t == STRING_LENGTH) {
-      r = StringLength(b, 0);
-    }
-    else if (t == STRUCT_DEF_BODY) {
-      r = StructDefBody(b, 0);
-    }
-    else if (t == STRUCT_FIELD_DEF) {
-      r = StructFieldDef(b, 0);
-    }
     else if (t == STRUCT_FIELD_REF) {
       r = StructFieldRef(b, 0);
-    }
-    else if (t == STRUCT_OF_DEF_BODY) {
-      r = StructOfDefBody(b, 0);
-    }
-    else if (t == STRUCTURED_TYPE_DEF) {
-      r = StructuredTypeDef(b, 0);
-    }
-    else if (t == SUB_TYPE_DEF) {
-      r = SubTypeDef(b, 0);
     }
     else if (t == SUB_TYPE_SPEC) {
       r = SubTypeSpec(b, 0);
@@ -1213,17 +955,8 @@ public class TtcnParser implements PsiParser {
     else if (t == TEMPLATE_OR_RANGE) {
       r = TemplateOrRange(b, 0);
     }
-    else if (t == TEMPLATE_OR_VALUE_FORMAL_PAR) {
-      r = TemplateOrValueFormalPar(b, 0);
-    }
-    else if (t == TEMPLATE_OR_VALUE_FORMAL_PAR_LIST) {
-      r = TemplateOrValueFormalParList(b, 0);
-    }
     else if (t == TEMPLATE_REF_WITH_PAR_LIST) {
       r = TemplateRefWithParList(b, 0);
-    }
-    else if (t == TEMPLATE_RESTRICTION) {
-      r = TemplateRestriction(b, 0);
     }
     else if (t == TESTCASE_ACTUAL_PAR_LIST) {
       r = TestcaseActualParList(b, 0);
@@ -1267,17 +1000,11 @@ public class TtcnParser implements PsiParser {
     else if (t == TYPE_DEF) {
       r = TypeDef(b, 0);
     }
-    else if (t == TYPE_DEF_BODY) {
-      r = TypeDefBody(b, 0);
-    }
     else if (t == TYPE_LIST) {
       r = TypeList(b, 0);
     }
     else if (t == TYPE_REFERENCE) {
       r = TypeReference(b, 0);
-    }
-    else if (t == UNARY_EXPRESSION) {
-      r = UnaryExpression(b, 0);
     }
     else if (t == UNARY_OP) {
       r = UnaryOp(b, 0);
@@ -1285,26 +1012,11 @@ public class TtcnParser implements PsiParser {
     else if (t == UNION_DEF) {
       r = UnionDef(b, 0);
     }
-    else if (t == UNION_DEF_BODY) {
-      r = UnionDefBody(b, 0);
-    }
-    else if (t == UNION_FIELD_DEF) {
-      r = UnionFieldDef(b, 0);
-    }
-    else if (t == UNIVERSAL_CHAR_STRING) {
-      r = UniversalCharString(b, 0);
-    }
-    else if (t == UNIVERSAL_KEYWORD) {
-      r = UniversalKeyword(b, 0);
-    }
     else if (t == UNMAP_PARAM_DEF) {
       r = UnmapParamDef(b, 0);
     }
     else if (t == UNMAP_STATEMENT) {
       r = UnmapStatement(b, 0);
-    }
-    else if (t == UPPER_ALPHA) {
-      r = UpperAlpha(b, 0);
     }
     else if (t == VALUE) {
       r = Value(b, 0);
@@ -1336,14 +1048,8 @@ public class TtcnParser implements PsiParser {
     else if (t == VARIABLE_REF) {
       r = VariableRef(b, 0);
     }
-    else if (t == VERDICT_TYPE_KEYWORD) {
-      r = VerdictTypeKeyword(b, 0);
-    }
     else if (t == VERDICT_TYPE_VALUE) {
       r = VerdictTypeValue(b, 0);
-    }
-    else if (t == VISIBILITY) {
-      r = Visibility(b, 0);
     }
     else if (t == WHILE_STATEMENT) {
       r = WhileStatement(b, 0);
@@ -1351,14 +1057,8 @@ public class TtcnParser implements PsiParser {
     else if (t == WILDCARD_LENGTH_MATCH) {
       r = WildcardLengthMatch(b, 0);
     }
-    else if (t == WITH_ATTRIB_LIST) {
-      r = WithAttribList(b, 0);
-    }
     else if (t == WITH_STATEMENT) {
       r = WithStatement(b, 0);
-    }
-    else if (t == XOR_EXPRESSION) {
-      r = XorExpression(b, 0);
     }
     else {
       r = parse_root_(t, b, 0);
@@ -1367,7 +1067,7 @@ public class TtcnParser implements PsiParser {
   }
 
   protected boolean parse_root_(IElementType t, PsiBuilder b, int l) {
-    return Module(b, l + 1);
+    return root(b, l + 1);
   }
 
   /* ********************************************************** */
@@ -1398,13 +1098,13 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // MulExpression ( AddOp MulExpression )*
-  public static boolean AddExpression(PsiBuilder b, int l) {
+  static boolean AddExpression(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "AddExpression")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<add expression>");
+    Marker m = enter_section_(b);
     r = MulExpression(b, l + 1);
     r = r && AddExpression_1(b, l + 1);
-    exit_section_(b, l, m, ADD_EXPRESSION, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -1459,14 +1159,8 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_ADDRESS
-  public static boolean AddressKeyword(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "AddressKeyword")) return false;
-    if (!nextTokenIs(b, TTCN_ADDRESS)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_ADDRESS);
-    exit_section_(b, m, ADDRESS_KEYWORD, r);
-    return r;
+  static boolean AddressKeyword(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_ADDRESS);
   }
 
   /* ********************************************************** */
@@ -1509,14 +1203,8 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_NULL
-  public static boolean AddressValue(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "AddressValue")) return false;
-    if (!nextTokenIs(b, TTCN_NULL)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_NULL);
-    exit_section_(b, m, ADDRESS_VALUE, r);
-    return r;
+  static boolean AddressValue(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_NULL);
   }
 
   /* ********************************************************** */
@@ -1849,31 +1537,6 @@ public class TtcnParser implements PsiParser {
   }
 
   /* ********************************************************** */
-  // UpperAlpha | LowerAlpha
-  public static boolean Alpha(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "Alpha")) return false;
-    if (!nextTokenIs(b, "<alpha>", TTCN_LOWERCHAR, TTCN_UPPERCHAR)) return false;
-    boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<alpha>");
-    r = UpperAlpha(b, l + 1);
-    if (!r) r = LowerAlpha(b, l + 1);
-    exit_section_(b, l, m, ALPHA, r, false, null);
-    return r;
-  }
-
-  /* ********************************************************** */
-  // Alpha | Num
-  public static boolean AlphaNum(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "AlphaNum")) return false;
-    boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<alpha num>");
-    r = Alpha(b, l + 1);
-    if (!r) r = Num(b, l + 1);
-    exit_section_(b, l, m, ALPHA_NUM, r, false, null);
-    return r;
-  }
-
-  /* ********************************************************** */
   // TTCN_ALT TTCN_LB AltGuardList* TTCN_RB
   public static boolean AltConstruct(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "AltConstruct")) return false;
@@ -2091,13 +1754,13 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // NotExpression ( TTCN_AND NotExpression )*
-  public static boolean AndExpression(PsiBuilder b, int l) {
+  static boolean AndExpression(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "AndExpression")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<and expression>");
+    Marker m = enter_section_(b);
     r = NotExpression(b, l + 1);
     r = r && AndExpression_1(b, l + 1);
-    exit_section_(b, l, m, AND_EXPRESSION, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -2126,14 +1789,8 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_ANYTYPE
-  public static boolean AnyTypeKeyword(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "AnyTypeKeyword")) return false;
-    if (!nextTokenIs(b, TTCN_ANYTYPE)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_ANYTYPE);
-    exit_section_(b, m, ANY_TYPE_KEYWORD, r);
-    return r;
+  static boolean AnyTypeKeyword(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_ANYTYPE);
   }
 
   /* ********************************************************** */
@@ -2347,14 +2004,14 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // Identifier ArrayOrBitRef*
-  public static boolean ArrayIdentifierRef(PsiBuilder b, int l) {
+  static boolean ArrayIdentifierRef(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "ArrayIdentifierRef")) return false;
     if (!nextTokenIs(b, TTCN_ID)) return false;
     boolean r;
     Marker m = enter_section_(b);
     r = Identifier(b, l + 1);
     r = r && ArrayIdentifierRef_1(b, l + 1);
-    exit_section_(b, m, ARRAY_IDENTIFIER_REF, r);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -2386,7 +2043,7 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_LM FieldOrBitNumber TTCN_RM
-  public static boolean ArrayOrBitRef(PsiBuilder b, int l) {
+  static boolean ArrayOrBitRef(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "ArrayOrBitRef")) return false;
     if (!nextTokenIs(b, TTCN_LM)) return false;
     boolean r;
@@ -2394,7 +2051,7 @@ public class TtcnParser implements PsiParser {
     r = consumeToken(b, TTCN_LM);
     r = r && FieldOrBitNumber(b, l + 1);
     r = r && consumeToken(b, TTCN_RM);
-    exit_section_(b, m, ARRAY_OR_BIT_REF, r);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -2593,14 +2250,8 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_BIN
-  public static boolean Bin(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "Bin")) return false;
-    if (!nextTokenIs(b, TTCN_BIN)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_BIN);
-    exit_section_(b, m, BIN, r);
-    return r;
+  static boolean Bin(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_BIN);
   }
 
   /* ********************************************************** */
@@ -2618,13 +2269,13 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // BitNotExpression ( TTCN_AND4B BitNotExpression )*
-  public static boolean BitAndExpression(PsiBuilder b, int l) {
+  static boolean BitAndExpression(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "BitAndExpression")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<bit and expression>");
+    Marker m = enter_section_(b);
     r = BitNotExpression(b, l + 1);
     r = r && BitAndExpression_1(b, l + 1);
-    exit_section_(b, l, m, BIT_AND_EXPRESSION, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -2653,13 +2304,13 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_NOT4B? AddExpression
-  public static boolean BitNotExpression(PsiBuilder b, int l) {
+  static boolean BitNotExpression(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "BitNotExpression")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<bit not expression>");
+    Marker m = enter_section_(b);
     r = BitNotExpression_0(b, l + 1);
     r = r && AddExpression(b, l + 1);
-    exit_section_(b, l, m, BIT_NOT_EXPRESSION, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -2672,13 +2323,13 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // BitXorExpression ( TTCN_OR4B BitXorExpression ) *
-  public static boolean BitOrExpression(PsiBuilder b, int l) {
+  static boolean BitOrExpression(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "BitOrExpression")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<bit or expression>");
+    Marker m = enter_section_(b);
     r = BitXorExpression(b, l + 1);
     r = r && BitOrExpression_1(b, l + 1);
-    exit_section_(b, l, m, BIT_OR_EXPRESSION, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -2707,14 +2358,8 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_BITSTRING
-  public static boolean BitStringKeyword(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "BitStringKeyword")) return false;
-    if (!nextTokenIs(b, TTCN_BITSTRING)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_BITSTRING);
-    exit_section_(b, m, BIT_STRING_KEYWORD, r);
-    return r;
+  static boolean BitStringKeyword(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_BITSTRING);
   }
 
   /* ********************************************************** */
@@ -2745,13 +2390,13 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // BitAndExpression ( TTCN_XOR4B BitAndExpression )*
-  public static boolean BitXorExpression(PsiBuilder b, int l) {
+  static boolean BitXorExpression(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "BitXorExpression")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<bit xor expression>");
+    Marker m = enter_section_(b);
     r = BitAndExpression(b, l + 1);
     r = r && BitXorExpression_1(b, l + 1);
-    exit_section_(b, l, m, BIT_XOR_EXPRESSION, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -2780,25 +2425,14 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // SingleExpression
-  public static boolean BooleanExpression(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "BooleanExpression")) return false;
-    boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<boolean expression>");
-    r = SingleExpression(b, l + 1);
-    exit_section_(b, l, m, BOOLEAN_EXPRESSION, r, false, null);
-    return r;
+  static boolean BooleanExpression(PsiBuilder b, int l) {
+    return SingleExpression(b, l + 1);
   }
 
   /* ********************************************************** */
   // TTCN_BOOL
-  public static boolean BooleanKeyword(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "BooleanKeyword")) return false;
-    if (!nextTokenIs(b, TTCN_BOOL)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_BOOL);
-    exit_section_(b, m, BOOLEAN_KEYWORD, r);
-    return r;
+  static boolean BooleanKeyword(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_BOOL);
   }
 
   /* ********************************************************** */
@@ -2864,27 +2498,8 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_BSTRING
-  public static boolean Bstring(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "Bstring")) return false;
-    if (!nextTokenIs(b, TTCN_BSTRING)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_BSTRING);
-    exit_section_(b, m, BSTRING, r);
-    return r;
-  }
-
-  /* ********************************************************** */
-  // TTCN_LINECOMMENT | TTCN_BLOCKCOMMENT
-  public static boolean COMMENT(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "COMMENT")) return false;
-    if (!nextTokenIs(b, "<comment>", TTCN_BLOCKCOMMENT, TTCN_LINECOMMENT)) return false;
-    boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<comment>");
-    r = consumeToken(b, TTCN_LINECOMMENT);
-    if (!r) r = consumeToken(b, TTCN_BLOCKCOMMENT);
-    exit_section_(b, l, m, COMMENT, r, false, null);
-    return r;
+  static boolean Bstring(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_BSTRING);
   }
 
   /* ********************************************************** */
@@ -3079,14 +2694,8 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_CHARSTRING
-  public static boolean CharStringKeyword(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "CharStringKeyword")) return false;
-    if (!nextTokenIs(b, TTCN_CHARSTRING)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_CHARSTRING);
-    exit_section_(b, m, CHAR_STRING_KEYWORD, r);
-    return r;
+  static boolean CharStringKeyword(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_CHARSTRING);
   }
 
   /* ********************************************************** */
@@ -3429,15 +3038,15 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // ComponentOrDefaultReference | TTCN_SYSTEM | TTCN_SELF | TTCN_MTC
-  public static boolean ComponentRef(PsiBuilder b, int l) {
+  static boolean ComponentRef(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "ComponentRef")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<component ref>");
+    Marker m = enter_section_(b);
     r = ComponentOrDefaultReference(b, l + 1);
     if (!r) r = consumeToken(b, TTCN_SYSTEM);
     if (!r) r = consumeToken(b, TTCN_SELF);
     if (!r) r = consumeToken(b, TTCN_MTC);
-    exit_section_(b, l, m, COMPONENT_REF, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -3470,14 +3079,8 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // ExtendedIdentifier
-  public static boolean ComponentType(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "ComponentType")) return false;
-    if (!nextTokenIs(b, TTCN_ID)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = ExtendedIdentifier(b, l + 1);
-    exit_section_(b, m, COMPONENT_TYPE, r);
-    return r;
+  static boolean ComponentType(PsiBuilder b, int l) {
+    return ExtendedIdentifier(b, l + 1);
   }
 
   /* ********************************************************** */
@@ -3593,10 +3196,10 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // ConnectStatement | MapStatement | DisconnectStatement | UnmapStatement | DoneStatement | KilledStatement | StartTCStatement | StopTCStatement | KillTCStatement
-  public static boolean ConfigurationStatements(PsiBuilder b, int l) {
+  static boolean ConfigurationStatements(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "ConfigurationStatements")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<configuration statements>");
+    Marker m = enter_section_(b);
     r = ConnectStatement(b, l + 1);
     if (!r) r = MapStatement(b, l + 1);
     if (!r) r = DisconnectStatement(b, l + 1);
@@ -3606,7 +3209,7 @@ public class TtcnParser implements PsiParser {
     if (!r) r = StartTCStatement(b, l + 1);
     if (!r) r = StopTCStatement(b, l + 1);
     if (!r) r = KillTCStatement(b, l + 1);
-    exit_section_(b, l, m, CONFIGURATION_STATEMENTS, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -3639,14 +3242,14 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // SingleConstDef ( TTCN_COMMA SingleConstDef )*
-  public static boolean ConstList(PsiBuilder b, int l) {
+  static boolean ConstList(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "ConstList")) return false;
     if (!nextTokenIs(b, TTCN_ID)) return false;
     boolean r;
     Marker m = enter_section_(b);
     r = SingleConstDef(b, l + 1);
     r = r && ConstList_1(b, l + 1);
-    exit_section_(b, m, CONST_LIST, r);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -3687,13 +3290,13 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // ModuleDefinitionsList | ModuleControlPart
-  public static boolean Content(PsiBuilder b, int l) {
+  static boolean Content(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "Content")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<content>");
+    Marker m = enter_section_(b);
     r = ModuleDefinitionsList(b, l + 1);
     if (!r) r = ModuleControlPart(b, l + 1);
-    exit_section_(b, l, m, CONTENT, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -3861,14 +3464,8 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_STRING
-  public static boolean Cstring(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "Cstring")) return false;
-    if (!nextTokenIs(b, TTCN_STRING)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_STRING);
-    exit_section_(b, m, CSTRING, r);
-    return r;
+  static boolean Cstring(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_STRING);
   }
 
   /* ********************************************************** */
@@ -3905,7 +3502,7 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // Num+
-  public static boolean DecimalNumber(PsiBuilder b, int l) {
+  static boolean DecimalNumber(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "DecimalNumber")) return false;
     if (!nextTokenIs(b, TTCN_NUM)) return false;
     boolean r;
@@ -3917,7 +3514,7 @@ public class TtcnParser implements PsiParser {
       if (!empty_element_parsed_guard_(b, "DecimalNumber", c)) break;
       c = current_position_(b);
     }
-    exit_section_(b, m, DECIMAL_NUMBER, r);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -4000,14 +3597,8 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_DEFAULT
-  public static boolean DefaultKeyword(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "DefaultKeyword")) return false;
-    if (!nextTokenIs(b, TTCN_DEFAULT)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_DEFAULT);
-    exit_section_(b, m, DEFAULT_KEYWORD, r);
-    return r;
+  static boolean DefaultKeyword(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_DEFAULT);
   }
 
   /* ********************************************************** */
@@ -4228,14 +3819,14 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // Enumeration ( TTCN_COMMA Enumeration)*
-  public static boolean EnumerationList(PsiBuilder b, int l) {
+  static boolean EnumerationList(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "EnumerationList")) return false;
     if (!nextTokenIs(b, TTCN_ID)) return false;
     boolean r;
     Marker m = enter_section_(b);
     r = Enumeration(b, l + 1);
     r = r && EnumerationList_1(b, l + 1);
-    exit_section_(b, m, ENUMERATION_LIST, r);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -4264,13 +3855,13 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // RelExpression ( EqualOp RelExpression )*
-  public static boolean EqualExpression(PsiBuilder b, int l) {
+  static boolean EqualExpression(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "EqualExpression")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<equal expression>");
+    Marker m = enter_section_(b);
     r = RelExpression(b, l + 1);
     r = r && EqualExpression_1(b, l + 1);
-    exit_section_(b, l, m, EQUAL_EXPRESSION, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -4594,14 +4185,8 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_STRING
-  public static boolean ExtendedAlphaNum(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "ExtendedAlphaNum")) return false;
-    if (!nextTokenIs(b, TTCN_STRING)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_STRING);
-    exit_section_(b, m, EXTENDED_ALPHA_NUM, r);
-    return r;
+  static boolean ExtendedAlphaNum(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_STRING);
   }
 
   /* ********************************************************** */
@@ -4668,14 +4253,14 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // (Identifier TTCN_DOT)* Identifier
-  public static boolean ExtendedIdentifier(PsiBuilder b, int l) {
+  static boolean ExtendedIdentifier(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "ExtendedIdentifier")) return false;
     if (!nextTokenIs(b, TTCN_ID)) return false;
     boolean r;
     Marker m = enter_section_(b);
     r = ExtendedIdentifier_0(b, l + 1);
     r = r && Identifier(b, l + 1);
-    exit_section_(b, m, EXTENDED_IDENTIFIER, r);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -4960,14 +4545,8 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_FLOAT
-  public static boolean FloatKeyword(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "FloatKeyword")) return false;
-    if (!nextTokenIs(b, TTCN_FLOAT)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_FLOAT);
-    exit_section_(b, m, FLOAT_KEYWORD, r);
-    return r;
+  static boolean FloatKeyword(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_FLOAT);
   }
 
   /* ********************************************************** */
@@ -5005,15 +4584,15 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // InOutParKeyword? Identifier Identifier
-  public static boolean FormalPortPar(PsiBuilder b, int l) {
+  static boolean FormalPortPar(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "FormalPortPar")) return false;
-    if (!nextTokenIs(b, "<formal port par>", TTCN_ID, TTCN_INOUT)) return false;
+    if (!nextTokenIs(b, "", TTCN_ID, TTCN_INOUT)) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<formal port par>");
+    Marker m = enter_section_(b);
     r = FormalPortPar_0(b, l + 1);
     r = r && Identifier(b, l + 1);
     r = r && Identifier(b, l + 1);
-    exit_section_(b, l, m, FORMAL_PORT_PAR, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -5026,17 +4605,17 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // ( InParKeyword | OutParKeyword | InOutParKeyword )? ( TTCN_TEMPLATE | RestrictedTemplate ) ( TTCN_AT_LAZY | TTCN_AT_FUZZY )? Type Identifier ( TTCN_ASSIGN ( InLineTemplate | TTCN_SUB ) )?
-  public static boolean FormalTemplatePar(PsiBuilder b, int l) {
+  static boolean FormalTemplatePar(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "FormalTemplatePar")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<formal template par>");
+    Marker m = enter_section_(b);
     r = FormalTemplatePar_0(b, l + 1);
     r = r && FormalTemplatePar_1(b, l + 1);
     r = r && FormalTemplatePar_2(b, l + 1);
     r = r && Type(b, l + 1);
     r = r && Identifier(b, l + 1);
     r = r && FormalTemplatePar_5(b, l + 1);
-    exit_section_(b, l, m, FORMAL_TEMPLATE_PAR, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -5119,15 +4698,15 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // InOutParKeyword? TTCN_TIMER Identifier
-  public static boolean FormalTimerPar(PsiBuilder b, int l) {
+  static boolean FormalTimerPar(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "FormalTimerPar")) return false;
-    if (!nextTokenIs(b, "<formal timer par>", TTCN_INOUT, TTCN_TIMER)) return false;
+    if (!nextTokenIs(b, "", TTCN_INOUT, TTCN_TIMER)) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<formal timer par>");
+    Marker m = enter_section_(b);
     r = FormalTimerPar_0(b, l + 1);
     r = r && consumeToken(b, TTCN_TIMER);
     r = r && Identifier(b, l + 1);
-    exit_section_(b, l, m, FORMAL_TIMER_PAR, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -5140,16 +4719,16 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // ( InParKeyword | InOutParKeyword | OutParKeyword )? (TTCN_AT_LAZY | TTCN_AT_FUZZY)? Type Identifier (TTCN_ASSIGN ( Expression | TTCN_SUB ))?
-  public static boolean FormalValuePar(PsiBuilder b, int l) {
+  static boolean FormalValuePar(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "FormalValuePar")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<formal value par>");
+    Marker m = enter_section_(b);
     r = FormalValuePar_0(b, l + 1);
     r = r && FormalValuePar_1(b, l + 1);
     r = r && Type(b, l + 1);
     r = r && Identifier(b, l + 1);
     r = r && FormalValuePar_4(b, l + 1);
-    exit_section_(b, l, m, FORMAL_VALUE_PAR, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -5339,14 +4918,14 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // FunctionActualParAssignment ( TTCN_COMMA FunctionActualParAssignment )*
-  public static boolean FunctionActAssignlist(PsiBuilder b, int l) {
+  static boolean FunctionActAssignlist(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "FunctionActAssignlist")) return false;
     if (!nextTokenIs(b, TTCN_ID)) return false;
     boolean r;
     Marker m = enter_section_(b);
     r = FunctionActualParAssignment(b, l + 1);
     r = r && FunctionActAssignlist_1(b, l + 1);
-    exit_section_(b, m, FUNCTION_ACT_ASSIGNLIST, r);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -5375,13 +4954,13 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // FunctionActualPar ( TTCN_COMMA FunctionActualPar )*
-  public static boolean FunctionActlist(PsiBuilder b, int l) {
+  static boolean FunctionActlist(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "FunctionActlist")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<function actlist>");
+    Marker m = enter_section_(b);
     r = FunctionActualPar(b, l + 1);
     r = r && FunctionActlist_1(b, l + 1);
-    exit_section_(b, l, m, FUNCTION_ACTLIST, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -5410,21 +4989,21 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // ArrayIdentifierRef | InLineTemplate | ComponentRef | TTCN_SUB
-  public static boolean FunctionActualPar(PsiBuilder b, int l) {
+  static boolean FunctionActualPar(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "FunctionActualPar")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<function actual par>");
+    Marker m = enter_section_(b);
     r = ArrayIdentifierRef(b, l + 1);
     if (!r) r = InLineTemplate(b, l + 1);
     if (!r) r = ComponentRef(b, l + 1);
     if (!r) r = consumeToken(b, TTCN_SUB);
-    exit_section_(b, l, m, FUNCTION_ACTUAL_PAR, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
   /* ********************************************************** */
   // TemplateInstanceAssignment | ComponentRefAssignment | ArrayIdentifierRefAssignment
-  public static boolean FunctionActualParAssignment(PsiBuilder b, int l) {
+  static boolean FunctionActualParAssignment(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "FunctionActualParAssignment")) return false;
     if (!nextTokenIs(b, TTCN_ID)) return false;
     boolean r;
@@ -5432,19 +5011,19 @@ public class TtcnParser implements PsiParser {
     r = TemplateInstanceAssignment(b, l + 1);
     if (!r) r = ComponentRefAssignment(b, l + 1);
     if (!r) r = ArrayIdentifierRefAssignment(b, l + 1);
-    exit_section_(b, m, FUNCTION_ACTUAL_PAR_ASSIGNMENT, r);
+    exit_section_(b, m, null, r);
     return r;
   }
 
   /* ********************************************************** */
   // FunctionActlist | FunctionActAssignlist
-  public static boolean FunctionActualParList(PsiBuilder b, int l) {
+  static boolean FunctionActualParList(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "FunctionActualParList")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<function actual par list>");
+    Marker m = enter_section_(b);
     r = FunctionActlist(b, l + 1);
     if (!r) r = FunctionActAssignlist(b, l + 1);
-    exit_section_(b, l, m, FUNCTION_ACTUAL_PAR_LIST, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -5514,14 +5093,14 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // ( FunctionLocalDef | FunctionLocalInst ) WithStatement? TTCN_SEMI?
-  public static boolean FunctionDefList(PsiBuilder b, int l) {
+  static boolean FunctionDefList(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "FunctionDefList")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<function def list>");
+    Marker m = enter_section_(b);
     r = FunctionDefList_0(b, l + 1);
     r = r && FunctionDefList_1(b, l + 1);
     r = r && FunctionDefList_2(b, l + 1);
-    exit_section_(b, l, m, FUNCTION_DEF_LIST, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -5552,15 +5131,15 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // FormalValuePar | FormalTimerPar | FormalTemplatePar | FormalPortPar
-  public static boolean FunctionFormalPar(PsiBuilder b, int l) {
+  static boolean FunctionFormalPar(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "FunctionFormalPar")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<function formal par>");
+    Marker m = enter_section_(b);
     r = FormalValuePar(b, l + 1);
     if (!r) r = FormalTimerPar(b, l + 1);
     if (!r) r = FormalTemplatePar(b, l + 1);
     if (!r) r = FormalPortPar(b, l + 1);
-    exit_section_(b, l, m, FUNCTION_FORMAL_PAR, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -5623,27 +5202,27 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // ConstDef | TemplateDef
-  public static boolean FunctionLocalDef(PsiBuilder b, int l) {
+  static boolean FunctionLocalDef(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "FunctionLocalDef")) return false;
-    if (!nextTokenIs(b, "<function local def>", TTCN_CONST, TTCN_TEMPLATE)) return false;
+    if (!nextTokenIs(b, "", TTCN_CONST, TTCN_TEMPLATE)) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<function local def>");
+    Marker m = enter_section_(b);
     r = ConstDef(b, l + 1);
     if (!r) r = TemplateDef(b, l + 1);
-    exit_section_(b, l, m, FUNCTION_LOCAL_DEF, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
   /* ********************************************************** */
   // VarInstance | TimerInstance
-  public static boolean FunctionLocalInst(PsiBuilder b, int l) {
+  static boolean FunctionLocalInst(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "FunctionLocalInst")) return false;
-    if (!nextTokenIs(b, "<function local inst>", TTCN_TIMER, TTCN_VAR)) return false;
+    if (!nextTokenIs(b, "", TTCN_TIMER, TTCN_VAR)) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<function local inst>");
+    Marker m = enter_section_(b);
     r = VarInstance(b, l + 1);
     if (!r) r = TimerInstance(b, l + 1);
-    exit_section_(b, l, m, FUNCTION_LOCAL_INST, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -5698,13 +5277,13 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // FunctionStatement TTCN_SEMI?
-  public static boolean FunctionStatementList(PsiBuilder b, int l) {
+  static boolean FunctionStatementList(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "FunctionStatementList")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<function statement list>");
+    Marker m = enter_section_(b);
     r = FunctionStatement(b, l + 1);
     r = r && FunctionStatementList_1(b, l + 1);
-    exit_section_(b, l, m, FUNCTION_STATEMENT_LIST, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -5902,14 +5481,8 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_HEX
-  public static boolean Hex(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "Hex")) return false;
-    if (!nextTokenIs(b, TTCN_HEX)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_HEX);
-    exit_section_(b, m, HEX, r);
-    return r;
+  static boolean Hex(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_HEX);
   }
 
   /* ********************************************************** */
@@ -5927,14 +5500,8 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_HEXSTRING
-  public static boolean HexStringKeyword(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "HexStringKeyword")) return false;
-    if (!nextTokenIs(b, TTCN_HEXSTRING)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_HEXSTRING);
-    exit_section_(b, m, HEX_STRING_KEYWORD, r);
-    return r;
+  static boolean HexStringKeyword(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_HEXSTRING);
   }
 
   /* ********************************************************** */
@@ -5965,26 +5532,14 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_HSTRING
-  public static boolean Hstring(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "Hstring")) return false;
-    if (!nextTokenIs(b, TTCN_HSTRING)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_HSTRING);
-    exit_section_(b, m, HSTRING, r);
-    return r;
+  static boolean Hstring(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_HSTRING);
   }
 
   /* ********************************************************** */
   // TTCN_ID
-  public static boolean Identifier(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "Identifier")) return false;
-    if (!nextTokenIs(b, TTCN_ID)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_ID);
-    exit_section_(b, m, IDENTIFIER, r);
-    return r;
+  static boolean Identifier(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_ID);
   }
 
   /* ********************************************************** */
@@ -6292,14 +5847,14 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // ( ( Type | Signature ) TTCN_COLON )? ( DerivedRefWithParList TTCN_ASSIGN)? TemplateBody
-  public static boolean InLineTemplate(PsiBuilder b, int l) {
+  static boolean InLineTemplate(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "InLineTemplate")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<in line template>");
+    Marker m = enter_section_(b);
     r = InLineTemplate_0(b, l + 1);
     r = r && InLineTemplate_1(b, l + 1);
     r = r && TemplateBody(b, l + 1);
-    exit_section_(b, l, m, IN_LINE_TEMPLATE, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -6352,26 +5907,14 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_INOUT
-  public static boolean InOutParKeyword(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "InOutParKeyword")) return false;
-    if (!nextTokenIs(b, TTCN_INOUT)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_INOUT);
-    exit_section_(b, m, IN_OUT_PAR_KEYWORD, r);
-    return r;
+  static boolean InOutParKeyword(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_INOUT);
   }
 
   /* ********************************************************** */
   // TTCN_IN
-  public static boolean InParKeyword(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "InParKeyword")) return false;
-    if (!nextTokenIs(b, TTCN_IN)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_IN);
-    exit_section_(b, m, IN_PAR_KEYWORD, r);
-    return r;
+  static boolean InParKeyword(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_IN);
   }
 
   /* ********************************************************** */
@@ -6415,14 +5958,8 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_INTEGER
-  public static boolean IntegerKeyword(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "IntegerKeyword")) return false;
-    if (!nextTokenIs(b, TTCN_INTEGER)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_INTEGER);
-    exit_section_(b, m, INTEGER_KEYWORD, r);
-    return r;
+  static boolean IntegerKeyword(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_INTEGER);
   }
 
   /* ********************************************************** */
@@ -6570,7 +6107,7 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_LANGUAGE FreeText (TTCN_COMMA FreeText)*
-  public static boolean LanguageSpec(PsiBuilder b, int l) {
+  static boolean LanguageSpec(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "LanguageSpec")) return false;
     if (!nextTokenIs(b, TTCN_LANGUAGE)) return false;
     boolean r;
@@ -6578,7 +6115,7 @@ public class TtcnParser implements PsiParser {
     r = consumeToken(b, TTCN_LANGUAGE);
     r = r && FreeText(b, l + 1);
     r = r && LanguageSpec_2(b, l + 1);
-    exit_section_(b, m, LANGUAGE_SPEC, r);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -6703,18 +6240,6 @@ public class TtcnParser implements PsiParser {
     if (!r) r = WhileStatement(b, l + 1);
     if (!r) r = DoWhileStatement(b, l + 1);
     exit_section_(b, l, m, LOOP_CONSTRUCT, r, false, null);
-    return r;
-  }
-
-  /* ********************************************************** */
-  // TTCN_LOWERCHAR
-  public static boolean LowerAlpha(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "LowerAlpha")) return false;
-    if (!nextTokenIs(b, TTCN_LOWERCHAR)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_LOWERCHAR);
-    exit_section_(b, m, LOWER_ALPHA, r);
     return r;
   }
 
@@ -6996,7 +6521,7 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_MODULE ModuleId TTCN_LB Content* TTCN_RB WithStatement? TTCN_SEMI?
-  static boolean Module(PsiBuilder b, int l) {
+  public static boolean Module(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "Module")) return false;
     if (!nextTokenIs(b, TTCN_MODULE)) return false;
     boolean r;
@@ -7008,7 +6533,7 @@ public class TtcnParser implements PsiParser {
     r = r && consumeToken(b, TTCN_RB);
     r = r && Module_5(b, l + 1);
     r = r && Module_6(b, l + 1);
-    exit_section_(b, m, null, r);
+    exit_section_(b, m, MODULE, r);
     return r;
   }
 
@@ -7080,13 +6605,13 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // ( ( Visibility ? ( TypeDef | ConstDef | TemplateDef | ModuleParDef | FunctionDef | SignatureDef | TestcaseDef | AltstepDef | ImportDef | ExtFunctionDef | ExtConstDef ) ) | ( TTCN_PUBLIC? GroupDef ) | ( TTCN_PRIVATE? FriendModuleDef ) ) WithStatement?
-  public static boolean ModuleDefinition(PsiBuilder b, int l) {
+  static boolean ModuleDefinition(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "ModuleDefinition")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<module definition>");
+    Marker m = enter_section_(b);
     r = ModuleDefinition_0(b, l + 1);
     r = r && ModuleDefinition_1(b, l + 1);
-    exit_section_(b, l, m, MODULE_DEFINITION, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -7220,14 +6745,14 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // Identifier LanguageSpec?
-  public static boolean ModuleId(PsiBuilder b, int l) {
+  static boolean ModuleId(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "ModuleId")) return false;
     if (!nextTokenIs(b, TTCN_ID)) return false;
     boolean r;
     Marker m = enter_section_(b);
     r = Identifier(b, l + 1);
     r = r && ModuleId_1(b, l + 1);
-    exit_section_(b, m, MODULE_ID, r);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -7300,7 +6825,7 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // Identifier (TTCN_ASSIGN ConstantExpression)? ( TTCN_COMMA Identifier (TTCN_ASSIGN ConstantExpression)? )*
-  public static boolean ModuleParList(PsiBuilder b, int l) {
+  static boolean ModuleParList(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "ModuleParList")) return false;
     if (!nextTokenIs(b, TTCN_ID)) return false;
     boolean r;
@@ -7308,7 +6833,7 @@ public class TtcnParser implements PsiParser {
     r = Identifier(b, l + 1);
     r = r && ModuleParList_1(b, l + 1);
     r = r && ModuleParList_2(b, l + 1);
-    exit_section_(b, m, MODULE_PAR_LIST, r);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -7387,13 +6912,13 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // UnaryExpression ( MultiplyOp UnaryExpression )* | CompoundExpression
-  public static boolean MulExpression(PsiBuilder b, int l) {
+  static boolean MulExpression(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "MulExpression")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<mul expression>");
+    Marker m = enter_section_(b);
     r = MulExpression_0(b, l + 1);
     if (!r) r = CompoundExpression(b, l + 1);
-    exit_section_(b, l, m, MUL_EXPRESSION, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -7730,26 +7255,14 @@ public class TtcnParser implements PsiParser {
   }
 
   /* ********************************************************** */
-  // TTCN_NON_ZERO_NUMBER
-  public static boolean NonZeroNum(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "NonZeroNum")) return false;
-    if (!nextTokenIs(b, TTCN_NON_ZERO_NUMBER)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_NON_ZERO_NUMBER);
-    exit_section_(b, m, NON_ZERO_NUM, r);
-    return r;
-  }
-
-  /* ********************************************************** */
   // TTCN_NOT? EqualExpression
-  public static boolean NotExpression(PsiBuilder b, int l) {
+  static boolean NotExpression(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "NotExpression")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<not expression>");
+    Marker m = enter_section_(b);
     r = NotExpression_0(b, l + 1);
     r = r && EqualExpression(b, l + 1);
-    exit_section_(b, l, m, NOT_EXPRESSION, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -7774,38 +7287,26 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_NUM
-  public static boolean Num(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "Num")) return false;
-    if (!nextTokenIs(b, TTCN_NUM)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_NUM);
-    exit_section_(b, m, NUM, r);
-    return r;
+  static boolean Num(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_NUM);
   }
 
   /* ********************************************************** */
   // TTCN_NUMBER
-  public static boolean Number(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "Number")) return false;
-    if (!nextTokenIs(b, TTCN_NUMBER)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_NUMBER);
-    exit_section_(b, m, NUMBER, r);
-    return r;
+  static boolean Number(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_NUMBER);
   }
 
   /* ********************************************************** */
   // Hex Hex
-  public static boolean Oct(PsiBuilder b, int l) {
+  static boolean Oct(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "Oct")) return false;
     if (!nextTokenIs(b, TTCN_HEX)) return false;
     boolean r;
     Marker m = enter_section_(b);
     r = Hex(b, l + 1);
     r = r && Hex(b, l + 1);
-    exit_section_(b, m, OCT, r);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -7824,14 +7325,8 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_OCTETSTRING
-  public static boolean OctetStringKeyword(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "OctetStringKeyword")) return false;
-    if (!nextTokenIs(b, TTCN_OCTETSTRING)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_OCTETSTRING);
-    exit_section_(b, m, OCTET_STRING_KEYWORD, r);
-    return r;
+  static boolean OctetStringKeyword(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_OCTETSTRING);
   }
 
   /* ********************************************************** */
@@ -7862,14 +7357,8 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_OMIT
-  public static boolean OmitKeyword(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "OmitKeyword")) return false;
-    if (!nextTokenIs(b, TTCN_OMIT)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_OMIT);
-    exit_section_(b, m, OMIT_KEYWORD, r);
-    return r;
+  static boolean OmitKeyword(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_OMIT);
   }
 
   /* ********************************************************** */
@@ -7927,26 +7416,14 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_OSTRING
-  public static boolean Ostring(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "Ostring")) return false;
-    if (!nextTokenIs(b, TTCN_OSTRING)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_OSTRING);
-    exit_section_(b, m, OSTRING, r);
-    return r;
+  static boolean Ostring(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_OSTRING);
   }
 
   /* ********************************************************** */
   // TTCN_OUT
-  public static boolean OutParKeyword(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "OutParKeyword")) return false;
-    if (!nextTokenIs(b, TTCN_OUT)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_OUT);
-    exit_section_(b, m, OUT_PAR_KEYWORD, r);
-    return r;
+  static boolean OutParKeyword(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_OUT);
   }
 
   /* ********************************************************** */
@@ -7988,14 +7465,14 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_PARAM FunctionActualParList
-  public static boolean ParamClause(PsiBuilder b, int l) {
+  static boolean ParamClause(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "ParamClause")) return false;
     if (!nextTokenIs(b, TTCN_PARAM)) return false;
     boolean r;
     Marker m = enter_section_(b);
     r = consumeToken(b, TTCN_PARAM);
     r = r && FunctionActualParList(b, l + 1);
-    exit_section_(b, m, PARAM_CLAUSE, r);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -8193,27 +7670,27 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // MessageAttribs | ProcedureAttribs | MixedAttribs
-  public static boolean PortDefAttribs(PsiBuilder b, int l) {
+  static boolean PortDefAttribs(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "PortDefAttribs")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<port def attribs>");
+    Marker m = enter_section_(b);
     r = MessageAttribs(b, l + 1);
     if (!r) r = ProcedureAttribs(b, l + 1);
     if (!r) r = MixedAttribs(b, l + 1);
-    exit_section_(b, l, m, PORT_DEF_ATTRIBS, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
   /* ********************************************************** */
   // Identifier PortDefAttribs
-  public static boolean PortDefBody(PsiBuilder b, int l) {
+  static boolean PortDefBody(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "PortDefBody")) return false;
     if (!nextTokenIs(b, TTCN_ID)) return false;
     boolean r;
     Marker m = enter_section_(b);
     r = Identifier(b, l + 1);
     r = r && PortDefAttribs(b, l + 1);
-    exit_section_(b, m, PORT_DEF_BODY, r);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -8619,14 +8096,14 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // ComponentRef TTCN_COLON ArrayIdentifierRef
-  public static boolean PortRef(PsiBuilder b, int l) {
+  static boolean PortRef(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "PortRef")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<port ref>");
+    Marker m = enter_section_(b);
     r = ComponentRef(b, l + 1);
     r = r && consumeToken(b, TTCN_COLON);
     r = r && ArrayIdentifierRef(b, l + 1);
-    exit_section_(b, l, m, PORT_REF, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -8731,23 +8208,11 @@ public class TtcnParser implements PsiParser {
   }
 
   /* ********************************************************** */
-  // Identifier
-  public static boolean PreDefFunctionIdentifier(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "PreDefFunctionIdentifier")) return false;
-    if (!nextTokenIs(b, TTCN_ID)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = Identifier(b, l + 1);
-    exit_section_(b, m, PRE_DEF_FUNCTION_IDENTIFIER, r);
-    return r;
-  }
-
-  /* ********************************************************** */
   // BitStringKeyword | BooleanKeyword | CharStringKeyword | UniversalCharString | IntegerKeyword | OctetStringKeyword | HexStringKeyword | VerdictTypeKeyword | FloatKeyword | AddressKeyword | DefaultKeyword | AnyTypeKeyword
-  public static boolean PredefinedType(PsiBuilder b, int l) {
+  static boolean PredefinedType(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "PredefinedType")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<predefined type>");
+    Marker m = enter_section_(b);
     r = BitStringKeyword(b, l + 1);
     if (!r) r = BooleanKeyword(b, l + 1);
     if (!r) r = CharStringKeyword(b, l + 1);
@@ -8760,7 +8225,7 @@ public class TtcnParser implements PsiParser {
     if (!r) r = AddressKeyword(b, l + 1);
     if (!r) r = DefaultKeyword(b, l + 1);
     if (!r) r = AnyTypeKeyword(b, l + 1);
-    exit_section_(b, l, m, PREDEFINED_TYPE, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -9305,14 +8770,14 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // ExtendedIdentifier ExtendedFieldReference?
-  public static boolean ReferencedType(PsiBuilder b, int l) {
+  static boolean ReferencedType(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "ReferencedType")) return false;
     if (!nextTokenIs(b, TTCN_ID)) return false;
     boolean r;
     Marker m = enter_section_(b);
     r = ExtendedIdentifier(b, l + 1);
     r = r && ReferencedType_1(b, l + 1);
-    exit_section_(b, m, REFERENCED_TYPE, r);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -9345,13 +8810,13 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // ShiftExpression ( RelOp ShiftExpression )? | CompoundExpression
-  public static boolean RelExpression(PsiBuilder b, int l) {
+  static boolean RelExpression(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "RelExpression")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<rel expression>");
+    Marker m = enter_section_(b);
     r = RelExpression_0(b, l + 1);
     if (!r) r = CompoundExpression(b, l + 1);
-    exit_section_(b, l, m, REL_EXPRESSION, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -9427,14 +8892,14 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // OmitKeyword | ( TTCN_TEMPLATE TemplateRestriction )
-  public static boolean RestrictedTemplate(PsiBuilder b, int l) {
+  static boolean RestrictedTemplate(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "RestrictedTemplate")) return false;
-    if (!nextTokenIs(b, "<restricted template>", TTCN_OMIT, TTCN_TEMPLATE)) return false;
+    if (!nextTokenIs(b, "", TTCN_OMIT, TTCN_TEMPLATE)) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<restricted template>");
+    Marker m = enter_section_(b);
     r = OmitKeyword(b, l + 1);
     if (!r) r = RestrictedTemplate_1(b, l + 1);
-    exit_section_(b, l, m, RESTRICTED_TEMPLATE, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -9822,13 +9287,13 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // BitOrExpression ( ShiftOp BitOrExpression )*
-  public static boolean ShiftExpression(PsiBuilder b, int l) {
+  static boolean ShiftExpression(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "ShiftExpression")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<shift expression>");
+    Marker m = enter_section_(b);
     r = BitOrExpression(b, l + 1);
     r = r && ShiftExpression_1(b, l + 1);
-    exit_section_(b, l, m, SHIFT_EXPRESSION, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -10075,7 +9540,7 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_LP PortRef TTCN_COMMA PortRef TTCN_RP
-  public static boolean SingleConnectionSpec(PsiBuilder b, int l) {
+  static boolean SingleConnectionSpec(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "SingleConnectionSpec")) return false;
     if (!nextTokenIs(b, TTCN_LP)) return false;
     boolean r;
@@ -10085,7 +9550,7 @@ public class TtcnParser implements PsiParser {
     r = r && consumeToken(b, TTCN_COMMA);
     r = r && PortRef(b, l + 1);
     r = r && consumeToken(b, TTCN_RP);
-    exit_section_(b, m, SINGLE_CONNECTION_SPEC, r);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -10476,7 +9941,7 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_LENGTH TTCN_LP SingleExpression ( TTCN_POINT_CONNECT Bound )? TTCN_RP
-  public static boolean StringLength(PsiBuilder b, int l) {
+  static boolean StringLength(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "StringLength")) return false;
     if (!nextTokenIs(b, TTCN_LENGTH)) return false;
     boolean r;
@@ -10485,7 +9950,7 @@ public class TtcnParser implements PsiParser {
     r = r && SingleExpression(b, l + 1);
     r = r && StringLength_3(b, l + 1);
     r = r && consumeToken(b, TTCN_RP);
-    exit_section_(b, m, STRING_LENGTH, r);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -10509,16 +9974,16 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // ( Identifier | AddressKeyword ) TTCN_LB (StructFieldDef ( TTCN_COMMA StructFieldDef )* )? TTCN_RB
-  public static boolean StructDefBody(PsiBuilder b, int l) {
+  static boolean StructDefBody(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "StructDefBody")) return false;
-    if (!nextTokenIs(b, "<struct def body>", TTCN_ADDRESS, TTCN_ID)) return false;
+    if (!nextTokenIs(b, "", TTCN_ADDRESS, TTCN_ID)) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<struct def body>");
+    Marker m = enter_section_(b);
     r = StructDefBody_0(b, l + 1);
     r = r && consumeToken(b, TTCN_LB);
     r = r && StructDefBody_2(b, l + 1);
     r = r && consumeToken(b, TTCN_RB);
-    exit_section_(b, l, m, STRUCT_DEF_BODY, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -10576,16 +10041,16 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // ( Type | NestedTypeDef ) Identifier ArrayDef? SubTypeSpec? TTCN_OPTIONAL?
-  public static boolean StructFieldDef(PsiBuilder b, int l) {
+  static boolean StructFieldDef(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "StructFieldDef")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<struct field def>");
+    Marker m = enter_section_(b);
     r = StructFieldDef_0(b, l + 1);
     r = r && Identifier(b, l + 1);
     r = r && StructFieldDef_2(b, l + 1);
     r = r && StructFieldDef_3(b, l + 1);
     r = r && StructFieldDef_4(b, l + 1);
-    exit_section_(b, l, m, STRUCT_FIELD_DEF, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -10636,14 +10101,14 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // ( Type | NestedTypeDef ) ( Identifier | AddressKeyword ) SubTypeSpec?
-  public static boolean StructOfDefBody(PsiBuilder b, int l) {
+  static boolean StructOfDefBody(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "StructOfDefBody")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<struct of def body>");
+    Marker m = enter_section_(b);
     r = StructOfDefBody_0(b, l + 1);
     r = r && StructOfDefBody_1(b, l + 1);
     r = r && StructOfDefBody_2(b, l + 1);
-    exit_section_(b, l, m, STRUCT_OF_DEF_BODY, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -10678,10 +10143,10 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // RecordDef | UnionDef | SetDef | RecordOfDef | SetOfDef | EnumDef | PortDef | ComponentDef
-  public static boolean StructuredTypeDef(PsiBuilder b, int l) {
+  static boolean StructuredTypeDef(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "StructuredTypeDef")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<structured type def>");
+    Marker m = enter_section_(b);
     r = RecordDef(b, l + 1);
     if (!r) r = UnionDef(b, l + 1);
     if (!r) r = SetDef(b, l + 1);
@@ -10690,21 +10155,21 @@ public class TtcnParser implements PsiParser {
     if (!r) r = EnumDef(b, l + 1);
     if (!r) r = PortDef(b, l + 1);
     if (!r) r = ComponentDef(b, l + 1);
-    exit_section_(b, l, m, STRUCTURED_TYPE_DEF, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
   /* ********************************************************** */
   // Type ( Identifier | AddressKeyword ) ArrayDef? SubTypeSpec?
-  public static boolean SubTypeDef(PsiBuilder b, int l) {
+  static boolean SubTypeDef(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "SubTypeDef")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<sub type def>");
+    Marker m = enter_section_(b);
     r = Type(b, l + 1);
     r = r && SubTypeDef_1(b, l + 1);
     r = r && SubTypeDef_2(b, l + 1);
     r = r && SubTypeDef_3(b, l + 1);
-    exit_section_(b, l, m, SUB_TYPE_DEF, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -11117,25 +10582,25 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // FormalValuePar | FormalTemplatePar
-  public static boolean TemplateOrValueFormalPar(PsiBuilder b, int l) {
+  static boolean TemplateOrValueFormalPar(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "TemplateOrValueFormalPar")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<template or value formal par>");
+    Marker m = enter_section_(b);
     r = FormalValuePar(b, l + 1);
     if (!r) r = FormalTemplatePar(b, l + 1);
-    exit_section_(b, l, m, TEMPLATE_OR_VALUE_FORMAL_PAR, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
   /* ********************************************************** */
   // TemplateOrValueFormalPar ( TTCN_COMMA TemplateOrValueFormalPar )*
-  public static boolean TemplateOrValueFormalParList(PsiBuilder b, int l) {
+  static boolean TemplateOrValueFormalParList(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "TemplateOrValueFormalParList")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<template or value formal par list>");
+    Marker m = enter_section_(b);
     r = TemplateOrValueFormalPar(b, l + 1);
     r = r && TemplateOrValueFormalParList_1(b, l + 1);
-    exit_section_(b, l, m, TEMPLATE_OR_VALUE_FORMAL_PAR_LIST, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -11184,7 +10649,7 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_LP ( OmitKeyword | TTCN_VALUE | TTCN_PRESENT ) TTCN_RP
-  public static boolean TemplateRestriction(PsiBuilder b, int l) {
+  static boolean TemplateRestriction(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "TemplateRestriction")) return false;
     if (!nextTokenIs(b, TTCN_LP)) return false;
     boolean r;
@@ -11192,7 +10657,7 @@ public class TtcnParser implements PsiParser {
     r = consumeToken(b, TTCN_LP);
     r = r && TemplateRestriction_1(b, l + 1);
     r = r && consumeToken(b, TTCN_RP);
-    exit_section_(b, m, TEMPLATE_RESTRICTION, r);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -11633,13 +11098,13 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // StructuredTypeDef | SubTypeDef
-  public static boolean TypeDefBody(PsiBuilder b, int l) {
+  static boolean TypeDefBody(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "TypeDefBody")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<type def body>");
+    Marker m = enter_section_(b);
     r = StructuredTypeDef(b, l + 1);
     if (!r) r = SubTypeDef(b, l + 1);
-    exit_section_(b, l, m, TYPE_DEF_BODY, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -11692,13 +11157,13 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // UnaryOp? Primary
-  public static boolean UnaryExpression(PsiBuilder b, int l) {
+  static boolean UnaryExpression(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "UnaryExpression")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<unary expression>");
+    Marker m = enter_section_(b);
     r = UnaryExpression_0(b, l + 1);
     r = r && Primary(b, l + 1);
-    exit_section_(b, l, m, UNARY_EXPRESSION, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -11737,17 +11202,17 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // ( Identifier | AddressKeyword ) TTCN_LB UnionFieldDef ( TTCN_COMMA UnionFieldDef )* TTCN_RB
-  public static boolean UnionDefBody(PsiBuilder b, int l) {
+  static boolean UnionDefBody(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "UnionDefBody")) return false;
-    if (!nextTokenIs(b, "<union def body>", TTCN_ADDRESS, TTCN_ID)) return false;
+    if (!nextTokenIs(b, "", TTCN_ADDRESS, TTCN_ID)) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<union def body>");
+    Marker m = enter_section_(b);
     r = UnionDefBody_0(b, l + 1);
     r = r && consumeToken(b, TTCN_LB);
     r = r && UnionFieldDef(b, l + 1);
     r = r && UnionDefBody_3(b, l + 1);
     r = r && consumeToken(b, TTCN_RB);
-    exit_section_(b, l, m, UNION_DEF_BODY, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -11787,15 +11252,15 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // ( Type | NestedTypeDef ) Identifier ArrayDef? SubTypeSpec?
-  public static boolean UnionFieldDef(PsiBuilder b, int l) {
+  static boolean UnionFieldDef(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "UnionFieldDef")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<union field def>");
+    Marker m = enter_section_(b);
     r = UnionFieldDef_0(b, l + 1);
     r = r && Identifier(b, l + 1);
     r = r && UnionFieldDef_2(b, l + 1);
     r = r && UnionFieldDef_3(b, l + 1);
-    exit_section_(b, l, m, UNION_FIELD_DEF, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -11826,27 +11291,21 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // UniversalKeyword CharStringKeyword
-  public static boolean UniversalCharString(PsiBuilder b, int l) {
+  static boolean UniversalCharString(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "UniversalCharString")) return false;
     if (!nextTokenIs(b, TTCN_UNIVERSAL)) return false;
     boolean r;
     Marker m = enter_section_(b);
     r = UniversalKeyword(b, l + 1);
     r = r && CharStringKeyword(b, l + 1);
-    exit_section_(b, m, UNIVERSAL_CHAR_STRING, r);
+    exit_section_(b, m, null, r);
     return r;
   }
 
   /* ********************************************************** */
   // TTCN_UNIVERSAL
-  public static boolean UniversalKeyword(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "UniversalKeyword")) return false;
-    if (!nextTokenIs(b, TTCN_UNIVERSAL)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_UNIVERSAL);
-    exit_section_(b, m, UNIVERSAL_KEYWORD, r);
-    return r;
+  static boolean UniversalKeyword(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_UNIVERSAL);
   }
 
   /* ********************************************************** */
@@ -11954,18 +11413,6 @@ public class TtcnParser implements PsiParser {
     if (!recursion_guard_(b, l, "UnmapStatement_1_0_1_1")) return false;
     ParamClause(b, l + 1);
     return true;
-  }
-
-  /* ********************************************************** */
-  // TTCN_UPPERCHAR
-  public static boolean UpperAlpha(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "UpperAlpha")) return false;
-    if (!nextTokenIs(b, TTCN_UPPERCHAR)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_UPPERCHAR);
-    exit_section_(b, m, UPPER_ALPHA, r);
-    return r;
   }
 
   /* ********************************************************** */
@@ -12284,14 +11731,8 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_VERDICTTYPE
-  public static boolean VerdictTypeKeyword(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "VerdictTypeKeyword")) return false;
-    if (!nextTokenIs(b, TTCN_VERDICTTYPE)) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeToken(b, TTCN_VERDICTTYPE);
-    exit_section_(b, m, VERDICT_TYPE_KEYWORD, r);
-    return r;
+  static boolean VerdictTypeKeyword(PsiBuilder b, int l) {
+    return consumeToken(b, TTCN_VERDICTTYPE);
   }
 
   /* ********************************************************** */
@@ -12311,14 +11752,14 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_PUBLIC | TTCN_FRIEND| TTCN_PRIVATE
-  public static boolean Visibility(PsiBuilder b, int l) {
+  static boolean Visibility(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "Visibility")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<visibility>");
+    Marker m = enter_section_(b);
     r = consumeToken(b, TTCN_PUBLIC);
     if (!r) r = consumeToken(b, TTCN_FRIEND);
     if (!r) r = consumeToken(b, TTCN_PRIVATE);
-    exit_section_(b, l, m, VISIBILITY, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -12353,7 +11794,7 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // TTCN_LB MultiWithAttrib TTCN_RB
-  public static boolean WithAttribList(PsiBuilder b, int l) {
+  static boolean WithAttribList(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "WithAttribList")) return false;
     if (!nextTokenIs(b, TTCN_LB)) return false;
     boolean r;
@@ -12361,7 +11802,7 @@ public class TtcnParser implements PsiParser {
     r = consumeToken(b, TTCN_LB);
     r = r && MultiWithAttrib(b, l + 1);
     r = r && consumeToken(b, TTCN_RB);
-    exit_section_(b, m, WITH_ATTRIB_LIST, r);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -12380,13 +11821,13 @@ public class TtcnParser implements PsiParser {
 
   /* ********************************************************** */
   // AndExpression ( TTCN_XOR AndExpression )*
-  public static boolean XorExpression(PsiBuilder b, int l) {
+  static boolean XorExpression(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "XorExpression")) return false;
     boolean r;
-    Marker m = enter_section_(b, l, _NONE_, "<xor expression>");
+    Marker m = enter_section_(b);
     r = AndExpression(b, l + 1);
     r = r && XorExpression_1(b, l + 1);
-    exit_section_(b, l, m, XOR_EXPRESSION, r, false, null);
+    exit_section_(b, m, null, r);
     return r;
   }
 
@@ -12410,6 +11851,30 @@ public class TtcnParser implements PsiParser {
     r = consumeToken(b, TTCN_XOR);
     r = r && AndExpression(b, l + 1);
     exit_section_(b, m, null, r);
+    return r;
+  }
+
+  /* ********************************************************** */
+  // !<<eof>> Module
+  static boolean root(PsiBuilder b, int l) {
+    if (!recursion_guard_(b, l, "root")) return false;
+    if (!nextTokenIs(b, TTCN_MODULE)) return false;
+    boolean r, p;
+    Marker m = enter_section_(b, l, _NONE_, null);
+    r = root_0(b, l + 1);
+    p = r; // pin = 1
+    r = r && Module(b, l + 1);
+    exit_section_(b, l, m, null, r, p, null);
+    return r || p;
+  }
+
+  // !<<eof>>
+  private static boolean root_0(PsiBuilder b, int l) {
+    if (!recursion_guard_(b, l, "root_0")) return false;
+    boolean r;
+    Marker m = enter_section_(b, l, _NOT_, null);
+    r = !eof(b, l + 1);
+    exit_section_(b, l, m, null, r, false, null);
     return r;
   }
 

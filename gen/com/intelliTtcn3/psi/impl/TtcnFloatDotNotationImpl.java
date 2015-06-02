@@ -24,14 +24,8 @@ public class TtcnFloatDotNotationImpl extends ASTWrapperPsiElement implements Tt
 
   @Override
   @NotNull
-  public TtcnDecimalNumber getDecimalNumber() {
-    return findNotNullChildByClass(TtcnDecimalNumber.class);
-  }
-
-  @Override
-  @NotNull
-  public TtcnNumber getNumber() {
-    return findNotNullChildByClass(TtcnNumber.class);
+  public PsiElement getTtcnNumber() {
+    return findNotNullChildByType(TTCN_NUMBER);
   }
 
 }

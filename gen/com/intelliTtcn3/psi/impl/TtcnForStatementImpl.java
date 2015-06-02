@@ -30,14 +30,14 @@ public class TtcnForStatementImpl extends ASTWrapperPsiElement implements TtcnFo
 
   @Override
   @NotNull
-  public TtcnBooleanExpression getBooleanExpression() {
-    return findNotNullChildByClass(TtcnBooleanExpression.class);
+  public TtcnInitial getInitial() {
+    return findNotNullChildByClass(TtcnInitial.class);
   }
 
   @Override
   @NotNull
-  public TtcnInitial getInitial() {
-    return findNotNullChildByClass(TtcnInitial.class);
+  public TtcnSingleExpression getSingleExpression() {
+    return findNotNullChildByClass(TtcnSingleExpression.class);
   }
 
   @Override

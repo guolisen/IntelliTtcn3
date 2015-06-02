@@ -10,7 +10,4 @@ public interface TtcnReferencedValue extends PsiElement {
   @Nullable
   TtcnExtendedFieldReference getExtendedFieldReference();
 
-  @NotNull
-  TtcnExtendedIdentifier getExtendedIdentifier();
-
 }

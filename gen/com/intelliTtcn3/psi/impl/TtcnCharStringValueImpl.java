@@ -24,14 +24,14 @@ public class TtcnCharStringValueImpl extends ASTWrapperPsiElement implements Ttc
 
   @Override
   @Nullable
-  public TtcnCstring getCstring() {
-    return findChildByClass(TtcnCstring.class);
+  public TtcnQuadruple getQuadruple() {
+    return findChildByClass(TtcnQuadruple.class);
   }
 
   @Override
   @Nullable
-  public TtcnQuadruple getQuadruple() {
-    return findChildByClass(TtcnQuadruple.class);
+  public PsiElement getTtcnString() {
+    return findChildByType(TTCN_STRING);
   }
 
 }

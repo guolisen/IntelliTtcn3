@@ -8,6 +8,6 @@ import com.intellij.psi.PsiElement;
 public interface TtcnGotoStatement extends PsiElement {
 
   @NotNull
-  TtcnIdentifier getIdentifier();
+  PsiElement getTtcnId();
 
 }

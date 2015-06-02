@@ -8,6 +8,9 @@ import com.intellij.psi.PsiElement;
 public interface TtcnImportFromSpec extends PsiElement {
 
   @NotNull
-  TtcnModuleId getModuleId();
+  List<TtcnFreeText> getFreeTextList();
+
+  @NotNull
+  PsiElement getTtcnId();
 
 }

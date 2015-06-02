@@ -7,10 +7,31 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnMapStatement extends PsiElement {
 
-  @Nullable
-  TtcnParamClause getParamClause();
+  @NotNull
+  List<TtcnArrayIdentifierRefAssignment> getArrayIdentifierRefAssignmentList();
 
   @NotNull
-  TtcnSingleConnectionSpec getSingleConnectionSpec();
+  List<TtcnComponentOrDefaultReference> getComponentOrDefaultReferenceList();
+
+  @NotNull
+  List<TtcnComponentRefAssignment> getComponentRefAssignmentList();
+
+  @NotNull
+  List<TtcnDerivedRefWithParList> getDerivedRefWithParListList();
+
+  @NotNull
+  List<TtcnFieldOrBitNumber> getFieldOrBitNumberList();
+
+  @NotNull
+  List<TtcnSignature> getSignatureList();
+
+  @NotNull
+  List<TtcnTemplateBody> getTemplateBodyList();
+
+  @NotNull
+  List<TtcnTemplateInstanceAssignment> getTemplateInstanceAssignmentList();
+
+  @NotNull
+  List<TtcnType> getTypeList();
 
 }

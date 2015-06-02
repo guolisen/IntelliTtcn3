@@ -8,9 +8,18 @@ import com.intellij.psi.PsiElement;
 public interface TtcnLogItem extends PsiElement {
 
   @Nullable
+  TtcnDerivedRefWithParList getDerivedRefWithParList();
+
+  @Nullable
   TtcnFreeText getFreeText();
 
   @Nullable
-  TtcnInLineTemplate getInLineTemplate();
+  TtcnSignature getSignature();
+
+  @Nullable
+  TtcnTemplateBody getTemplateBody();
+
+  @Nullable
+  TtcnType getType();
 
 }

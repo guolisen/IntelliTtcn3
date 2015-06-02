@@ -14,6 +14,6 @@ public interface TtcnSingleConstDef extends PsiElement {
   TtcnConstantExpression getConstantExpression();
 
   @NotNull
-  TtcnIdentifier getIdentifier();
+  PsiElement getTtcnId();
 
 }

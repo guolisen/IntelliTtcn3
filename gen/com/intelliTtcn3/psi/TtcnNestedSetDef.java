@@ -8,6 +8,15 @@ import com.intellij.psi.PsiElement;
 public interface TtcnNestedSetDef extends PsiElement {
 
   @NotNull
-  List<TtcnStructFieldDef> getStructFieldDefList();
+  List<TtcnArrayDef> getArrayDefList();
+
+  @NotNull
+  List<TtcnNestedTypeDef> getNestedTypeDefList();
+
+  @NotNull
+  List<TtcnSubTypeSpec> getSubTypeSpecList();
+
+  @NotNull
+  List<TtcnType> getTypeList();
 
 }

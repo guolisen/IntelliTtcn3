@@ -7,10 +7,10 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnTimerRefOrAny extends PsiElement {
 
-  @Nullable
-  TtcnArrayIdentifierRef getArrayIdentifierRef();
+  @NotNull
+  List<TtcnFieldOrBitNumber> getFieldOrBitNumberList();
 
   @Nullable
-  TtcnIdentifier getIdentifier();
+  PsiElement getTtcnId();
 
 }

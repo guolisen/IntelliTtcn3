@@ -22,10 +22,4 @@ public class TtcnDerivedDefImpl extends ASTWrapperPsiElement implements TtcnDeri
     else super.accept(visitor);
   }
 
-  @Override
-  @NotNull
-  public TtcnExtendedIdentifier getExtendedIdentifier() {
-    return findNotNullChildByClass(TtcnExtendedIdentifier.class);
-  }
-
 }

@@ -7,10 +7,10 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnComponentRefAssignment extends PsiElement {
 
-  @NotNull
-  TtcnComponentRef getComponentRef();
+  @Nullable
+  TtcnComponentOrDefaultReference getComponentOrDefaultReference();
 
   @NotNull
-  TtcnIdentifier getIdentifier();
+  PsiElement getTtcnId();
 
 }

@@ -23,15 +23,15 @@ public class TtcnTimerRefOrAnyImpl extends ASTWrapperPsiElement implements TtcnT
   }
 
   @Override
-  @Nullable
-  public TtcnArrayIdentifierRef getArrayIdentifierRef() {
-    return findChildByClass(TtcnArrayIdentifierRef.class);
+  @NotNull
+  public List<TtcnFieldOrBitNumber> getFieldOrBitNumberList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnFieldOrBitNumber.class);
   }
 
   @Override
   @Nullable
-  public TtcnIdentifier getIdentifier() {
-    return findChildByClass(TtcnIdentifier.class);
+  public PsiElement getTtcnId() {
+    return findChildByType(TTCN_ID);
   }
 
 }

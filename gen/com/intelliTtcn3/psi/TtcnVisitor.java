@@ -15,10 +15,6 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitAddExpression(@NotNull TtcnAddExpression o) {
-    visitPsiElement(o);
-  }
-
   public void visitAddOp(@NotNull TtcnAddOp o) {
     visitPsiElement(o);
   }
@@ -27,15 +23,7 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitAddressKeyword(@NotNull TtcnAddressKeyword o) {
-    visitPsiElement(o);
-  }
-
   public void visitAddressRefList(@NotNull TtcnAddressRefList o) {
-    visitPsiElement(o);
-  }
-
-  public void visitAddressValue(@NotNull TtcnAddressValue o) {
     visitPsiElement(o);
   }
 
@@ -87,14 +75,6 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitAlpha(@NotNull TtcnAlpha o) {
-    visitPsiElement(o);
-  }
-
-  public void visitAlphaNum(@NotNull TtcnAlphaNum o) {
-    visitPsiElement(o);
-  }
-
   public void visitAltConstruct(@NotNull TtcnAltConstruct o) {
     visitPsiElement(o);
   }
@@ -120,14 +100,6 @@ public class TtcnVisitor extends PsiElementVisitor {
   }
 
   public void visitAltstepLocalDefList(@NotNull TtcnAltstepLocalDefList o) {
-    visitPsiElement(o);
-  }
-
-  public void visitAndExpression(@NotNull TtcnAndExpression o) {
-    visitPsiElement(o);
-  }
-
-  public void visitAnyTypeKeyword(@NotNull TtcnAnyTypeKeyword o) {
     visitPsiElement(o);
   }
 
@@ -159,15 +131,7 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitArrayIdentifierRef(@NotNull TtcnArrayIdentifierRef o) {
-    visitPsiElement(o);
-  }
-
   public void visitArrayIdentifierRefAssignment(@NotNull TtcnArrayIdentifierRefAssignment o) {
-    visitPsiElement(o);
-  }
-
-  public void visitArrayOrBitRef(@NotNull TtcnArrayOrBitRef o) {
     visitPsiElement(o);
   }
 
@@ -203,43 +167,11 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitBin(@NotNull TtcnBin o) {
-    visitPsiElement(o);
-  }
-
   public void visitBinOrMatch(@NotNull TtcnBinOrMatch o) {
     visitPsiElement(o);
   }
 
-  public void visitBitAndExpression(@NotNull TtcnBitAndExpression o) {
-    visitPsiElement(o);
-  }
-
-  public void visitBitNotExpression(@NotNull TtcnBitNotExpression o) {
-    visitPsiElement(o);
-  }
-
-  public void visitBitOrExpression(@NotNull TtcnBitOrExpression o) {
-    visitPsiElement(o);
-  }
-
-  public void visitBitStringKeyword(@NotNull TtcnBitStringKeyword o) {
-    visitPsiElement(o);
-  }
-
   public void visitBitStringMatch(@NotNull TtcnBitStringMatch o) {
-    visitPsiElement(o);
-  }
-
-  public void visitBitXorExpression(@NotNull TtcnBitXorExpression o) {
-    visitPsiElement(o);
-  }
-
-  public void visitBooleanExpression(@NotNull TtcnBooleanExpression o) {
-    visitPsiElement(o);
-  }
-
-  public void visitBooleanKeyword(@NotNull TtcnBooleanKeyword o) {
     visitPsiElement(o);
   }
 
@@ -248,14 +180,6 @@ public class TtcnVisitor extends PsiElementVisitor {
   }
 
   public void visitBound(@NotNull TtcnBound o) {
-    visitPsiElement(o);
-  }
-
-  public void visitBstring(@NotNull TtcnBstring o) {
-    visitPsiElement(o);
-  }
-
-  public void visitComment(@NotNull TtcnComment o) {
     visitPsiElement(o);
   }
 
@@ -296,10 +220,6 @@ public class TtcnVisitor extends PsiElementVisitor {
   }
 
   public void visitCharKeyword(@NotNull TtcnCharKeyword o) {
-    visitPsiElement(o);
-  }
-
-  public void visitCharStringKeyword(@NotNull TtcnCharStringKeyword o) {
     visitPsiElement(o);
   }
 
@@ -359,19 +279,11 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitComponentRef(@NotNull TtcnComponentRef o) {
-    visitPsiElement(o);
-  }
-
   public void visitComponentRefAssignment(@NotNull TtcnComponentRefAssignment o) {
     visitPsiElement(o);
   }
 
   public void visitComponentReferenceOrLiteral(@NotNull TtcnComponentReferenceOrLiteral o) {
-    visitPsiElement(o);
-  }
-
-  public void visitComponentType(@NotNull TtcnComponentType o) {
     visitPsiElement(o);
   }
 
@@ -399,10 +311,6 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitConfigurationStatements(@NotNull TtcnConfigurationStatements o) {
-    visitPsiElement(o);
-  }
-
   public void visitConnectStatement(@NotNull TtcnConnectStatement o) {
     visitPsiElement(o);
   }
@@ -411,15 +319,7 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitConstList(@NotNull TtcnConstList o) {
-    visitPsiElement(o);
-  }
-
   public void visitConstantExpression(@NotNull TtcnConstantExpression o) {
-    visitPsiElement(o);
-  }
-
-  public void visitContent(@NotNull TtcnContent o) {
     visitPsiElement(o);
   }
 
@@ -439,15 +339,7 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitCstring(@NotNull TtcnCstring o) {
-    visitPsiElement(o);
-  }
-
   public void visitDeactivateStatement(@NotNull TtcnDeactivateStatement o) {
-    visitPsiElement(o);
-  }
-
-  public void visitDecimalNumber(@NotNull TtcnDecimalNumber o) {
     visitPsiElement(o);
   }
 
@@ -456,10 +348,6 @@ public class TtcnVisitor extends PsiElementVisitor {
   }
 
   public void visitDefOrFieldRefList(@NotNull TtcnDefOrFieldRefList o) {
-    visitPsiElement(o);
-  }
-
-  public void visitDefaultKeyword(@NotNull TtcnDefaultKeyword o) {
     visitPsiElement(o);
   }
 
@@ -504,14 +392,6 @@ public class TtcnVisitor extends PsiElementVisitor {
   }
 
   public void visitEnumeration(@NotNull TtcnEnumeration o) {
-    visitPsiElement(o);
-  }
-
-  public void visitEnumerationList(@NotNull TtcnEnumerationList o) {
-    visitPsiElement(o);
-  }
-
-  public void visitEqualExpression(@NotNull TtcnEqualExpression o) {
     visitPsiElement(o);
   }
 
@@ -587,15 +467,7 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitExtendedAlphaNum(@NotNull TtcnExtendedAlphaNum o) {
-    visitPsiElement(o);
-  }
-
   public void visitExtendedFieldReference(@NotNull TtcnExtendedFieldReference o) {
-    visitPsiElement(o);
-  }
-
-  public void visitExtendedIdentifier(@NotNull TtcnExtendedIdentifier o) {
     visitPsiElement(o);
   }
 
@@ -643,31 +515,11 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitFloatKeyword(@NotNull TtcnFloatKeyword o) {
-    visitPsiElement(o);
-  }
-
   public void visitFloatValue(@NotNull TtcnFloatValue o) {
     visitPsiElement(o);
   }
 
   public void visitForStatement(@NotNull TtcnForStatement o) {
-    visitPsiElement(o);
-  }
-
-  public void visitFormalPortPar(@NotNull TtcnFormalPortPar o) {
-    visitPsiElement(o);
-  }
-
-  public void visitFormalTemplatePar(@NotNull TtcnFormalTemplatePar o) {
-    visitPsiElement(o);
-  }
-
-  public void visitFormalTimerPar(@NotNull TtcnFormalTimerPar o) {
-    visitPsiElement(o);
-  }
-
-  public void visitFormalValuePar(@NotNull TtcnFormalValuePar o) {
     visitPsiElement(o);
   }
 
@@ -687,35 +539,7 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitFunctionActAssignlist(@NotNull TtcnFunctionActAssignlist o) {
-    visitPsiElement(o);
-  }
-
-  public void visitFunctionActlist(@NotNull TtcnFunctionActlist o) {
-    visitPsiElement(o);
-  }
-
-  public void visitFunctionActualPar(@NotNull TtcnFunctionActualPar o) {
-    visitPsiElement(o);
-  }
-
-  public void visitFunctionActualParAssignment(@NotNull TtcnFunctionActualParAssignment o) {
-    visitPsiElement(o);
-  }
-
-  public void visitFunctionActualParList(@NotNull TtcnFunctionActualParList o) {
-    visitPsiElement(o);
-  }
-
   public void visitFunctionDef(@NotNull TtcnFunctionDef o) {
-    visitPsiElement(o);
-  }
-
-  public void visitFunctionDefList(@NotNull TtcnFunctionDefList o) {
-    visitPsiElement(o);
-  }
-
-  public void visitFunctionFormalPar(@NotNull TtcnFunctionFormalPar o) {
     visitPsiElement(o);
   }
 
@@ -727,23 +551,11 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitFunctionLocalDef(@NotNull TtcnFunctionLocalDef o) {
-    visitPsiElement(o);
-  }
-
-  public void visitFunctionLocalInst(@NotNull TtcnFunctionLocalInst o) {
-    visitPsiElement(o);
-  }
-
   public void visitFunctionRef(@NotNull TtcnFunctionRef o) {
     visitPsiElement(o);
   }
 
   public void visitFunctionStatement(@NotNull TtcnFunctionStatement o) {
-    visitPsiElement(o);
-  }
-
-  public void visitFunctionStatementList(@NotNull TtcnFunctionStatementList o) {
     visitPsiElement(o);
   }
 
@@ -779,27 +591,11 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitHex(@NotNull TtcnHex o) {
-    visitPsiElement(o);
-  }
-
   public void visitHexOrMatch(@NotNull TtcnHexOrMatch o) {
     visitPsiElement(o);
   }
 
-  public void visitHexStringKeyword(@NotNull TtcnHexStringKeyword o) {
-    visitPsiElement(o);
-  }
-
   public void visitHexStringMatch(@NotNull TtcnHexStringMatch o) {
-    visitPsiElement(o);
-  }
-
-  public void visitHstring(@NotNull TtcnHstring o) {
-    visitPsiElement(o);
-  }
-
-  public void visitIdentifier(@NotNull TtcnIdentifier o) {
     visitPsiElement(o);
   }
 
@@ -879,18 +675,6 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitInLineTemplate(@NotNull TtcnInLineTemplate o) {
-    visitPsiElement(o);
-  }
-
-  public void visitInOutParKeyword(@NotNull TtcnInOutParKeyword o) {
-    visitPsiElement(o);
-  }
-
-  public void visitInParKeyword(@NotNull TtcnInParKeyword o) {
-    visitPsiElement(o);
-  }
-
   public void visitIndexAssignment(@NotNull TtcnIndexAssignment o) {
     visitPsiElement(o);
   }
@@ -900,10 +684,6 @@ public class TtcnVisitor extends PsiElementVisitor {
   }
 
   public void visitInitial(@NotNull TtcnInitial o) {
-    visitPsiElement(o);
-  }
-
-  public void visitIntegerKeyword(@NotNull TtcnIntegerKeyword o) {
     visitPsiElement(o);
   }
 
@@ -935,10 +715,6 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitLanguageSpec(@NotNull TtcnLanguageSpec o) {
-    visitPsiElement(o);
-  }
-
   public void visitListOfTemplates(@NotNull TtcnListOfTemplates o) {
     visitPsiElement(o);
   }
@@ -952,10 +728,6 @@ public class TtcnVisitor extends PsiElementVisitor {
   }
 
   public void visitLoopConstruct(@NotNull TtcnLoopConstruct o) {
-    visitPsiElement(o);
-  }
-
-  public void visitLowerAlpha(@NotNull TtcnLowerAlpha o) {
     visitPsiElement(o);
   }
 
@@ -991,6 +763,10 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
+  public void visitModule(@NotNull TtcnModule o) {
+    visitPsiElement(o);
+  }
+
   public void visitModuleControlBody(@NotNull TtcnModuleControlBody o) {
     visitPsiElement(o);
   }
@@ -999,15 +775,7 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitModuleDefinition(@NotNull TtcnModuleDefinition o) {
-    visitPsiElement(o);
-  }
-
   public void visitModuleDefinitionsList(@NotNull TtcnModuleDefinitionsList o) {
-    visitPsiElement(o);
-  }
-
-  public void visitModuleId(@NotNull TtcnModuleId o) {
     visitPsiElement(o);
   }
 
@@ -1019,15 +787,7 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitModuleParList(@NotNull TtcnModuleParList o) {
-    visitPsiElement(o);
-  }
-
   public void visitMtcSpec(@NotNull TtcnMtcSpec o) {
-    visitPsiElement(o);
-  }
-
-  public void visitMulExpression(@NotNull TtcnMulExpression o) {
     visitPsiElement(o);
   }
 
@@ -1071,27 +831,7 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitNonZeroNum(@NotNull TtcnNonZeroNum o) {
-    visitPsiElement(o);
-  }
-
-  public void visitNotExpression(@NotNull TtcnNotExpression o) {
-    visitPsiElement(o);
-  }
-
   public void visitNotUsedOrExpression(@NotNull TtcnNotUsedOrExpression o) {
-    visitPsiElement(o);
-  }
-
-  public void visitNum(@NotNull TtcnNum o) {
-    visitPsiElement(o);
-  }
-
-  public void visitNumber(@NotNull TtcnNumber o) {
-    visitPsiElement(o);
-  }
-
-  public void visitOct(@NotNull TtcnOct o) {
     visitPsiElement(o);
   }
 
@@ -1099,27 +839,11 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitOctetStringKeyword(@NotNull TtcnOctetStringKeyword o) {
-    visitPsiElement(o);
-  }
-
   public void visitOctetStringMatch(@NotNull TtcnOctetStringMatch o) {
     visitPsiElement(o);
   }
 
-  public void visitOmitKeyword(@NotNull TtcnOmitKeyword o) {
-    visitPsiElement(o);
-  }
-
   public void visitOpCall(@NotNull TtcnOpCall o) {
-    visitPsiElement(o);
-  }
-
-  public void visitOstring(@NotNull TtcnOstring o) {
-    visitPsiElement(o);
-  }
-
-  public void visitOutParKeyword(@NotNull TtcnOutParKeyword o) {
     visitPsiElement(o);
   }
 
@@ -1128,10 +852,6 @@ public class TtcnVisitor extends PsiElementVisitor {
   }
 
   public void visitParamAssignmentList(@NotNull TtcnParamAssignmentList o) {
-    visitPsiElement(o);
-  }
-
-  public void visitParamClause(@NotNull TtcnParamClause o) {
     visitPsiElement(o);
   }
 
@@ -1172,14 +892,6 @@ public class TtcnVisitor extends PsiElementVisitor {
   }
 
   public void visitPortDef(@NotNull TtcnPortDef o) {
-    visitPsiElement(o);
-  }
-
-  public void visitPortDefAttribs(@NotNull TtcnPortDefAttribs o) {
-    visitPsiElement(o);
-  }
-
-  public void visitPortDefBody(@NotNull TtcnPortDefBody o) {
     visitPsiElement(o);
   }
 
@@ -1231,10 +943,6 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitPortRef(@NotNull TtcnPortRef o) {
-    visitPsiElement(o);
-  }
-
   public void visitPortReplyOp(@NotNull TtcnPortReplyOp o) {
     visitPsiElement(o);
   }
@@ -1244,14 +952,6 @@ public class TtcnVisitor extends PsiElementVisitor {
   }
 
   public void visitPortTriggerOp(@NotNull TtcnPortTriggerOp o) {
-    visitPsiElement(o);
-  }
-
-  public void visitPreDefFunctionIdentifier(@NotNull TtcnPreDefFunctionIdentifier o) {
-    visitPsiElement(o);
-  }
-
-  public void visitPredefinedType(@NotNull TtcnPredefinedType o) {
     visitPsiElement(o);
   }
 
@@ -1335,15 +1035,7 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitReferencedType(@NotNull TtcnReferencedType o) {
-    visitPsiElement(o);
-  }
-
   public void visitReferencedValue(@NotNull TtcnReferencedValue o) {
-    visitPsiElement(o);
-  }
-
-  public void visitRelExpression(@NotNull TtcnRelExpression o) {
     visitPsiElement(o);
   }
 
@@ -1356,10 +1048,6 @@ public class TtcnVisitor extends PsiElementVisitor {
   }
 
   public void visitReplyValue(@NotNull TtcnReplyValue o) {
-    visitPsiElement(o);
-  }
-
-  public void visitRestrictedTemplate(@NotNull TtcnRestrictedTemplate o) {
     visitPsiElement(o);
   }
 
@@ -1419,10 +1107,6 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitShiftExpression(@NotNull TtcnShiftExpression o) {
-    visitPsiElement(o);
-  }
-
   public void visitShiftOp(@NotNull TtcnShiftOp o) {
     visitPsiElement(o);
   }
@@ -1448,10 +1132,6 @@ public class TtcnVisitor extends PsiElementVisitor {
   }
 
   public void visitSimpleTemplateSpec(@NotNull TtcnSimpleTemplateSpec o) {
-    visitPsiElement(o);
-  }
-
-  public void visitSingleConnectionSpec(@NotNull TtcnSingleConnectionSpec o) {
     visitPsiElement(o);
   }
 
@@ -1511,31 +1191,7 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitStringLength(@NotNull TtcnStringLength o) {
-    visitPsiElement(o);
-  }
-
-  public void visitStructDefBody(@NotNull TtcnStructDefBody o) {
-    visitPsiElement(o);
-  }
-
-  public void visitStructFieldDef(@NotNull TtcnStructFieldDef o) {
-    visitPsiElement(o);
-  }
-
   public void visitStructFieldRef(@NotNull TtcnStructFieldRef o) {
-    visitPsiElement(o);
-  }
-
-  public void visitStructOfDefBody(@NotNull TtcnStructOfDefBody o) {
-    visitPsiElement(o);
-  }
-
-  public void visitStructuredTypeDef(@NotNull TtcnStructuredTypeDef o) {
-    visitPsiElement(o);
-  }
-
-  public void visitSubTypeDef(@NotNull TtcnSubTypeDef o) {
     visitPsiElement(o);
   }
 
@@ -1595,19 +1251,7 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitTemplateOrValueFormalPar(@NotNull TtcnTemplateOrValueFormalPar o) {
-    visitPsiElement(o);
-  }
-
-  public void visitTemplateOrValueFormalParList(@NotNull TtcnTemplateOrValueFormalParList o) {
-    visitPsiElement(o);
-  }
-
   public void visitTemplateRefWithParList(@NotNull TtcnTemplateRefWithParList o) {
-    visitPsiElement(o);
-  }
-
-  public void visitTemplateRestriction(@NotNull TtcnTemplateRestriction o) {
     visitPsiElement(o);
   }
 
@@ -1667,19 +1311,11 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitTypeDefBody(@NotNull TtcnTypeDefBody o) {
-    visitPsiElement(o);
-  }
-
   public void visitTypeList(@NotNull TtcnTypeList o) {
     visitPsiElement(o);
   }
 
   public void visitTypeReference(@NotNull TtcnTypeReference o) {
-    visitPsiElement(o);
-  }
-
-  public void visitUnaryExpression(@NotNull TtcnUnaryExpression o) {
     visitPsiElement(o);
   }
 
@@ -1691,31 +1327,11 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitUnionDefBody(@NotNull TtcnUnionDefBody o) {
-    visitPsiElement(o);
-  }
-
-  public void visitUnionFieldDef(@NotNull TtcnUnionFieldDef o) {
-    visitPsiElement(o);
-  }
-
-  public void visitUniversalCharString(@NotNull TtcnUniversalCharString o) {
-    visitPsiElement(o);
-  }
-
-  public void visitUniversalKeyword(@NotNull TtcnUniversalKeyword o) {
-    visitPsiElement(o);
-  }
-
   public void visitUnmapParamDef(@NotNull TtcnUnmapParamDef o) {
     visitPsiElement(o);
   }
 
   public void visitUnmapStatement(@NotNull TtcnUnmapStatement o) {
-    visitPsiElement(o);
-  }
-
-  public void visitUpperAlpha(@NotNull TtcnUpperAlpha o) {
     visitPsiElement(o);
   }
 
@@ -1759,15 +1375,7 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitVerdictTypeKeyword(@NotNull TtcnVerdictTypeKeyword o) {
-    visitPsiElement(o);
-  }
-
   public void visitVerdictTypeValue(@NotNull TtcnVerdictTypeValue o) {
-    visitPsiElement(o);
-  }
-
-  public void visitVisibility(@NotNull TtcnVisibility o) {
     visitPsiElement(o);
   }
 
@@ -1779,15 +1387,7 @@ public class TtcnVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitWithAttribList(@NotNull TtcnWithAttribList o) {
-    visitPsiElement(o);
-  }
-
   public void visitWithStatement(@NotNull TtcnWithStatement o) {
-    visitPsiElement(o);
-  }
-
-  public void visitXorExpression(@NotNull TtcnXorExpression o) {
     visitPsiElement(o);
   }
 

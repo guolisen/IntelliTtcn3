@@ -8,6 +8,6 @@ import com.intellij.psi.PsiElement;
 public interface TtcnHexOrMatch extends PsiElement {
 
   @Nullable
-  TtcnHex getHex();
+  PsiElement getTtcnHex();
 
 }

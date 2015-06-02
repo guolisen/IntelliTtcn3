@@ -8,9 +8,18 @@ import com.intellij.psi.PsiElement;
 public interface TtcnSelectCase extends PsiElement {
 
   @NotNull
-  List<TtcnInLineTemplate> getInLineTemplateList();
+  List<TtcnDerivedRefWithParList> getDerivedRefWithParListList();
+
+  @NotNull
+  List<TtcnSignature> getSignatureList();
 
   @NotNull
   TtcnStatementBlock getStatementBlock();
+
+  @NotNull
+  List<TtcnTemplateBody> getTemplateBodyList();
+
+  @NotNull
+  List<TtcnType> getTypeList();
 
 }

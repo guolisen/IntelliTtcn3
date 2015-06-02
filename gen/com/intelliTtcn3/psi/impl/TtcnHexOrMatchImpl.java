@@ -24,8 +24,8 @@ public class TtcnHexOrMatchImpl extends ASTWrapperPsiElement implements TtcnHexO
 
   @Override
   @Nullable
-  public TtcnHex getHex() {
-    return findChildByClass(TtcnHex.class);
+  public PsiElement getTtcnHex() {
+    return findChildByType(TTCN_HEX);
   }
 
 }

@@ -24,20 +24,8 @@ public class TtcnPredefinedValueImpl extends ASTWrapperPsiElement implements Ttc
 
   @Override
   @Nullable
-  public TtcnAddressValue getAddressValue() {
-    return findChildByClass(TtcnAddressValue.class);
-  }
-
-  @Override
-  @Nullable
   public TtcnBooleanValue getBooleanValue() {
     return findChildByClass(TtcnBooleanValue.class);
-  }
-
-  @Override
-  @Nullable
-  public TtcnBstring getBstring() {
-    return findChildByClass(TtcnBstring.class);
   }
 
   @Override
@@ -54,38 +42,38 @@ public class TtcnPredefinedValueImpl extends ASTWrapperPsiElement implements Ttc
 
   @Override
   @Nullable
-  public TtcnHstring getHstring() {
-    return findChildByClass(TtcnHstring.class);
-  }
-
-  @Override
-  @Nullable
-  public TtcnIdentifier getIdentifier() {
-    return findChildByClass(TtcnIdentifier.class);
-  }
-
-  @Override
-  @Nullable
-  public TtcnNumber getNumber() {
-    return findChildByClass(TtcnNumber.class);
-  }
-
-  @Override
-  @Nullable
-  public TtcnOmitKeyword getOmitKeyword() {
-    return findChildByClass(TtcnOmitKeyword.class);
-  }
-
-  @Override
-  @Nullable
-  public TtcnOstring getOstring() {
-    return findChildByClass(TtcnOstring.class);
-  }
-
-  @Override
-  @Nullable
   public TtcnVerdictTypeValue getVerdictTypeValue() {
     return findChildByClass(TtcnVerdictTypeValue.class);
+  }
+
+  @Override
+  @Nullable
+  public PsiElement getTtcnBstring() {
+    return findChildByType(TTCN_BSTRING);
+  }
+
+  @Override
+  @Nullable
+  public PsiElement getTtcnHstring() {
+    return findChildByType(TTCN_HSTRING);
+  }
+
+  @Override
+  @Nullable
+  public PsiElement getTtcnId() {
+    return findChildByType(TTCN_ID);
+  }
+
+  @Override
+  @Nullable
+  public PsiElement getTtcnNumber() {
+    return findChildByType(TTCN_NUMBER);
+  }
+
+  @Override
+  @Nullable
+  public PsiElement getTtcnOstring() {
+    return findChildByType(TTCN_OSTRING);
   }
 
 }

@@ -24,14 +24,38 @@ public class TtcnRecordOfDefImpl extends ASTWrapperPsiElement implements TtcnRec
 
   @Override
   @Nullable
-  public TtcnStringLength getStringLength() {
-    return findChildByClass(TtcnStringLength.class);
+  public TtcnBound getBound() {
+    return findChildByClass(TtcnBound.class);
   }
 
   @Override
-  @NotNull
-  public TtcnStructOfDefBody getStructOfDefBody() {
-    return findNotNullChildByClass(TtcnStructOfDefBody.class);
+  @Nullable
+  public TtcnNestedTypeDef getNestedTypeDef() {
+    return findChildByClass(TtcnNestedTypeDef.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnSingleExpression getSingleExpression() {
+    return findChildByClass(TtcnSingleExpression.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnSubTypeSpec getSubTypeSpec() {
+    return findChildByClass(TtcnSubTypeSpec.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnType getType() {
+    return findChildByClass(TtcnType.class);
+  }
+
+  @Override
+  @Nullable
+  public PsiElement getTtcnId() {
+    return findChildByType(TTCN_ID);
   }
 
 }

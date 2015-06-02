@@ -24,26 +24,32 @@ public class TtcnBaseTemplateImpl extends ASTWrapperPsiElement implements TtcnBa
 
   @Override
   @NotNull
-  public TtcnIdentifier getIdentifier() {
-    return findNotNullChildByClass(TtcnIdentifier.class);
+  public List<TtcnDerivedRefWithParList> getDerivedRefWithParListList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnDerivedRefWithParList.class);
   }
 
   @Override
-  @Nullable
-  public TtcnSignature getSignature() {
-    return findChildByClass(TtcnSignature.class);
+  @NotNull
+  public List<TtcnExpression> getExpressionList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnExpression.class);
   }
 
   @Override
-  @Nullable
-  public TtcnTemplateOrValueFormalParList getTemplateOrValueFormalParList() {
-    return findChildByClass(TtcnTemplateOrValueFormalParList.class);
+  @NotNull
+  public List<TtcnSignature> getSignatureList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnSignature.class);
   }
 
   @Override
-  @Nullable
-  public TtcnType getType() {
-    return findChildByClass(TtcnType.class);
+  @NotNull
+  public List<TtcnTemplateBody> getTemplateBodyList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnTemplateBody.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnType> getTypeList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnType.class);
   }
 
 }

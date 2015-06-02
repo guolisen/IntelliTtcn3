@@ -7,13 +7,10 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnEnumDef extends PsiElement {
 
-  @Nullable
-  TtcnAddressKeyword getAddressKeyword();
-
   @NotNull
-  TtcnEnumerationList getEnumerationList();
+  List<TtcnEnumeration> getEnumerationList();
 
   @Nullable
-  TtcnIdentifier getIdentifier();
+  PsiElement getTtcnId();
 
 }

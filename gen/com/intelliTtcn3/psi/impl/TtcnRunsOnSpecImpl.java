@@ -22,10 +22,4 @@ public class TtcnRunsOnSpecImpl extends ASTWrapperPsiElement implements TtcnRuns
     else super.accept(visitor);
   }
 
-  @Override
-  @NotNull
-  public TtcnComponentType getComponentType() {
-    return findNotNullChildByClass(TtcnComponentType.class);
-  }
-
 }

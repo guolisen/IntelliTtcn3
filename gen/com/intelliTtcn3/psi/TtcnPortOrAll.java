@@ -7,7 +7,10 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnPortOrAll extends PsiElement {
 
+  @NotNull
+  List<TtcnFieldOrBitNumber> getFieldOrBitNumberList();
+
   @Nullable
-  TtcnArrayIdentifierRef getArrayIdentifierRef();
+  PsiElement getTtcnId();
 
 }

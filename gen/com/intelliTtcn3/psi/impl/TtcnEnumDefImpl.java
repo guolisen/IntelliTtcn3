@@ -23,21 +23,15 @@ public class TtcnEnumDefImpl extends ASTWrapperPsiElement implements TtcnEnumDef
   }
 
   @Override
-  @Nullable
-  public TtcnAddressKeyword getAddressKeyword() {
-    return findChildByClass(TtcnAddressKeyword.class);
-  }
-
-  @Override
   @NotNull
-  public TtcnEnumerationList getEnumerationList() {
-    return findNotNullChildByClass(TtcnEnumerationList.class);
+  public List<TtcnEnumeration> getEnumerationList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnEnumeration.class);
   }
 
   @Override
   @Nullable
-  public TtcnIdentifier getIdentifier() {
-    return findChildByClass(TtcnIdentifier.class);
+  public PsiElement getTtcnId() {
+    return findChildByType(TTCN_ID);
   }
 
 }

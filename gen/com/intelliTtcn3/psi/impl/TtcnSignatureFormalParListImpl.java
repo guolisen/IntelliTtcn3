@@ -24,8 +24,14 @@ public class TtcnSignatureFormalParListImpl extends ASTWrapperPsiElement impleme
 
   @Override
   @NotNull
-  public List<TtcnFormalValuePar> getFormalValueParList() {
-    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnFormalValuePar.class);
+  public List<TtcnExpression> getExpressionList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnExpression.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnType> getTypeList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnType.class);
   }
 
 }

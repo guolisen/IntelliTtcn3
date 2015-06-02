@@ -24,12 +24,6 @@ public class TtcnAddressDeclImpl extends ASTWrapperPsiElement implements TtcnAdd
 
   @Override
   @NotNull
-  public TtcnAddressKeyword getAddressKeyword() {
-    return findNotNullChildByClass(TtcnAddressKeyword.class);
-  }
-
-  @Override
-  @NotNull
   public TtcnType getType() {
     return findNotNullChildByClass(TtcnType.class);
   }

@@ -8,9 +8,9 @@ import com.intellij.psi.PsiElement;
 public interface TtcnEnumeration extends PsiElement {
 
   @NotNull
-  TtcnIdentifier getIdentifier();
+  PsiElement getTtcnId();
 
   @Nullable
-  TtcnNumber getNumber();
+  PsiElement getTtcnNumber();
 
 }

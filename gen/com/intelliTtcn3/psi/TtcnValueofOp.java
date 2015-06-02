@@ -7,7 +7,16 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnValueofOp extends PsiElement {
 
+  @Nullable
+  TtcnDerivedRefWithParList getDerivedRefWithParList();
+
+  @Nullable
+  TtcnSignature getSignature();
+
   @NotNull
-  TtcnInLineTemplate getInLineTemplate();
+  TtcnTemplateBody getTemplateBody();
+
+  @Nullable
+  TtcnType getType();
 
 }

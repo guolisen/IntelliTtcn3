@@ -8,6 +8,15 @@ import com.intellij.psi.PsiElement;
 public interface TtcnAddressRefList extends PsiElement {
 
   @NotNull
-  List<TtcnInLineTemplate> getInLineTemplateList();
+  List<TtcnDerivedRefWithParList> getDerivedRefWithParListList();
+
+  @NotNull
+  List<TtcnSignature> getSignatureList();
+
+  @NotNull
+  List<TtcnTemplateBody> getTemplateBodyList();
+
+  @NotNull
+  List<TtcnType> getTypeList();
 
 }

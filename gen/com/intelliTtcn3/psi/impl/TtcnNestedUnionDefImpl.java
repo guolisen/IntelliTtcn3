@@ -24,8 +24,26 @@ public class TtcnNestedUnionDefImpl extends ASTWrapperPsiElement implements Ttcn
 
   @Override
   @NotNull
-  public List<TtcnUnionFieldDef> getUnionFieldDefList() {
-    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnUnionFieldDef.class);
+  public List<TtcnArrayDef> getArrayDefList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnArrayDef.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnNestedTypeDef> getNestedTypeDefList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnNestedTypeDef.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnSubTypeSpec> getSubTypeSpecList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnSubTypeSpec.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnType> getTypeList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnType.class);
   }
 
 }

@@ -7,7 +7,4 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnDerivedDef extends PsiElement {
 
-  @NotNull
-  TtcnExtendedIdentifier getExtendedIdentifier();
-
 }

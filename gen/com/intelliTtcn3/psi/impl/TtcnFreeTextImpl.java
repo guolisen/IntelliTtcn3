@@ -24,8 +24,8 @@ public class TtcnFreeTextImpl extends ASTWrapperPsiElement implements TtcnFreeTe
 
   @Override
   @NotNull
-  public TtcnExtendedAlphaNum getExtendedAlphaNum() {
-    return findNotNullChildByClass(TtcnExtendedAlphaNum.class);
+  public PsiElement getTtcnString() {
+    return findNotNullChildByType(TTCN_STRING);
   }
 
 }

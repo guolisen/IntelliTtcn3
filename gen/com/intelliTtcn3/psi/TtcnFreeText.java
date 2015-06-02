@@ -8,6 +8,6 @@ import com.intellij.psi.PsiElement;
 public interface TtcnFreeText extends PsiElement {
 
   @NotNull
-  TtcnExtendedAlphaNum getExtendedAlphaNum();
+  PsiElement getTtcnString();
 
 }

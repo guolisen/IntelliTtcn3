@@ -8,10 +8,13 @@ import com.intellij.psi.PsiElement;
 public interface TtcnNestedSetOfDef extends PsiElement {
 
   @Nullable
+  TtcnBound getBound();
+
+  @Nullable
   TtcnNestedTypeDef getNestedTypeDef();
 
   @Nullable
-  TtcnStringLength getStringLength();
+  TtcnSingleExpression getSingleExpression();
 
   @Nullable
   TtcnType getType();

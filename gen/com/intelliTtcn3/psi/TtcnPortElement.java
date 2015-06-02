@@ -11,6 +11,6 @@ public interface TtcnPortElement extends PsiElement {
   TtcnArrayDef getArrayDef();
 
   @NotNull
-  TtcnIdentifier getIdentifier();
+  PsiElement getTtcnId();
 
 }

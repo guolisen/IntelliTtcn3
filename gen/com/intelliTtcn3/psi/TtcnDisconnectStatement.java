@@ -16,7 +16,10 @@ public interface TtcnDisconnectStatement extends PsiElement {
   @Nullable
   TtcnAllPortsSpec getAllPortsSpec();
 
-  @Nullable
-  TtcnSingleConnectionSpec getSingleConnectionSpec();
+  @NotNull
+  List<TtcnComponentOrDefaultReference> getComponentOrDefaultReferenceList();
+
+  @NotNull
+  List<TtcnFieldOrBitNumber> getFieldOrBitNumberList();
 
 }

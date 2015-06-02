@@ -24,14 +24,56 @@ public class TtcnAltstepInstanceImpl extends ASTWrapperPsiElement implements Ttc
 
   @Override
   @NotNull
-  public TtcnExtendedIdentifier getExtendedIdentifier() {
-    return findNotNullChildByClass(TtcnExtendedIdentifier.class);
+  public List<TtcnArrayIdentifierRefAssignment> getArrayIdentifierRefAssignmentList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnArrayIdentifierRefAssignment.class);
   }
 
   @Override
-  @Nullable
-  public TtcnFunctionActualParList getFunctionActualParList() {
-    return findChildByClass(TtcnFunctionActualParList.class);
+  @NotNull
+  public List<TtcnComponentOrDefaultReference> getComponentOrDefaultReferenceList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnComponentOrDefaultReference.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnComponentRefAssignment> getComponentRefAssignmentList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnComponentRefAssignment.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnDerivedRefWithParList> getDerivedRefWithParListList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnDerivedRefWithParList.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnFieldOrBitNumber> getFieldOrBitNumberList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnFieldOrBitNumber.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnSignature> getSignatureList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnSignature.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnTemplateBody> getTemplateBodyList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnTemplateBody.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnTemplateInstanceAssignment> getTemplateInstanceAssignmentList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnTemplateInstanceAssignment.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnType> getTypeList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnType.class);
   }
 
 }

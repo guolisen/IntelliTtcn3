@@ -24,8 +24,50 @@ public class TtcnSingleExpressionImpl extends ASTWrapperPsiElement implements Tt
 
   @Override
   @NotNull
-  public List<TtcnXorExpression> getXorExpressionList() {
-    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnXorExpression.class);
+  public List<TtcnAddOp> getAddOpList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnAddOp.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnCompoundExpression> getCompoundExpressionList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnCompoundExpression.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnEqualOp> getEqualOpList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnEqualOp.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnMultiplyOp> getMultiplyOpList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnMultiplyOp.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnPrimary> getPrimaryList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnPrimary.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnRelOp> getRelOpList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnRelOp.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnShiftOp> getShiftOpList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnShiftOp.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnUnaryOp> getUnaryOpList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnUnaryOp.class);
   }
 
 }

@@ -28,10 +28,4 @@ public class TtcnReferencedValueImpl extends ASTWrapperPsiElement implements Ttc
     return findChildByClass(TtcnExtendedFieldReference.class);
   }
 
-  @Override
-  @NotNull
-  public TtcnExtendedIdentifier getExtendedIdentifier() {
-    return findNotNullChildByClass(TtcnExtendedIdentifier.class);
-  }
-
 }

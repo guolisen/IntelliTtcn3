@@ -22,10 +22,4 @@ public class TtcnSignatureImpl extends ASTWrapperPsiElement implements TtcnSigna
     else super.accept(visitor);
   }
 
-  @Override
-  @NotNull
-  public TtcnExtendedIdentifier getExtendedIdentifier() {
-    return findNotNullChildByClass(TtcnExtendedIdentifier.class);
-  }
-
 }

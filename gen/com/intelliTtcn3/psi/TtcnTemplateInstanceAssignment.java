@@ -7,10 +7,19 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnTemplateInstanceAssignment extends PsiElement {
 
-  @NotNull
-  TtcnIdentifier getIdentifier();
+  @Nullable
+  TtcnDerivedRefWithParList getDerivedRefWithParList();
+
+  @Nullable
+  TtcnSignature getSignature();
 
   @NotNull
-  TtcnInLineTemplate getInLineTemplate();
+  TtcnTemplateBody getTemplateBody();
+
+  @Nullable
+  TtcnType getType();
+
+  @NotNull
+  PsiElement getTtcnId();
 
 }

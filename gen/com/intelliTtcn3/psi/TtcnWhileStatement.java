@@ -8,7 +8,7 @@ import com.intellij.psi.PsiElement;
 public interface TtcnWhileStatement extends PsiElement {
 
   @NotNull
-  TtcnBooleanExpression getBooleanExpression();
+  TtcnSingleExpression getSingleExpression();
 
   @NotNull
   TtcnStatementBlock getStatementBlock();

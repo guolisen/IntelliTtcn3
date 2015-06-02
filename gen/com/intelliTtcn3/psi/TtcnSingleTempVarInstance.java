@@ -10,10 +10,10 @@ public interface TtcnSingleTempVarInstance extends PsiElement {
   @Nullable
   TtcnArrayDef getArrayDef();
 
-  @NotNull
-  TtcnIdentifier getIdentifier();
-
   @Nullable
   TtcnTemplateBody getTemplateBody();
+
+  @NotNull
+  PsiElement getTtcnId();
 
 }

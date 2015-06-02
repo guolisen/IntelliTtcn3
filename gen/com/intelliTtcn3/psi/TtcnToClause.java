@@ -11,6 +11,15 @@ public interface TtcnToClause extends PsiElement {
   TtcnAddressRefList getAddressRefList();
 
   @Nullable
-  TtcnInLineTemplate getInLineTemplate();
+  TtcnDerivedRefWithParList getDerivedRefWithParList();
+
+  @Nullable
+  TtcnSignature getSignature();
+
+  @Nullable
+  TtcnTemplateBody getTemplateBody();
+
+  @Nullable
+  TtcnType getType();
 
 }

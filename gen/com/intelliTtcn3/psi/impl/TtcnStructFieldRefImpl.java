@@ -24,20 +24,14 @@ public class TtcnStructFieldRefImpl extends ASTWrapperPsiElement implements Ttcn
 
   @Override
   @Nullable
-  public TtcnIdentifier getIdentifier() {
-    return findChildByClass(TtcnIdentifier.class);
-  }
-
-  @Override
-  @Nullable
-  public TtcnPredefinedType getPredefinedType() {
-    return findChildByClass(TtcnPredefinedType.class);
-  }
-
-  @Override
-  @Nullable
   public TtcnTypeReference getTypeReference() {
     return findChildByClass(TtcnTypeReference.class);
+  }
+
+  @Override
+  @Nullable
+  public PsiElement getTtcnId() {
+    return findChildByType(TTCN_ID);
   }
 
 }

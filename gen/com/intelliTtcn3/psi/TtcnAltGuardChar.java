@@ -8,6 +8,6 @@ import com.intellij.psi.PsiElement;
 public interface TtcnAltGuardChar extends PsiElement {
 
   @Nullable
-  TtcnBooleanExpression getBooleanExpression();
+  TtcnSingleExpression getSingleExpression();
 
 }

@@ -8,7 +8,7 @@ import com.intellij.psi.PsiElement;
 public interface TtcnModulePar extends PsiElement {
 
   @NotNull
-  TtcnModuleParList getModuleParList();
+  List<TtcnConstantExpression> getConstantExpressionList();
 
   @NotNull
   TtcnType getType();

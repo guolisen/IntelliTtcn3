@@ -24,8 +24,8 @@ public class TtcnNestedEnumDefImpl extends ASTWrapperPsiElement implements TtcnN
 
   @Override
   @NotNull
-  public TtcnEnumerationList getEnumerationList() {
-    return findNotNullChildByClass(TtcnEnumerationList.class);
+  public List<TtcnEnumeration> getEnumerationList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnEnumeration.class);
   }
 
 }

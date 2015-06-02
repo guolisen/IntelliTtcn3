@@ -7,7 +7,7 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnAllPortsSpec extends PsiElement {
 
-  @NotNull
-  TtcnComponentRef getComponentRef();
+  @Nullable
+  TtcnComponentOrDefaultReference getComponentOrDefaultReference();
 
 }

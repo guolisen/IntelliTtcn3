@@ -22,10 +22,4 @@ public class TtcnIdentifierListImpl extends ASTWrapperPsiElement implements Ttcn
     else super.accept(visitor);
   }
 
-  @Override
-  @NotNull
-  public List<TtcnIdentifier> getIdentifierList() {
-    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnIdentifier.class);
-  }
-
 }

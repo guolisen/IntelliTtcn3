@@ -17,7 +17,22 @@ public interface TtcnFunctionStatement extends PsiElement {
   TtcnCommunicationStatements getCommunicationStatements();
 
   @Nullable
-  TtcnConfigurationStatements getConfigurationStatements();
+  TtcnConnectStatement getConnectStatement();
+
+  @Nullable
+  TtcnDisconnectStatement getDisconnectStatement();
+
+  @Nullable
+  TtcnDoneStatement getDoneStatement();
+
+  @Nullable
+  TtcnKillTCStatement getKillTCStatement();
+
+  @Nullable
+  TtcnKilledStatement getKilledStatement();
+
+  @Nullable
+  TtcnMapStatement getMapStatement();
 
   @Nullable
   TtcnSUTStatements getSUTStatements();
@@ -26,9 +41,18 @@ public interface TtcnFunctionStatement extends PsiElement {
   TtcnSetLocalVerdict getSetLocalVerdict();
 
   @Nullable
+  TtcnStartTCStatement getStartTCStatement();
+
+  @Nullable
+  TtcnStopTCStatement getStopTCStatement();
+
+  @Nullable
   TtcnTestcaseOperation getTestcaseOperation();
 
   @Nullable
   TtcnTimerStatements getTimerStatements();
+
+  @Nullable
+  TtcnUnmapStatement getUnmapStatement();
 
 }

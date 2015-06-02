@@ -24,12 +24,6 @@ public class TtcnPortInstanceImpl extends ASTWrapperPsiElement implements TtcnPo
 
   @Override
   @NotNull
-  public TtcnExtendedIdentifier getExtendedIdentifier() {
-    return findNotNullChildByClass(TtcnExtendedIdentifier.class);
-  }
-
-  @Override
-  @NotNull
   public List<TtcnPortElement> getPortElementList() {
     return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnPortElement.class);
   }

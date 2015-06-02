@@ -24,14 +24,20 @@ public class TtcnSendStatementImpl extends ASTWrapperPsiElement implements TtcnS
 
   @Override
   @NotNull
-  public TtcnArrayIdentifierRef getArrayIdentifierRef() {
-    return findNotNullChildByClass(TtcnArrayIdentifierRef.class);
+  public List<TtcnFieldOrBitNumber> getFieldOrBitNumberList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnFieldOrBitNumber.class);
   }
 
   @Override
   @NotNull
   public TtcnPortSendOp getPortSendOp() {
     return findNotNullChildByClass(TtcnPortSendOp.class);
+  }
+
+  @Override
+  @NotNull
+  public PsiElement getTtcnId() {
+    return findNotNullChildByType(TTCN_ID);
   }
 
 }

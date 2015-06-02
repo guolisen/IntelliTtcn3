@@ -8,6 +8,15 @@ import com.intellij.psi.PsiElement;
 public interface TtcnRecordDef extends PsiElement {
 
   @NotNull
-  TtcnStructDefBody getStructDefBody();
+  List<TtcnArrayDef> getArrayDefList();
+
+  @NotNull
+  List<TtcnNestedTypeDef> getNestedTypeDefList();
+
+  @NotNull
+  List<TtcnSubTypeSpec> getSubTypeSpecList();
+
+  @NotNull
+  List<TtcnType> getTypeList();
 
 }

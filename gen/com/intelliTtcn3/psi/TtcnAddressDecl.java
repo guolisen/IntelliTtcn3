@@ -8,9 +8,6 @@ import com.intellij.psi.PsiElement;
 public interface TtcnAddressDecl extends PsiElement {
 
   @NotNull
-  TtcnAddressKeyword getAddressKeyword();
-
-  @NotNull
   TtcnType getType();
 
 }

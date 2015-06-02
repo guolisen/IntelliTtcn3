@@ -14,6 +14,6 @@ public interface TtcnSingleVarInstance extends PsiElement {
   TtcnExpression getExpression();
 
   @NotNull
-  TtcnIdentifier getIdentifier();
+  PsiElement getTtcnId();
 
 }

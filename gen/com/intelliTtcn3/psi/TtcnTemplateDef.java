@@ -16,7 +16,4 @@ public interface TtcnTemplateDef extends PsiElement {
   @NotNull
   TtcnTemplateBody getTemplateBody();
 
-  @Nullable
-  TtcnTemplateRestriction getTemplateRestriction();
-
 }

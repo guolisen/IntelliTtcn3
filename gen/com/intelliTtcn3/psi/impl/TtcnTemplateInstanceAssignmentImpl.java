@@ -23,15 +23,33 @@ public class TtcnTemplateInstanceAssignmentImpl extends ASTWrapperPsiElement imp
   }
 
   @Override
-  @NotNull
-  public TtcnIdentifier getIdentifier() {
-    return findNotNullChildByClass(TtcnIdentifier.class);
+  @Nullable
+  public TtcnDerivedRefWithParList getDerivedRefWithParList() {
+    return findChildByClass(TtcnDerivedRefWithParList.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnSignature getSignature() {
+    return findChildByClass(TtcnSignature.class);
   }
 
   @Override
   @NotNull
-  public TtcnInLineTemplate getInLineTemplate() {
-    return findNotNullChildByClass(TtcnInLineTemplate.class);
+  public TtcnTemplateBody getTemplateBody() {
+    return findNotNullChildByClass(TtcnTemplateBody.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnType getType() {
+    return findChildByClass(TtcnType.class);
+  }
+
+  @Override
+  @NotNull
+  public PsiElement getTtcnId() {
+    return findNotNullChildByType(TTCN_ID);
   }
 
 }

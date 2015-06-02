@@ -22,22 +22,4 @@ public class TtcnDirectionImpl extends ASTWrapperPsiElement implements TtcnDirec
     else super.accept(visitor);
   }
 
-  @Override
-  @Nullable
-  public TtcnInOutParKeyword getInOutParKeyword() {
-    return findChildByClass(TtcnInOutParKeyword.class);
-  }
-
-  @Override
-  @Nullable
-  public TtcnInParKeyword getInParKeyword() {
-    return findChildByClass(TtcnInParKeyword.class);
-  }
-
-  @Override
-  @Nullable
-  public TtcnOutParKeyword getOutParKeyword() {
-    return findChildByClass(TtcnOutParKeyword.class);
-  }
-
 }

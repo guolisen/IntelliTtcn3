@@ -8,6 +8,6 @@ import com.intellij.psi.PsiElement;
 public interface TtcnBinOrMatch extends PsiElement {
 
   @Nullable
-  TtcnBin getBin();
+  PsiElement getTtcnBin();
 
 }

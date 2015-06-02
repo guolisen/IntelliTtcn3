@@ -8,7 +8,7 @@ import com.intellij.psi.PsiElement;
 public interface TtcnConstDef extends PsiElement {
 
   @NotNull
-  TtcnConstList getConstList();
+  List<TtcnSingleConstDef> getSingleConstDefList();
 
   @NotNull
   TtcnType getType();

@@ -10,10 +10,4 @@ public interface TtcnComponentDef extends PsiElement {
   @NotNull
   List<TtcnComponentDefList> getComponentDefListList();
 
-  @NotNull
-  List<TtcnComponentType> getComponentTypeList();
-
-  @NotNull
-  TtcnIdentifier getIdentifier();
-
 }

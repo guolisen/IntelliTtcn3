@@ -8,6 +8,6 @@ import com.intellij.psi.PsiElement;
 public interface TtcnWithStatement extends PsiElement {
 
   @NotNull
-  TtcnWithAttribList getWithAttribList();
+  TtcnMultiWithAttrib getMultiWithAttrib();
 
 }

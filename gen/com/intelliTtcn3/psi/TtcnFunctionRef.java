@@ -7,7 +7,4 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnFunctionRef extends PsiElement {
 
-  @NotNull
-  List<TtcnIdentifier> getIdentifierList();
-
 }

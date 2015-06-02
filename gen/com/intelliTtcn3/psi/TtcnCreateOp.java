@@ -8,9 +8,6 @@ import com.intellij.psi.PsiElement;
 public interface TtcnCreateOp extends PsiElement {
 
   @NotNull
-  TtcnComponentType getComponentType();
-
-  @NotNull
   List<TtcnSingleExpression> getSingleExpressionList();
 
 }

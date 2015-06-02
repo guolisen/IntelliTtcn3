@@ -7,13 +7,4 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnDirection extends PsiElement {
 
-  @Nullable
-  TtcnInOutParKeyword getInOutParKeyword();
-
-  @Nullable
-  TtcnInParKeyword getInParKeyword();
-
-  @Nullable
-  TtcnOutParKeyword getOutParKeyword();
-
 }

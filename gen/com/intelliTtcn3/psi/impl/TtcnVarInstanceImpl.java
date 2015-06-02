@@ -24,12 +24,6 @@ public class TtcnVarInstanceImpl extends ASTWrapperPsiElement implements TtcnVar
 
   @Override
   @Nullable
-  public TtcnRestrictedTemplate getRestrictedTemplate() {
-    return findChildByClass(TtcnRestrictedTemplate.class);
-  }
-
-  @Override
-  @Nullable
   public TtcnTempVarList getTempVarList() {
     return findChildByClass(TtcnTempVarList.class);
   }

@@ -24,8 +24,14 @@ public class TtcnExtraMatchingAttributesImpl extends ASTWrapperPsiElement implem
 
   @Override
   @Nullable
-  public TtcnStringLength getStringLength() {
-    return findChildByClass(TtcnStringLength.class);
+  public TtcnBound getBound() {
+    return findChildByClass(TtcnBound.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnSingleExpression getSingleExpression() {
+    return findChildByClass(TtcnSingleExpression.class);
   }
 
 }

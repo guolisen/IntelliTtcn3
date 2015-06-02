@@ -24,8 +24,26 @@ public class TtcnSetDefImpl extends ASTWrapperPsiElement implements TtcnSetDef {
 
   @Override
   @NotNull
-  public TtcnStructDefBody getStructDefBody() {
-    return findNotNullChildByClass(TtcnStructDefBody.class);
+  public List<TtcnArrayDef> getArrayDefList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnArrayDef.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnNestedTypeDef> getNestedTypeDefList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnNestedTypeDef.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnSubTypeSpec> getSubTypeSpecList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnSubTypeSpec.class);
+  }
+
+  @Override
+  @NotNull
+  public List<TtcnType> getTypeList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnType.class);
   }
 
 }

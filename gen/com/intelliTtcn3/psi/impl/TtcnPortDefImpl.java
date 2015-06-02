@@ -23,9 +23,27 @@ public class TtcnPortDefImpl extends ASTWrapperPsiElement implements TtcnPortDef
   }
 
   @Override
+  @Nullable
+  public TtcnMessageAttribs getMessageAttribs() {
+    return findChildByClass(TtcnMessageAttribs.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnMixedAttribs getMixedAttribs() {
+    return findChildByClass(TtcnMixedAttribs.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnProcedureAttribs getProcedureAttribs() {
+    return findChildByClass(TtcnProcedureAttribs.class);
+  }
+
+  @Override
   @NotNull
-  public TtcnPortDefBody getPortDefBody() {
-    return findNotNullChildByClass(TtcnPortDefBody.class);
+  public PsiElement getTtcnId() {
+    return findNotNullChildByType(TTCN_ID);
   }
 
 }

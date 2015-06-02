@@ -7,7 +7,4 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnOctOrMatch extends PsiElement {
 
-  @Nullable
-  TtcnOct getOct();
-
 }

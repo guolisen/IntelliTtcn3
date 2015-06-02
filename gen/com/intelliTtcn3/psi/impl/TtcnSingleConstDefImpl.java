@@ -36,8 +36,8 @@ public class TtcnSingleConstDefImpl extends ASTWrapperPsiElement implements Ttcn
 
   @Override
   @NotNull
-  public TtcnIdentifier getIdentifier() {
-    return findNotNullChildByClass(TtcnIdentifier.class);
+  public PsiElement getTtcnId() {
+    return findNotNullChildByType(TTCN_ID);
   }
 
 }

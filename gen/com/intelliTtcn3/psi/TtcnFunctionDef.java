@@ -10,9 +10,6 @@ public interface TtcnFunctionDef extends PsiElement {
   @Nullable
   TtcnFunctionFormalParList getFunctionFormalParList();
 
-  @NotNull
-  TtcnIdentifier getIdentifier();
-
   @Nullable
   TtcnMtcSpec getMtcSpec();
 
@@ -27,5 +24,8 @@ public interface TtcnFunctionDef extends PsiElement {
 
   @Nullable
   TtcnSystemSpec getSystemSpec();
+
+  @NotNull
+  PsiElement getTtcnId();
 
 }

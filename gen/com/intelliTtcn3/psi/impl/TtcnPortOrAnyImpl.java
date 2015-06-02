@@ -23,15 +23,21 @@ public class TtcnPortOrAnyImpl extends ASTWrapperPsiElement implements TtcnPortO
   }
 
   @Override
-  @Nullable
-  public TtcnArrayIdentifierRef getArrayIdentifierRef() {
-    return findChildByClass(TtcnArrayIdentifierRef.class);
+  @NotNull
+  public List<TtcnFieldOrBitNumber> getFieldOrBitNumberList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnFieldOrBitNumber.class);
   }
 
   @Override
   @Nullable
   public TtcnVariableRef getVariableRef() {
     return findChildByClass(TtcnVariableRef.class);
+  }
+
+  @Override
+  @Nullable
+  public PsiElement getTtcnId() {
+    return findChildByType(TTCN_ID);
   }
 
 }

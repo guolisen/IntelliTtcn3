@@ -7,10 +7,19 @@ import com.intellij.psi.PsiElement;
 
 public interface TtcnMatchOp extends PsiElement {
 
+  @Nullable
+  TtcnDerivedRefWithParList getDerivedRefWithParList();
+
   @NotNull
   TtcnExpression getExpression();
 
+  @Nullable
+  TtcnSignature getSignature();
+
   @NotNull
-  TtcnInLineTemplate getInLineTemplate();
+  TtcnTemplateBody getTemplateBody();
+
+  @Nullable
+  TtcnType getType();
 
 }

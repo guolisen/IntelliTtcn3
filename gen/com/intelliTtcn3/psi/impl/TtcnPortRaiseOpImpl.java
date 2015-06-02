@@ -23,21 +23,33 @@ public class TtcnPortRaiseOpImpl extends ASTWrapperPsiElement implements TtcnPor
   }
 
   @Override
-  @NotNull
-  public TtcnInLineTemplate getInLineTemplate() {
-    return findNotNullChildByClass(TtcnInLineTemplate.class);
+  @Nullable
+  public TtcnDerivedRefWithParList getDerivedRefWithParList() {
+    return findChildByClass(TtcnDerivedRefWithParList.class);
   }
 
   @Override
   @NotNull
-  public TtcnSignature getSignature() {
-    return findNotNullChildByClass(TtcnSignature.class);
+  public List<TtcnSignature> getSignatureList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, TtcnSignature.class);
+  }
+
+  @Override
+  @NotNull
+  public TtcnTemplateBody getTemplateBody() {
+    return findNotNullChildByClass(TtcnTemplateBody.class);
   }
 
   @Override
   @Nullable
   public TtcnToClause getToClause() {
     return findChildByClass(TtcnToClause.class);
+  }
+
+  @Override
+  @Nullable
+  public TtcnType getType() {
+    return findChildByClass(TtcnType.class);
   }
 
 }

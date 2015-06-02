@@ -8,9 +8,15 @@ import com.intellij.psi.PsiElement;
 public interface TtcnCatchOpParameter extends PsiElement {
 
   @Nullable
-  TtcnInLineTemplate getInLineTemplate();
+  TtcnDerivedRefWithParList getDerivedRefWithParList();
+
+  @NotNull
+  List<TtcnSignature> getSignatureList();
 
   @Nullable
-  TtcnSignature getSignature();
+  TtcnTemplateBody getTemplateBody();
+
+  @Nullable
+  TtcnType getType();
 
 }

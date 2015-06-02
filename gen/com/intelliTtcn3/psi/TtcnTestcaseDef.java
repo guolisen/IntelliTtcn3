@@ -11,12 +11,21 @@ public interface TtcnTestcaseDef extends PsiElement {
   TtcnConfigSpec getConfigSpec();
 
   @NotNull
-  TtcnIdentifier getIdentifier();
+  List<TtcnDerivedRefWithParList> getDerivedRefWithParListList();
+
+  @NotNull
+  List<TtcnExpression> getExpressionList();
+
+  @NotNull
+  List<TtcnSignature> getSignatureList();
 
   @NotNull
   TtcnStatementBlock getStatementBlock();
 
-  @Nullable
-  TtcnTemplateOrValueFormalParList getTemplateOrValueFormalParList();
+  @NotNull
+  List<TtcnTemplateBody> getTemplateBodyList();
+
+  @NotNull
+  List<TtcnType> getTypeList();
 
 }

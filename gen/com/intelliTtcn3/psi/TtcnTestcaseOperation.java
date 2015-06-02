@@ -8,9 +8,18 @@ import com.intellij.psi.PsiElement;
 public interface TtcnTestcaseOperation extends PsiElement {
 
   @NotNull
+  List<TtcnDerivedRefWithParList> getDerivedRefWithParListList();
+
+  @NotNull
   List<TtcnFreeText> getFreeTextList();
 
   @NotNull
-  List<TtcnInLineTemplate> getInLineTemplateList();
+  List<TtcnSignature> getSignatureList();
+
+  @NotNull
+  List<TtcnTemplateBody> getTemplateBodyList();
+
+  @NotNull
+  List<TtcnType> getTypeList();
 
 }
