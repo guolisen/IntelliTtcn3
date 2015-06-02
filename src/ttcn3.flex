@@ -261,7 +261,6 @@ SingleCharacter = [^\r\n\'\\]
      "&"                    { return TtcnTypes.TTCN_CONNECT; }
      ".."             { return TtcnTypes.TTCN_POINT_CONNECT; }
      ";"                       { return TtcnTypes.TTCN_SEMI; }
-     "="                         { return TtcnTypes.TTCN_EQ; }
      "("                         { return TtcnTypes.TTCN_LP; }
      ")"                         { return TtcnTypes.TTCN_RP; }
      "+"                        { return TtcnTypes.TTCN_ADD; }
@@ -358,6 +357,6 @@ SingleCharacter = [^\r\n\'\\]
 }
 
 /* error fallback */
-[^]                              { throw new RuntimeException("Illegal character \""+yytext()+
-                                                              "\" at line "+yyline+", column "+yycolumn); }
+//[^]                              { throw new RuntimeException("Illegal character \""+yytext()+
+//                                                              "\" at line "+yyline+", column "+yycolumn); }
 //<<EOF>>                          { return symbol(EOF); }
