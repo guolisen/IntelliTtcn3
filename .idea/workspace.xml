@@ -22,7 +22,7 @@
     <favorites_list name="ttcn3333333333" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.80610687">
+    <splitter split-orientation="vertical" split-proportion="0.67480916">
       <split-first>
         <leaf>
           <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="false">
@@ -45,10 +45,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="TtcnFile.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="TtcnFile.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/com/intelliTtcn3/psi/TtcnFile.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.18032786">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
                   <folding />
                 </state>
@@ -60,22 +60,19 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="5" column="25" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="25" />
-                  <folding>
-                    <element signature="e#225#226#0" expanded="false" />
-                    <element signature="e#259#260#0" expanded="false" />
-                    <element signature="e#311#312#0" expanded="false" />
-                    <element signature="e#341#342#0" expanded="false" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ttcn3.bnf" pinned="false" current-in-tab="false">
+          <file leaf-file-name="ttcn3.bnf" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/ttcn3.bnf">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-4.6666665">
-                  <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-                  <folding />
+                <state vertical-scroll-proportion="0.53513515">
+                  <caret line="384" column="22" selection-start-line="384" selection-start-column="22" selection-end-line="384" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#2#5658#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -96,7 +93,7 @@
           <file leaf-file-name="ttcn3.flex" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/ttcn3.flex">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-11.393939">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="259" column="62" selection-start-line="259" selection-start-column="62" selection-end-line="259" selection-end-column="62" />
                   <folding>
                     <marker date="1433250150187" expanded="false" signature="0:1036" placeholder="/.../" />
@@ -336,7 +333,7 @@
             <entry file="file://$PROJECT_DIR$/src/com/intelliTtcn3/psi/TtcnTokenType.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="16" column="27" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+                  <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
                   <folding>
                     <element signature="e#407#408#0" expanded="true" />
                     <element signature="e#466#467#0" expanded="true" />
@@ -376,11 +373,7 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-                  <folding>
-                    <element signature="imports" expanded="false" />
-                    <element signature="e#173#174#0" expanded="false" />
-                    <element signature="e#222#223#0" expanded="false" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -392,8 +385,8 @@
           <file leaf-file-name="ttcn3.bnf.preview" pinned="false" current-in-tab="true">
             <entry file="mock:///ttcn3.bnf.preview">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.72043014">
-                  <caret line="72" column="59" selection-start-line="72" selection-start-column="59" selection-end-line="72" selection-end-column="59" />
+                <state vertical-scroll-proportion="0.74157304">
+                  <caret line="87" column="74" selection-start-line="87" selection-start-column="74" selection-end-line="87" selection-end-column="74" />
                   <folding />
                 </state>
               </provider>
@@ -429,8 +422,8 @@
         <option value="$PROJECT_DIR$/gen/com/intelliTtcn3/psi/TtcnVisitor.java" />
         <option value="$PROJECT_DIR$/src/ttcn3.flex" />
         <option value="$PROJECT_DIR$/src/com/intelliTtcn3/Scanner.java" />
-        <option value="/ttcn3.bnf.preview" />
         <option value="$PROJECT_DIR$/META-INF/plugin.xml" />
+        <option value="/ttcn3.bnf.preview" />
         <option value="$PROJECT_DIR$/src/ttcn3.bnf" />
       </list>
     </option>
@@ -478,8 +471,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -580,27 +572,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ttcn3333333333" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IntelliTtcn3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="intelliTtcn3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -927,15 +902,16 @@
       <workItem from="1433061783576" duration="10495000" />
       <workItem from="1433148047950" duration="6466000" />
       <workItem from="1433230390426" duration="7870000" />
-      <workItem from="1433248818541" duration="7342000" />
+      <workItem from="1433248818541" duration="7700000" />
+      <workItem from="1433336587821" duration="3722000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46966000" />
+    <option name="totallyTimeSpent" value="51046000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1702" height="1034" extended-state="6" />
+    <frame x="-11" y="-11" width="1702" height="1034" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -950,7 +926,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22393365" sideWeight="0.4948387" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23648648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23771499" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -990,15 +966,43 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/intelliTtcn3/Scanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1426" column="19" selection-start-line="1426" selection-start-column="19" selection-end-line="1426" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#63117#63118#0" expanded="true" />
+            <element signature="e#63145#63146#0" expanded="true" />
+            <element signature="e#63740#63741#0" expanded="true" />
+            <element signature="e#63768#63769#0" expanded="true" />
+            <element signature="e#63803#63804#0" expanded="true" />
+            <element signature="e#63848#63849#0" expanded="true" />
+            <element signature="e#64559#64560#0" expanded="true" />
+            <element signature="e#64590#64591#0" expanded="true" />
+            <element signature="e#64728#64729#0" expanded="true" />
+            <element signature="e#64763#64764#0" expanded="true" />
+            <element signature="e#64881#64882#0" expanded="true" />
+            <element signature="e#64944#64945#0" expanded="true" />
+            <element signature="e#65500#65501#0" expanded="true" />
+            <element signature="e#65540#65541#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/intelliTtcn3/TtcnLexerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#173#174#0" expanded="false" />
-            <element signature="e#222#223#0" expanded="false" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/intelliTtcn3/TtcnLexerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1014,11 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#362#363#0" expanded="false" />
-            <element signature="e#422#423#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1026,7 +1025,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="233" column="15" selection-start-line="233" selection-start-column="15" selection-end-line="233" selection-end-column="15" />
-          <folding />
+          <folding>
+            <element signature="e#2#5658#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1034,9 +1035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1282,8 +1280,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
-            <element signature="e#306#307#0" expanded="false" />
-            <element signature="e#361#362#0" expanded="false" />
             <element signature="e#407#408#0" expanded="true" />
             <element signature="e#466#467#0" expanded="true" />
           </folding>
@@ -1318,11 +1314,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#173#174#0" expanded="false" />
-            <element signature="e#222#223#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1338,7 +1330,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="223" column="27" selection-start-line="223" selection-start-column="27" selection-end-line="223" selection-end-column="27" />
-          <folding />
+          <folding>
+            <element signature="e#2#5658#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1591,7 +1585,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="56" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="56" />
-          <folding />
+          <folding>
+            <element signature="e#2#5658#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1844,7 +1840,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2#5658#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2097,7 +2095,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2#5658#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2350,7 +2350,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2#5658#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2603,7 +2605,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="224" column="52" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2#5658#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2856,7 +2860,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2#5658#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3109,7 +3115,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2#5658#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3362,7 +3370,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2#5658#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3607,9 +3617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3617,11 +3624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#362#363#0" expanded="false" />
-            <element signature="e#422#423#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3629,12 +3631,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="25" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="25" />
-          <folding>
-            <element signature="e#225#226#0" expanded="false" />
-            <element signature="e#259#260#0" expanded="false" />
-            <element signature="e#311#312#0" expanded="false" />
-            <element signature="e#341#342#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3642,11 +3639,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#173#174#0" expanded="false" />
-            <element signature="e#222#223#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3654,7 +3647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14237288">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3684,7 +3676,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ttcn3.flex">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.393939">
+        <state vertical-scroll-proportion="0.0">
           <caret line="259" column="62" selection-start-line="259" selection-start-column="62" selection-end-line="259" selection-end-column="62" />
           <folding>
             <marker date="1433250150187" expanded="false" signature="0:1036" placeholder="/.../" />
@@ -3927,14 +3919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ttcn3.bnf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6666665">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/intelliTtcn3/psi/TtcnElementType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3949,7 +3933,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/intelliTtcn3/psi/TtcnTokenType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
             <element signature="e#407#408#0" expanded="true" />
             <element signature="e#466#467#0" expanded="true" />
@@ -3967,9 +3951,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/intelliTtcn3/psi/TtcnFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18032786">
+        <state vertical-scroll-proportion="0.0">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ttcn3.bnf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53513515">
+          <caret line="384" column="22" selection-start-line="384" selection-start-column="22" selection-end-line="384" selection-end-column="22" />
+          <folding>
+            <element signature="e#2#5658#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
