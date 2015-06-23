@@ -1,5 +1,5 @@
 <idea-plugin version="2">
-  <id>com.TTTTTyT</id>
+  <id>com.TTTT</id>
   <name>IntelliTtcn33</name>
   <version>1.0</version>
   <vendor email="support@RE.com" url="http://www.yoW.com">ER</vendor>
@@ -26,8 +26,11 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
-    <fileTypeFactory implementation="com.intelliTtcn3.TTCNFileTypeHandler"/>
+    <fileTypeFactory implementation="com.intelliTtcn3.TtcnFileTypeHandler"/>
     <lang.parserDefinition language="Ttcn3" implementationClass="com.intelliTtcn3.TtcnParserDefinition"/>
+    <lang.syntaxHighlighterFactory key="Ttcn3"
+                                   implementationClass="com.intelliTtcn3.TtcnSyntaxHighlighterFactory"/>
+    <psi.referenceContributor implementation="com.intelliTtcn3.TtcnReferenceContributor"/>
   </extensions>
 
   <application-components>

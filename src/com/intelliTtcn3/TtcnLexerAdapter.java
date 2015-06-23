@@ -9,3 +9,4 @@ public class TtcnLexerAdapter extends FlexAdapter {
         super(new Scanner((Reader) null));
     }
 }
+

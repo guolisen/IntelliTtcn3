@@ -64,20 +64,24 @@ DocumentationComment = "/*" "*"+ [^/*] ~"*/"
 Identifier = [:jletter:][:jletterdigit:]*
 
 /* integer literals */
-DecIntegerLiteral = 0 | [1-9][0-9]*
+DecIntegerLiteral = [+-]?(0 | [1-9][0-9]*)
 
 /* floating point literals */
 FloatLiteral  = ({FLit1}|{FLit2}|{FLit3}) {Exponent}? [fF]
 DoubleLiteral = ({FLit1}|{FLit2}|{FLit3}) {Exponent}?
 
-FLit1    = [0-9]+ \. [0-9]*
-FLit2    = \. [0-9]+
+FLit1    = [0-9]+\.[^\.][0-9]*
+FLit2    = \.[^\.][0-9]+
 FLit3    = [0-9]+
 Exponent = [eE] [+-]? [0-9]+
 
 /* string and character literals */
 StringCharacter = [^\r\n\"\\]
 SingleCharacter = [^\r\n\'\\]
+
+BSTRING=\'[0-1]*\'B
+HSTRING=\'[0-9A-Fa-f]*\'H
+OSTRING=\'[0-9A-Fa-f]+[0-9A-Fa-f]+\'O
 
 %state STRING, CHARLITERAL
 
@@ -288,7 +292,7 @@ SingleCharacter = [^\r\n\'\\]
   \"                             { yybegin(STRING); string.setLength(0); }
 
   /* character literal */
-  \'                             { yybegin(CHARLITERAL); }
+  //\'                             { yybegin(CHARLITERAL); string.setLength(0); }
 
   /* numeric literals */
 
@@ -301,13 +305,17 @@ SingleCharacter = [^\r\n\'\\]
     {DoubleLiteral}                { return TtcnTypes.TTCN_NUMBER; }
 
   /* comments */
-  {Comment}                      { return TtcnTypes.TTCN_COMMENT }
+  {Comment}                      { return TtcnTypes.TTCN_COMMENT; }
 
   /* whitespace */
   {WhiteSpace}                   { /* ignore */ }
 
   /* identifiers */
   {Identifier}                   { return TtcnTypes.TTCN_ID; }
+
+  {BSTRING}                      { return TtcnTypes.TTCN_BSTRING; }
+  {HSTRING}                      { return TtcnTypes.TTCN_HSTRING; }
+  {OSTRING}                      { return TtcnTypes.TTCN_OSTRING; }
 }
 
 <STRING> {
@@ -334,19 +342,19 @@ SingleCharacter = [^\r\n\'\\]
 
 <CHARLITERAL> {
 //  {SingleCharacter}\'            { yybegin(YYINITIAL); return TtcnTypes.TTCN_STRING; }
-
+  {StringCharacter}+             { string.append( yytext() ); }
   /* escape sequences */
-  \'"B"                          { yybegin(YYINITIAL); return TtcnTypes.TTCN_BSTRING;}
-  \'"H"                          { yybegin(YYINITIAL); return TtcnTypes.TTCN_HSTRING;}
-  \'"O"                          { yybegin(YYINITIAL); return TtcnTypes.TTCN_OSTRING;}
-  "\\b"\'                        { yybegin(YYINITIAL); return TtcnTypes.TTCN_STRING;}
-  "\\t"\'                        { yybegin(YYINITIAL); return TtcnTypes.TTCN_STRING;}
-  "\\n"\'                        { yybegin(YYINITIAL); return TtcnTypes.TTCN_STRING;}
-  "\\f"\'                        { yybegin(YYINITIAL); return TtcnTypes.TTCN_STRING;}
-  "\\r"\'                        { yybegin(YYINITIAL); return TtcnTypes.TTCN_STRING;}
-  "\\\""\'                       { yybegin(YYINITIAL); return TtcnTypes.TTCN_STRING;}
-  "\\'"\'                        { yybegin(YYINITIAL); return TtcnTypes.TTCN_STRING;}
-  "\\\\"\'                       { yybegin(YYINITIAL); return TtcnTypes.TTCN_STRING;}
+//  \'B                          { yybegin(YYINITIAL); return TtcnTypes.TTCN_BSTRING;}
+//  \'H                          { yybegin(YYINITIAL); return TtcnTypes.TTCN_HSTRING;}
+//  \'O                          { yybegin(YYINITIAL); return TtcnTypes.TTCN_OSTRING;}
+//  "\\b"\'                        { yybegin(YYINITIAL); return TtcnTypes.TTCN_STRING;}
+//  "\\t"\'                        { yybegin(YYINITIAL); return TtcnTypes.TTCN_STRING;}
+//  "\\n"\'                        { yybegin(YYINITIAL); return TtcnTypes.TTCN_STRING;}
+//  "\\f"\'                        { yybegin(YYINITIAL); return TtcnTypes.TTCN_STRING;}
+//  "\\r"\'                        { yybegin(YYINITIAL); return TtcnTypes.TTCN_STRING;}
+//  "\\\""\'                       { yybegin(YYINITIAL); return TtcnTypes.TTCN_STRING;}
+//  "\\'"\'                        { yybegin(YYINITIAL); return TtcnTypes.TTCN_STRING;}
+//  "\\\\"\'                       { yybegin(YYINITIAL); return TtcnTypes.TTCN_STRING;}
  // \\[0-3]?{OctDigit}?{OctDigit}\' { yybegin(YYINITIAL);
 //			                              int val = Integer.parseInt(yytext().substring(1,yylength()-1),8);
 //			                            return TtcnTypes.TTCN_STRING; }

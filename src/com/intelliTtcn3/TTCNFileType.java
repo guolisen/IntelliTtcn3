@@ -10,15 +10,15 @@ import javax.swing.*;
 /**
  * Created by qq on 2015/5/15.
  */
-public class TTCNFileType extends LanguageFileType {
+public class TtcnFileType extends LanguageFileType {
     public static final Icon TTCN_ICON = IconLoader.findIcon("/robot_icon.png");
-    public static final TTCNFileType INSTANCE = new TTCNFileType();
+    public static final TtcnFileType INSTANCE = new TtcnFileType();
 
-    public static TTCNFileType getInstance() {
+    public static TtcnFileType getInstance() {
         return INSTANCE;
     }
 
-    private TTCNFileType() {
+    private TtcnFileType() {
         super(TtcnLanguage.INSTANCE);
     }
 

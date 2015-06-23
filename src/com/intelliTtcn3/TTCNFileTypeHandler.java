@@ -7,9 +7,9 @@ import org.jetbrains.annotations.NotNull;
 /**
  * Created by qq on 2015/5/15.
  */
-public class TTCNFileTypeHandler  extends FileTypeFactory {
+public class TtcnFileTypeHandler extends FileTypeFactory {
     @Override
     public void createFileTypes(@NotNull FileTypeConsumer consumer) {
-        consumer.consume(TTCNFileType.getInstance());
+        consumer.consume(TtcnFileType.getInstance());
     }
 }
