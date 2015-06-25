@@ -1,5 +1,6 @@
 package com.intelliTtcn3.psi.ref;
 
+import com.intelliTtcn3.psi.TtcnModuleName;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.psi.PsiElement;
@@ -45,6 +46,8 @@ public class TtcnUtil {
     public static <T extends PsiElement> List<T> findElementInLocalFile(Project project, TtcnFile ttcnFile, String key, Class<T> className) {
         List<T> result = null;
         Collection<VirtualFile> virtualFiles = ttcnFile.getImportFileList(project);
+        if (virtualFiles == null)
+            return result;
         for (VirtualFile virtualFile : virtualFiles) {
             TtcnFile ttcnImportFile = (TtcnFile) PsiManager.getInstance(project).findFile(virtualFile);
 
@@ -101,4 +104,52 @@ public class TtcnUtil {
         }
         return result;
     }
+
+    public static Collection<VirtualFile> collectImportFile(Project project, TtcnFile ttcnFile) {
+        Collection<VirtualFile> result = null;
+        Collection<VirtualFile> virtualFiles = FileBasedIndex.getInstance().getContainingFiles(FileTypeIndex.NAME, TtcnFileType.INSTANCE,
+                GlobalSearchScope.allScope(project));
+        Collection<TtcnModuleName> moduleNamePool = PsiTreeUtil.collectElementsOfType(ttcnFile, TtcnModuleName.class);
+
+        for (TtcnModuleName moduleName : moduleNamePool) {
+            String nameStr = moduleName.getText();
+            String nameStrWithOutSp = nameStr.substring(0, nameStr.length() - 1);
+            for (VirtualFile file : virtualFiles) {
+                String fileName = file.getName();
+                String fileNameWithOutExt = fileName.substring(0, fileName.length() - 6);
+                if (fileNameWithOutExt.equals(nameStrWithOutSp))
+                {
+                    if(result == null)
+                        result = new ArrayList<VirtualFile>();
+                    result.add(file);
+                }
+            }
+        }
+
+        return result;
+    }
+
+    public static <T extends PsiElement, V extends PsiElement> V findFromRootElementInLocalFile(Project project, PsiElement element, String key, Class<T> rootClass, Class<V> targetClass) {
+        T parent = PsiTreeUtil.getParentOfType(element, rootClass);
+        if (parent == null)
+            return null;
+
+        Collection<V> funcParNames =  PsiTreeUtil.collectElementsOfType(parent, targetClass);
+        if (funcParNames == null)
+            return null;
+
+        for (V name : funcParNames) {
+            String nameStr = name.getText();
+            String nameStrWithOutSp = nameStr.substring(0, nameStr.length() - 1);
+            //String keyWithOutSp = key.substring(0, nameStr.length() - 1);
+
+            if (key.equals(nameStr))
+            {
+                return name;
+            }
+        }
+
+        return null;
+    }
+
 }

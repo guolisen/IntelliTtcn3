@@ -10,8 +10,6 @@ import com.intellij.lang.ASTNode;
 import com.intellij.lang.Language;
 import com.intellij.navigation.ItemPresentation;
 import com.intellij.openapi.project.Project;
-import com.intellij.openapi.util.TextRange;
-import com.intellij.openapi.util.text.StringUtil;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.psi.*;
 import com.intellij.psi.tree.IElementType;
@@ -21,7 +19,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;
-import java.util.StringTokenizer;
 
 /**
  * @author maxim
@@ -37,23 +34,13 @@ public class TtcnElementBaseImpl extends ASTWrapperPsiElement implements ITtcnEl
   @NotNull
   public PsiReference[] getReferences() {
     final long count = manager(this).getModificationTracker().getModificationCount();
-    if (myCachedRefs == null || myStamp != count) {
+    //if (myCachedRefs == null || myStamp != count) {
       IElementType elementType = getNode().getElementType();
       PsiReference[] refs;
 
-      if (elementType == TtcnTypes.TTCN_STRING) {
-        final String text = getNode().getText();
-        StringTokenizer tokenizer = new StringTokenizer(StringUtil.stripQuotesAroundValue(text),"/\\");
-        refs = new PsiReference[tokenizer.countTokens()];
-        int i = 0;
-        while(tokenizer.hasMoreElements()) {
-          final String token = tokenizer.nextToken();
-          final int index = text.indexOf(token);
-          refs[i++] = new MyPsiPolyVariantReference(this, new TextRange(index, index + token.length()));
-        }
-      } else if (elementType == TtcnTypes.VAR_REF_NAME) {
+      if (elementType == TtcnTypes.VAR_REF_NAME) {
         refs = new PsiReference[] {
-                new ConstVarReference(this)
+                new VarReference(this)
         };
       } else if (elementType == TtcnTypes.MODULE_NAME) {
         refs = new PsiReference[] {
@@ -63,14 +50,14 @@ public class TtcnElementBaseImpl extends ASTWrapperPsiElement implements ITtcnEl
         refs = PsiReference.EMPTY_ARRAY;
       }
 
-      myCachedRefs = refs;
-      myStamp = count;
-    }
-    return myCachedRefs;
+      //myCachedRefs = refs;
+      //myStamp = count;
+    //}
+    return refs;
   }
 
-  private static PsiManager manager(PsiElement cppElement) {
-    return cppElement.getManager();
+  private static PsiManager manager(PsiElement element) {
+    return element.getManager();
   }
 
   public String getName() {
@@ -108,11 +95,11 @@ public class TtcnElementBaseImpl extends ASTWrapperPsiElement implements ITtcnEl
   }
 
   public void accept(@NotNull PsiElementVisitor psiElementVisitor) {
-  //  if (psiElementVisitor instanceof TtcnVisitor) {
-  //    ((TtcnVisitor)psiElementVisitor).visitCppElement(this);
-  //  } else {
-  //    psiElementVisitor.visitElement(this);
-  //  }
+    //if (psiElementVisitor instanceof TtcnVisitor) {
+    //  ((TtcnVisitor)psiElementVisitor).visitModuleName(this);
+    //} else {
+      psiElementVisitor.visitElement(this);
+    //}
   }
 
   private class MyItemPresentation implements ItemPresentation {

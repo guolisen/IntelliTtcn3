@@ -12,6 +12,7 @@ import com.intellij.psi.search.GlobalSearchScope;
 import com.intellij.psi.util.PsiTreeUtil;
 import com.intellij.util.indexing.FileBasedIndex;
 import org.jetbrains.annotations.NotNull;
+import com.intelliTtcn3.psi.ref.TtcnUtil;
 
 import javax.swing.*;
 import java.util.ArrayList;
@@ -43,34 +44,8 @@ public class TtcnFile extends PsiFileBase {
 
     public Collection<VirtualFile> getImportFileList(Project project)
     {
-        if (importFilePool == null)
-        {
-            importFilePool =  new ArrayList<VirtualFile>();
-        }
-
-        importFilePool.clear();
-        collectImportFile(project);
-
+        importFilePool = TtcnUtil.collectImportFile(project, this);
         return importFilePool;
     }
 
-    private void collectImportFile(Project project) {
-        Collection<VirtualFile> virtualFiles = FileBasedIndex.getInstance().getContainingFiles(FileTypeIndex.NAME, TtcnFileType.INSTANCE,
-                GlobalSearchScope.allScope(project));
-        Collection<TtcnModuleName> moduleNamePool = PsiTreeUtil.collectElementsOfType(this, TtcnModuleName.class);
-
-
-        for (TtcnModuleName moduleName : moduleNamePool) {
-            String nameStr = moduleName.getText();
-            String nameStrWithOutSp = nameStr.substring(0, nameStr.length() - 1);
-            for (VirtualFile file : virtualFiles) {
-                String fileName = file.getName();
-                String fileNameWithOutExt = fileName.substring(0, fileName.length() - 6);
-                if (fileNameWithOutExt.equals(nameStrWithOutSp))
-                {
-                    importFilePool.add(file);
-                }
-            }
-        }
-    }
 }

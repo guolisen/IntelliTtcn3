@@ -38,7 +38,6 @@ public class ModuleReference extends MyPsiPolyVariantReference {
             return ResolveResult.EMPTY_ARRAY;
 
         for (VirtualFile virtualFile : virtualFiles) {
-
             String fileName = virtualFile.getName();
             String fileNameWithOutExt = fileName.substring(0, fileName.length() - 6);
             if (!fileNameWithOutExt.equals(nameStrWithOutSp))
@@ -49,6 +48,8 @@ public class ModuleReference extends MyPsiPolyVariantReference {
             TtcnFile ttcnImportFile = (TtcnFile) PsiManager.getInstance(project).findFile(virtualFile);
             if (ttcnImportFile != null) {
                 TtcnModuleName[] properties = PsiTreeUtil.getChildrenOfType(ttcnImportFile, TtcnModuleName.class);
+                if (properties == null)
+                    return ResolveResult.EMPTY_ARRAY;
                 for (TtcnModuleName property : properties) {
                     String ttt = property.getText();
                     if (fileNameWithOutExt.equals(ttt.substring(0, ttt.length() - 1))) {

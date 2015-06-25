@@ -245,7 +245,7 @@ tokens=[
 
 }
 
-root ::= !<<eof>> Module {pin=1}
+//root ::= !<<eof>> Module {pin=1}
 Module ::= TTCN_MODULE ModuleId TTCN_LB Content* TTCN_RB WithStatement? TTCN_SEMI? {pin=1}
 private Content ::= ModuleDefinitionsList | ModuleControlPart
 private ModuleId ::= ModuleName LanguageSpec?
@@ -384,7 +384,8 @@ private FunctionLocalInst ::= VarInstance | TimerInstance
 private FunctionLocalDef ::= ConstDef | TemplateDef
 FunctionStatement ::= BehaviourStatements | ConfigurationStatements | TimerStatements | CommunicationStatements | BasicStatements | SetLocalVerdict | SUTStatements | TestcaseOperation
 FunctionInstance ::= FunctionRef TTCN_LP FunctionActualParList? TTCN_RP
-FunctionRef ::= (ModuleName TTCN_DOT)? Identifier
+FunctionRef ::= (ModuleName TTCN_DOT)? FunctionRefName
+FunctionRefName ::= Identifier
 //PreDefFunctionIdentifier ::= Identifier
 private FunctionActualParList ::= FunctionActlist | FunctionActAssignlist
 private FunctionActlist ::= FunctionActualPar ( TTCN_COMMA FunctionActualPar )*
@@ -561,7 +562,7 @@ TimeoutStatement ::= TimerRefOrAny TTCN_DOT TTCN_TIMEOUT IndexAssignment?
 TimerRefOrAny ::= ArrayIdentifierRef | ( TTCN_ANY TTCN_TIMER ) | ( TTCN_ANY TTCN_FROM Identifier )
 TestcaseOperation ::= TTCN_TESTCASE TTCN_DOT TTCN_STOP (TTCN_LP ( ( FreeText | InLineTemplate ) (TTCN_COMMA)? )* TTCN_RP)?
 Type ::= ReferencedType | PredefinedType
-private PredefinedType ::= BitStringKeyword | BooleanKeyword | CharStringKeyword | UniversalCharString | IntegerKeyword | OctetStringKeyword | HexStringKeyword | VerdictTypeKeyword | FloatKeyword | AddressKeyword | DefaultKeyword | AnyTypeKeyword
+PredefinedType ::= BitStringKeyword | BooleanKeyword | CharStringKeyword | UniversalCharString | IntegerKeyword | OctetStringKeyword | HexStringKeyword | VerdictTypeKeyword | FloatKeyword | AddressKeyword | DefaultKeyword | AnyTypeKeyword
 private BitStringKeyword ::= TTCN_BITSTRING
 private BooleanKeyword ::= TTCN_BOOL
 private IntegerKeyword ::= TTCN_INTEGER
@@ -609,11 +610,11 @@ private OmitKeyword ::= TTCN_OMIT
 private InParKeyword ::= TTCN_IN
 private OutParKeyword ::= TTCN_OUT
 private InOutParKeyword ::= TTCN_INOUT
-private FormalValuePar ::= ( InParKeyword | InOutParKeyword | OutParKeyword )? (TTCN_AT_LAZY | TTCN_AT_FUZZY)? Type Identifier (TTCN_ASSIGN ( Expression | TTCN_SUB ))?
-private FormalPortPar ::= InOutParKeyword? Identifier Identifier
-private FormalTimerPar ::= InOutParKeyword? TTCN_TIMER Identifier
-private FormalTemplatePar ::= ( InParKeyword | OutParKeyword | InOutParKeyword )? ( TTCN_TEMPLATE | RestrictedTemplate ) ( TTCN_AT_LAZY | TTCN_AT_FUZZY )? Type TemplateParName ( TTCN_ASSIGN ( InLineTemplate | TTCN_SUB ) )?
-TemplateParName ::= Identifier
+private FormalValuePar ::= ( InParKeyword | InOutParKeyword | OutParKeyword )? (TTCN_AT_LAZY | TTCN_AT_FUZZY)? Type FunctionParName (TTCN_ASSIGN ( Expression | TTCN_SUB ))?
+private FormalPortPar ::= InOutParKeyword? FunctionParName Identifier
+private FormalTimerPar ::= InOutParKeyword? TTCN_TIMER FunctionParName
+private FormalTemplatePar ::= ( InParKeyword | OutParKeyword | InOutParKeyword )? ( TTCN_TEMPLATE | RestrictedTemplate ) ( TTCN_AT_LAZY | TTCN_AT_FUZZY )? Type FunctionParName ( TTCN_ASSIGN ( InLineTemplate | TTCN_SUB ) )?
+FunctionParName ::= Identifier
 private RestrictedTemplate ::= OmitKeyword | ( TTCN_TEMPLATE TemplateRestriction )
 private TemplateRestriction ::= TTCN_LP ( OmitKeyword | TTCN_VALUE | TTCN_PRESENT ) TTCN_RP
 WithStatement ::= TTCN_WITH WithAttribList
@@ -697,6 +698,6 @@ ElseClause ::= TTCN_ELSE StatementBlock
 SelectCaseConstruct ::= TTCN_SELECT TTCN_LP SingleExpression TTCN_RP SelectCaseBody
 SelectCaseBody ::= TTCN_LB (SelectCase)+ TTCN_RB
 SelectCase ::= TTCN_CASE ( TTCN_LP InLineTemplate (TTCN_COMMA InLineTemplate)* TTCN_RP | TTCN_ELSE ) StatementBlock
-private ExtendedIdentifier ::= (ModuleName TTCN_DOT)? Identifier
+ExtendedIdentifier ::= (VarRefName TTCN_DOT)? VarRefName
 IdentifierList ::= Identifier ( TTCN_COMMA Identifier )
 QualifiedIdentifierList ::= QualifiedIdentifier (TTCN_COMMA QualifiedIdentifier )*
