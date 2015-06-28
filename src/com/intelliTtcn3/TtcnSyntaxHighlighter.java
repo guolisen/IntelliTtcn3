@@ -719,6 +719,35 @@ public class TtcnSyntaxHighlighter extends SyntaxHighlighterBase {
             DefaultLanguageHighlighterColors.FUNCTION_DECLARATION
     );
 
+    public static final TextAttributesKey S_IF = TextAttributesKey.createTextAttributesKey(
+            TtcnTypes.TTCN_S_IF.toString(),
+            DefaultLanguageHighlighterColors.KEYWORD
+    );
+    public static final TextAttributesKey S_IFELSE = TextAttributesKey.createTextAttributesKey(
+            TtcnTypes.TTCN_S_IFELSE.toString(),
+            DefaultLanguageHighlighterColors.KEYWORD
+    );
+    public static final TextAttributesKey S_ELSE = TextAttributesKey.createTextAttributesKey(
+            TtcnTypes.TTCN_S_ELSE.toString(),
+            DefaultLanguageHighlighterColors.KEYWORD
+    );
+    public static final TextAttributesKey S_ENDIF = TextAttributesKey.createTextAttributesKey(
+            TtcnTypes.TTCN_S_ENDIF.toString(),
+            DefaultLanguageHighlighterColors.KEYWORD
+    );
+    public static final TextAttributesKey S_IFNDEF = TextAttributesKey.createTextAttributesKey(
+            TtcnTypes.TTCN_S_IFNDEF.toString(),
+            DefaultLanguageHighlighterColors.KEYWORD
+    );
+    public static final TextAttributesKey S_ELIF = TextAttributesKey.createTextAttributesKey(
+            TtcnTypes.TTCN_S_ELIF.toString(),
+            DefaultLanguageHighlighterColors.KEYWORD
+    );
+    public static final TextAttributesKey S_DEFINE = TextAttributesKey.createTextAttributesKey(
+            TtcnTypes.TTCN_S_DEFINE.toString(),
+            DefaultLanguageHighlighterColors.KEYWORD
+    );
+
     static {
         keys1 = new THashMap<IElementType, TextAttributesKey>();
         keys2 = new THashMap<IElementType, TextAttributesKey>();
@@ -899,7 +928,13 @@ public class TtcnSyntaxHighlighter extends SyntaxHighlighterBase {
         keys1.put(TtcnTypes.FUNCTION_NAME, FUNC_NAME_DEF);
         keys1.put(TtcnTypes.FUNCTION_REF, FUNC_NAME_DEF2);
 
-
+        keys1.put(TtcnTypes.TTCN_S_IF, S_IF);
+        keys1.put(TtcnTypes.TTCN_S_IFELSE, S_IFELSE);
+        keys1.put(TtcnTypes.TTCN_S_ELSE, S_ELSE);
+        keys1.put(TtcnTypes.TTCN_S_ENDIF, S_ENDIF);
+        keys1.put(TtcnTypes.TTCN_S_IFNDEF, S_IFNDEF);
+        keys1.put(TtcnTypes.TTCN_S_ELIF, S_ELIF);
+        keys1.put(TtcnTypes.TTCN_S_DEFINE, S_DEFINE);
     }
 
     @NotNull

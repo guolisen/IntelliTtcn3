@@ -25,6 +25,9 @@ import com.intellij.psi.tree.IElementType;
 //import com.intellij.psi.TokenType;
 import com.intelliTtcn3.psi.TtcnTypes;
 
+import java.util.ArrayList;
+import java.util.Collection;
+//import java.util.String;
 %%
 
 %public
@@ -45,7 +48,18 @@ import com.intelliTtcn3.psi.TtcnTypes;
   private int yyline;
   private int yycolumn;
 
+  private Collection<String> macroDefinePool = new ArrayList<String>();
+  private int currentMacroBool = -1;
+
+  public boolean checkMacroDefine(String defineStr) {
+      for (String def : macroDefinePool) {
+            if (defineStr.equals(def))
+                return true;
+      }
+      return false;
+  }
 %}
+
 
 /* main character classes */
 LineTerminator = \r|\n|\r\n
@@ -83,9 +97,71 @@ BSTRING=\'[0-1]*\'B
 HSTRING=\'[0-9A-Fa-f]*\'H
 OSTRING=\'[0-9A-Fa-f]+[0-9A-Fa-f]+\'O
 
-%state STRING, CHARLITERAL
+ESC = "\\" ( [^] )
+CHAR = {ESC} | [^\'\"\\]
+STRING_BAD1 = \" ({CHAR} | \') *
+StringLiteral = {STRING_BAD1} \"
+
+%state STRING, CHARLITERAL, MACRO_IF, MACRO_IFDEF, MACRO_IFNDEF, MACRO_DEFINE, MACRO_ELSE, MACRO_ELIF, MACRO_STATMENT
 
 %%
+
+
+<MACRO_STATMENT>
+{
+    "#elif"                      { yybegin(MACRO_ELIF); return TtcnTypes.TTCN_S_ELIF;}
+    "#else"                      { yybegin(MACRO_ELSE); return TtcnTypes.TTCN_S_ELSE;}
+    "#endif"                     { currentMacroBool = -1; yybegin(YYINITIAL); return TtcnTypes.TTCN_S_ENDIF;}
+    {StringCharacter}+           { return TtcnTypes.TTCN_COMMENT; }
+    {WhiteSpace}                   { /* ignore */ }
+          \\.                            {yybegin(YYINITIAL);  }
+}
+
+<MACRO_IFDEF>
+{
+    {Identifier}                 { if (checkMacroDefine(yytext().toString())) {currentMacroBool = 1; yybegin(YYINITIAL);} else {currentMacroBool = 0; yybegin(MACRO_STATMENT);}  }
+    {LineTerminator}             { yybegin(YYINITIAL); }
+    {WhiteSpace}                   { /* ignore */ }
+          \\.                            { yybegin(YYINITIAL); }
+}
+
+<MACRO_IFNDEF>
+{
+
+    {Identifier}                 { if (checkMacroDefine(yytext().toString()) == false) {currentMacroBool = 1; yybegin(YYINITIAL);} else {currentMacroBool = 0; yybegin(MACRO_STATMENT);}  }
+    {LineTerminator}             { yybegin(YYINITIAL); }
+    {WhiteSpace}                   { /* ignore */ }
+    \\.                            { yybegin(YYINITIAL); }
+}
+
+<MACRO_DEFINE>
+{
+
+    {Identifier}                 { macroDefinePool.add(yytext().toString()); }
+    {LineTerminator}             { yybegin(YYINITIAL); }
+    {WhiteSpace}                   { /* ignore */ }
+          \\.                            { yybegin(YYINITIAL); }
+}
+
+<MACRO_ELSE>
+{
+
+    {LineTerminator}             { if (currentMacroBool == 0) { yybegin(YYINITIAL); } else { yybegin(MACRO_STATMENT);} }
+    {WhiteSpace}                   { /* ignore */ }
+          \\.                            { yybegin(YYINITIAL); }
+}
+
+<MACRO_ELIF, MACRO_IF>
+{
+    // TODO: Express Calu
+    {Identifier}                 { if (checkMacroDefine(yytext().toString())) {currentMacroBool = 1; yybegin(YYINITIAL);} else {currentMacroBool = 0; yybegin(MACRO_STATMENT);} }
+    {DecIntegerLiteral}          { int exp = new Integer(yytext().toString()); if (exp != 0) {currentMacroBool = 1; yybegin(YYINITIAL);} else {currentMacroBool = 0; yybegin(MACRO_STATMENT);}  }
+    {LineTerminator}             { yybegin(YYINITIAL); }
+    {WhiteSpace}                   { /* ignore */ }
+          \\.                            { yybegin(YYINITIAL); }
+}
+
+
 
 <YYINITIAL> {
      "import"                { return TtcnTypes.TTCN_IMPORT; }
@@ -189,7 +265,7 @@ OSTRING=\'[0-9A-Fa-f]+[0-9A-Fa-f]+\'O
      "enumerated"        { return TtcnTypes.TTCN_ENUMERATED; }
      "union"                  { return TtcnTypes.TTCN_UNION; }
      "anytype"              { return TtcnTypes.TTCN_ANYTYPE; }
-     "address"              { return TtcnTypes.TTCN_ADDRESS; }
+     //"address"              { return TtcnTypes.TTCN_ADDRESS; }
      "port"                    { return TtcnTypes.TTCN_PORT; }
      "component"          { return TtcnTypes.TTCN_COMPONENT; }
      "default"              { return TtcnTypes.TTCN_DEFAULT; }
@@ -255,6 +331,7 @@ OSTRING=\'[0-9A-Fa-f]+[0-9A-Fa-f]+\'O
      "@lazy"                { return TtcnTypes.TTCN_AT_LAZY; }
      "@fuzzy"              { return TtcnTypes.TTCN_AT_FUZZY; }
 
+
      "["                         { return TtcnTypes.TTCN_LM; }
      "]"                         { return TtcnTypes.TTCN_RM; }
      ":="                    { return TtcnTypes.TTCN_ASSIGN; }
@@ -286,6 +363,20 @@ OSTRING=\'[0-9A-Fa-f]+[0-9A-Fa-f]+\'O
      "<@"             { return TtcnTypes.TTCN_LEFT_SHIFT_AT; }
      "@>"            { return TtcnTypes.TTCN_RIGHT_SHIFT_AT; }
      "_"                 { return TtcnTypes.TTCN_UNDERSCORE; }
+    // "#if"                 { return TtcnTypes.TTCN_S_IF; }
+    // "#ifdef"              { return TtcnTypes.TTCN_S_IFELSE; }
+    // "#else"               { return TtcnTypes.TTCN_S_ELSE; }
+    // "#endif"              { return TtcnTypes.TTCN_S_ENDIF; }
+    // "#ifndef"             { return TtcnTypes.TTCN_S_IFNDEF; }
+    // "#elif"               { return TtcnTypes.TTCN_S_ELIF; }
+     "#endif"              { currentMacroBool = -1; yybegin(YYINITIAL); return TtcnTypes.TTCN_S_ENDIF;}
+     "#if"                 { yybegin(MACRO_IF);  return TtcnTypes.TTCN_S_IF; }
+     "#ifdef"              { yybegin(MACRO_IFDEF); return TtcnTypes.TTCN_S_IFELSE;}
+     "#ifndef"             { yybegin(MACRO_IFNDEF); return TtcnTypes.TTCN_S_IFNDEF;}
+     "#define"             { yybegin(MACRO_DEFINE); return TtcnTypes.TTCN_S_DEFINE;}
+     "#else"               { yybegin(MACRO_ELSE); return TtcnTypes.TTCN_S_ELSE;}
+     "#elif"               { yybegin(MACRO_ELIF); return TtcnTypes.TTCN_S_ELIF;}
+
 
 
   /* string literal */
@@ -316,14 +407,16 @@ OSTRING=\'[0-9A-Fa-f]+[0-9A-Fa-f]+\'O
   {BSTRING}                      { return TtcnTypes.TTCN_BSTRING; }
   {HSTRING}                      { return TtcnTypes.TTCN_HSTRING; }
   {OSTRING}                      { return TtcnTypes.TTCN_OSTRING; }
+  //{StringLiteral}                { return TtcnTypes.TTCN_STRING; }
 }
+
 
 <STRING> {
   \"                             { yybegin(YYINITIAL); return TtcnTypes.TTCN_STRING; }
 
   {StringCharacter}+             { string.append( yytext() ); }
 
-  /* escape sequences */
+  //escape sequences
   "\\b"                          { string.append( '\b' ); }
   "\\t"                          { string.append( '\t' ); }
   "\\n"                          { string.append( '\n' ); }
@@ -332,12 +425,13 @@ OSTRING=\'[0-9A-Fa-f]+[0-9A-Fa-f]+\'O
   "\\\""                         { string.append( '\"' ); }
   "\\'"                          { string.append( '\'' ); }
   "\\\\"                         { string.append( '\\' ); }
+  "\\o"                          { string.append( 'o' ); }
  // \\[0-3]?{OctDigit}?{OctDigit}  { char val = (char) Integer.parseInt(yytext().substring(1),8);
   //                      				   string.append( val ); }
 
-  /* error cases */
-  \\.                            { throw new RuntimeException("Illegal escape sequence \""+yytext()+"\""); }
-  {LineTerminator}               { throw new RuntimeException("Unterminated string at end of line"); }
+  //error cases
+  \\.                            { throw new RuntimeException("Illegal escape sequence \""+yytext()+"\"" + " " + yycolumn + " " + yyline); }
+ // {LineTerminator}               { throw new RuntimeException("Unterminated string at end of line"); }
 }
 
 <CHARLITERAL> {
@@ -360,9 +454,11 @@ OSTRING=\'[0-9A-Fa-f]+[0-9A-Fa-f]+\'O
 //			                            return TtcnTypes.TTCN_STRING; }
 
   /* error cases */
-  \\.                            { throw new RuntimeException("Illegal escape sequence \""+yytext()+"\""); }
-  {LineTerminator}               { throw new RuntimeException("Unterminated character literal at end of line"); }
+  \\.                            { throw new RuntimeException("Illegal escape sequence \""+yytext()+"\"" + " " + yycolumn + " " + yyline); }
+  {LineTerminator}               { throw new RuntimeException("Unterminated character literal at end of line" + " " + yycolumn + " " + yyline); }
 }
+
+
 
 /* error fallback */
 //[^]                              { throw new RuntimeException("Illegal character \""+yytext()+

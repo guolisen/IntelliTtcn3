@@ -180,6 +180,13 @@ tokens=[
    TTCN_AT_DETERMINISTIC='@deterministic'
    TTCN_AT_LAZY='@lazy'
    TTCN_AT_FUZZY='@fuzzy'
+   TTCN_S_IF='#if'
+   TTCN_S_IFELSE='#ifdef'
+   TTCN_S_ELSE='#else'
+   TTCN_S_ENDIF='#endif'
+   TTCN_S_IFNDEF='#ifndef'
+   TTCN_S_ELIF='#elif'
+   TTCN_S_DEFINE='#define'
 
    TTCN_LM='['
    TTCN_RM=']'
@@ -244,6 +251,7 @@ tokens=[
    mixin("ModuleName")="com.intelliTtcn3.psi.ref.TtcnElementBaseImpl"
 
 }
+
 
 //root ::= !<<eof>> Module {pin=1}
 Module ::= TTCN_MODULE ModuleId TTCN_LB Content* TTCN_RB WithStatement? TTCN_SEMI? {pin=1}
@@ -377,11 +385,11 @@ private FunctionFormalPar ::= FormalValuePar | FormalTimerPar | FormalTemplatePa
 ReturnType ::= TTCN_RETURN (TTCN_TEMPLATE | RestrictedTemplate )? Type
 RunsOnSpec ::= TTCN_RUNS TTCN_ON ComponentType
 MtcSpec ::= TTCN_MTC ComponentType
-StatementBlock ::= TTCN_LB FunctionDefList* FunctionStatementList* TTCN_RB
-private FunctionDefList ::= ( FunctionLocalDef | FunctionLocalInst ) WithStatement? TTCN_SEMI?
-private FunctionStatementList ::= FunctionStatement TTCN_SEMI?
-private FunctionLocalInst ::= VarInstance | TimerInstance
-private FunctionLocalDef ::= ConstDef | TemplateDef
+StatementBlock ::= TTCN_LB (FunctionDefList | FunctionStatementList)* TTCN_RB
+FunctionDefList ::= ( FunctionLocalDef | FunctionLocalInst ) WithStatement? TTCN_SEMI?
+FunctionStatementList ::= FunctionStatement TTCN_SEMI?
+FunctionLocalInst ::= VarInstance | TimerInstance
+FunctionLocalDef ::= ConstDef | TemplateDef
 FunctionStatement ::= BehaviourStatements | ConfigurationStatements | TimerStatements | CommunicationStatements | BasicStatements | SetLocalVerdict | SUTStatements | TestcaseOperation
 FunctionInstance ::= FunctionRef TTCN_LP FunctionActualParList? TTCN_RP
 FunctionRef ::= (ModuleName TTCN_DOT)? FunctionRefName
@@ -603,8 +611,8 @@ private Oct ::= Hex Hex
 private Cstring ::= TTCN_STRING
 //Char ::=
 private Identifier ::= TTCN_ID//Alpha ( AlphaNum | TTCN_UNDERSCORE )*
-private ExtendedAlphaNum ::= TTCN_STRING
-FreeText ::= TTCN_QUOTES  ExtendedAlphaNum* TTCN_QUOTES
+//private ExtendedAlphaNum ::= TTCN_STRING
+FreeText ::= TTCN_STRING //TTCN_QUOTES  ExtendedAlphaNum* TTCN_QUOTES
 private AddressValue ::= TTCN_NULL
 private OmitKeyword ::= TTCN_OMIT
 private InParKeyword ::= TTCN_IN

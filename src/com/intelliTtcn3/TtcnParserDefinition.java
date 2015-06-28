@@ -21,7 +21,13 @@ import org.jetbrains.annotations.NotNull;
 
 public class TtcnParserDefinition implements ParserDefinition{
     public static final TokenSet WHITE_SPACES = TokenSet.create(TokenType.WHITE_SPACE);
-    public static final TokenSet COMMENTS = TokenSet.create(TtcnTypes.TTCN_COMMENT);
+    public static final TokenSet COMMENTS = TokenSet.create(TtcnTypes.TTCN_COMMENT, TtcnTypes.TTCN_S_IF,
+            TtcnTypes.TTCN_S_IFELSE,
+            TtcnTypes.TTCN_S_ELSE,
+            TtcnTypes.TTCN_S_ENDIF,
+            TtcnTypes.TTCN_S_IFNDEF,
+            TtcnTypes.TTCN_S_ELIF,
+            TtcnTypes.TTCN_S_DEFINE );
 
     public static final IFileElementType FILE = new IFileElementType(Language.<TtcnLanguage>findInstance(TtcnLanguage.class));
 
